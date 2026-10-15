@@ -33,6 +33,8 @@ Pick ONE problem per session and attack it for the entire session. Before commit
    - **Tier C — fuzzy definition of "solved."** Voynich, Beale 1 and 3, Rongorongo, Indus script, Linear A. "Decipherment" is not an admissible claim here because no skeptic can reproduce it. Attack only a well-defined sub-question — a statistical property, a structural finding, a hypothesis ruled out — with a crisp success criterion written in advance.
 3. **Write two paragraphs** at the top of today's notes: why the problem is tractable now (new tools, new data, new angle), and the standard definition of "solved" for it, with sources.
 
+Also check `ledger/routed-open-problems.md`: open problems the Un-Asked Questions Ledger (`LEDGER.md`) found already asked and still open. They go through the same status check and tractability filter as any other candidate. If you pick one, fill in its "Picked by research run" cell with today's date.
+
 Candidate areas (not exhaustive): unsolved ciphers, undeciphered scripts, open problems in number theory, combinatorics, graph theory, Ramsey theory, Collatz variants, sequences and puzzles where a new idea could matter.
 
 ## DAILY PROCESS

@@ -1,4 +1,4 @@
-<!-- Run daily by the "Un-Asked Questions Ledger Daily" routine. All state lives on the claude/project-thread-pefbmx branch, next to the research workstream (PROMPT.md). -->
+<!-- Run every 2 hours by the "Un-Asked Questions Ledger (every 2 hours)" routine. All state lives on the claude/project-thread-pefbmx branch, next to the research workstream (PROMPT.md). -->
 
 # Un-Asked Questions Ledger — Daily Batch
 
@@ -13,7 +13,7 @@ The burden of proof is on the question. The default verdict is **Rejected**. You
 - **Runs in:** Claude Code, in the same repo as the frontier research workstream (`PROMPT.md`, `research/`). Do not edit anything under `research/`; that is the research run's state.
 - **Working directory:** `./ledger/`
   - `unasked-ledger.md` — the LEDGER. Append-only: every candidate's entry, rejections included, in the schema below. Read it in full before every run.
-  - `batches/<YYYY-MM-DD>.md` — one file per run: candidates tried, verdict per candidate, rejection rate, and the full Gate 2 search record for each candidate if it did not fit in the ledger entry.
+  - `batches/<YYYY-MM-DD>-<HHMM>.md` (UTC start time; runs happen every 2 hours) — one file per run, with full records and adversary logs in a matching folder: candidates tried, verdict per candidate, rejection rate, and the full Gate 2 search record for each candidate if it did not fit in the ledger entry.
   - `routed-open-problems.md` — the open-questions handoff (see Routing below).
 - **Routing:** "the open-questions project" is this repo's research workstream. A candidate rejected because it was already asked and is still unanswered gets a row appended to `ledger/routed-open-problems.md` (date, ledger ID, problem, source showing it is open, rough tier per PROMPT.md's tractability filter). The daily research run reads that file as a source of candidate problems. Answered or disguised-known rejections are not routed.
 - **Adversary independence:** Gate 4 runs as a subagent with a completely fresh context (Agent tool), handed only the Gate 0–3 record, never your reasoning around it. If the harness supports it, run it on a different model from the one generating. Hold it to a strict standard of proof from the start: an attack is Resolved only when concrete evidence defeats it, Partial when the response is plausible but unevidenced, Unresolved when the response is weak or circular; and it must search at least 8 new queries for the Disguise attack in vocabularies Gate 2 did not try. (The first batch's gentle adversaries let through candidates a stricter rerun killed.) If you cannot spawn one, no entry may be set Validated in this run; Provisional is the ceiling.
@@ -149,7 +149,7 @@ Routing (if rejected as already-asked):
 
 1. Default run: generate one batch of BATCH SIZE candidates (see "Where candidates come from"), varying the source method across the batch, and take each through every gate.
 2. Append every entry to `ledger/unasked-ledger.md`. IDs continue from the highest number already used that day.
-3. Write `ledger/batches/<YYYY-MM-DD>.md`: the candidates, each verdict, the rejection rate, and any Gate 4 rerun.
+3. Write `ledger/batches/<YYYY-MM-DD>-<HHMM>.md`: the candidates, each verdict, the rejection rate, and any Gate 4 rerun.
 4. Append routed open problems to `ledger/routed-open-problems.md`.
 5. Commit and push per ENVIRONMENT.
 6. Report: one short plain-language summary of the batch (counts by status, each Validated or Provisional question in one line, rejection rate, anything routed to research). No celebration language: a Validated question is a well-posed question, not a result.

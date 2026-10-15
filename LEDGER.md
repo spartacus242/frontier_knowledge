@@ -16,13 +16,13 @@ The burden of proof is on the question. The default verdict is **Rejected**. You
   - `batches/<YYYY-MM-DD>.md` — one file per run: candidates tried, verdict per candidate, rejection rate, and the full Gate 2 search record for each candidate if it did not fit in the ledger entry.
   - `routed-open-problems.md` — the open-questions handoff (see Routing below).
 - **Routing:** "the open-questions project" is this repo's research workstream. A candidate rejected because it was already asked and is still unanswered gets a row appended to `ledger/routed-open-problems.md` (date, ledger ID, problem, source showing it is open, rough tier per PROMPT.md's tractability filter). The daily research run reads that file as a source of candidate problems. Answered or disguised-known rejections are not routed.
-- **Adversary independence:** Gate 4 runs as a subagent with a completely fresh context (Agent tool), handed only the Gate 0–3 record, never your reasoning around it. If the harness supports it, run it on a different model from the one generating. If you cannot spawn one, no entry may be set Validated in this run; Provisional is the ceiling.
+- **Adversary independence:** Gate 4 runs as a subagent with a completely fresh context (Agent tool), handed only the Gate 0–3 record, never your reasoning around it. If the harness supports it, run it on a different model from the one generating. Hold it to a strict standard of proof from the start: an attack is Resolved only when concrete evidence defeats it, Partial when the response is plausible but unevidenced, Unresolved when the response is weak or circular; and it must search at least 8 new queries for the Disguise attack in vocabularies Gate 2 did not try. (The first batch's gentle adversaries let through candidates a stricter rerun killed.) If you cannot spawn one, no entry may be set Validated in this run; Provisional is the ceiling.
 - **Persistence:** at end of run, commit everything under `ledger/` and push to branch `claude/project-thread-pefbmx`. Pull first; another workstream pushes to the same branch, so rebase onto it rather than overwriting. Never rewrite history.
 - **Tools:** web search, web fetch, code execution, file read/write.
 
 ## Parameters (edit these)
 
-- **DOMAIN SCOPE:** STEM, with emphasis on AI architecture (model design, training, inference, interpretability), biology, and medicine. Every candidate in a batch must sit in this scope; cross-field transplants are fine when the target field is in scope.
+- **DOMAIN SCOPE:** STEM, AI (including AI architecture), biology, or medicine. A candidate qualifies if it sits in any one of these; cross-field transplants are fine when the target field is in scope.
 - **BATCH SIZE** when generating candidates: 5
 - **MINIMUM DOCUMENTED SEARCHES** per candidate: 8
 - **LEDGER:** `ledger/unasked-ledger.md` in this repo. Read it before every run.

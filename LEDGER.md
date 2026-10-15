@@ -12,7 +12,8 @@ The burden of proof is on the question. The default verdict is **Rejected**. You
 
 - **Runs in:** Claude Code, in the same repo as the frontier research workstream (`PROMPT.md`, `research/`). Do not edit anything under `research/`; that is the research run's state.
 - **Working directory:** `./ledger/`
-  - `unasked-ledger.md` — the LEDGER. Append-only: every candidate's entry, rejections included, in the schema below. Read it in full before every run.
+  - `unasked-ledger.md` — the LEDGER. Append-only: every candidate's entry, rejections included, in the schema below. It is the record; do not rewrite it.
+  - `INDEX.md` — one line per ledger entry (ID, status, domain, truncated question). Read this in full before every run for the Gate 2 duplicate check, then open the full entry in `unasked-ledger.md` only for candidates that look close. Regenerate it at END OF RUN after appending entries; the generator is in `batches/2026-10-15-2233.md`'s process notes and is a short script over the ledger's `ID:` blocks.
   - `batches/<YYYY-MM-DD>-<HHMM>.md` (UTC start time; runs happen every 2 hours) — one file per run, with full records and adversary logs in a matching folder: candidates tried, verdict per candidate, rejection rate, and the full Gate 2 search record for each candidate if it did not fit in the ledger entry.
   - `routed-open-problems.md` — the open-questions handoff (see Routing below).
 - **Routing:** "the open-questions project" is this repo's research workstream. A candidate rejected because it was already asked and is still unanswered gets a row appended to `ledger/routed-open-problems.md` (date, ledger ID, problem, source showing it is open, rough tier per PROMPT.md's tractability filter). The daily research run reads that file as a source of candidate problems. Answered or disguised-known rejections are not routed.
@@ -149,7 +150,7 @@ Routing (if rejected as already-asked):
 ## END OF RUN
 
 1. Default run: generate one batch of BATCH SIZE candidates (see "Where candidates come from"), varying the source method across the batch, and take each through every gate.
-2. Append every entry to `ledger/unasked-ledger.md`. IDs continue from the highest number already used that day.
+2. Append every entry to `ledger/unasked-ledger.md`, then regenerate `ledger/INDEX.md` from it. IDs continue from the highest number already used that day.
 3. Write `ledger/batches/<YYYY-MM-DD>-<HHMM>.md`: the candidates, each verdict, the rejection rate, and any Gate 4 rerun.
 4. Append routed open problems to `ledger/routed-open-problems.md`.
 5. Commit and push per ENVIRONMENT.

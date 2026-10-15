@@ -1,0 +1,202 @@
+[      0s] SOLVED n=959 t=33 flips=0
+[      0s] SOLVED n=960 t=33 flips=0
+[      0s] SOLVED n=961 t=33 flips=0
+[      0s] SOLVED n=962 t=33 flips=0
+[      0s] SOLVED n=963 t=33 flips=0
+[      0s] SOLVED n=964 t=33 flips=0
+[      0s] SOLVED n=965 t=33 flips=0
+[      0s] SOLVED n=966 t=33 flips=0
+[      0s] SOLVED n=967 t=33 flips=0
+[      0s] SOLVED n=968 t=33 flips=0
+[      1s] SOLVED n=969 t=33 flips=0
+[      1s] SOLVED n=970 t=33 flips=0
+[      1s] SOLVED n=971 t=33 flips=0
+[      1s] SOLVED n=972 t=33 flips=0
+[      1s] SOLVED n=973 t=33 flips=0
+[      1s] SOLVED n=974 t=33 flips=0
+[      1s] SOLVED n=975 t=33 flips=0
+[    138s] FAIL n=976 t=33 best=1 now=4 flips=10000000
+[    138s] SOLVED n=976 t=33 flips=0
+[    242s] FAIL n=977 t=33 best=1 now=1 flips=10000000
+[    242s] SOLVED n=977 t=33 flips=0
+[    242s] SOLVED n=978 t=33 flips=0
+[    382s] FAIL n=979 t=33 best=1 now=1 flips=10000000
+[    580s] FAIL n=979 t=33 best=1 now=7 flips=10000000
+[    719s] SOLVED n=979 t=33 flips=9368228
+[    719s] SOLVED n=980 t=33 flips=0
+[    719s] SOLVED n=981 t=33 flips=0
+[    719s] SOLVED n=982 t=33 flips=0
+[    719s] SOLVED n=983 t=33 flips=0
+[    719s] SOLVED n=984 t=33 flips=0
+[    719s] SOLVED n=985 t=33 flips=0
+[    719s] SOLVED n=986 t=33 flips=0
+[    719s] SOLVED n=987 t=33 flips=0
+[    719s] SOLVED n=988 t=33 flips=0
+[    719s] SOLVED n=989 t=33 flips=0
+[    719s] SOLVED n=990 t=33 flips=0
+[    719s] SOLVED n=991 t=33 flips=0
+[    719s] SOLVED n=992 t=33 flips=0
+[    719s] SOLVED n=993 t=33 flips=0
+[    719s] SOLVED n=994 t=33 flips=0
+[    719s] SOLVED n=995 t=33 flips=0
+[    719s] SOLVED n=996 t=33 flips=0
+[    719s] SOLVED n=997 t=33 flips=0
+[    750s] SOLVED n=998 t=33 flips=2115901
+[    797s] SOLVED n=999 t=33 flips=3797974
+[    797s] SOLVED n=1000 t=33 flips=4405
+[    801s] SOLVED n=1001 t=33 flips=258046
+[    801s] SOLVED n=1002 t=33 flips=0
+[    801s] SOLVED n=1003 t=33 flips=0
+[    801s] SOLVED n=1004 t=33 flips=0
+[    801s] SOLVED n=1005 t=33 flips=0
+[    801s] SOLVED n=1006 t=33 flips=0
+[    879s] SOLVED n=1007 t=33 flips=5338591
+[    879s] SOLVED n=1008 t=33 flips=0
+[    987s] FAIL n=1009 t=33 best=1 now=1 flips=10000000
+[    987s] SOLVED n=1009 t=33 flips=0
+[   1121s] FAIL n=1010 t=33 best=1 now=3 flips=10000000
+[   1188s] SOLVED n=1010 t=33 flips=6404223
+[   1188s] SOLVED n=1011 t=33 flips=1
+[   1188s] SOLVED n=1012 t=33 flips=0
+[   1188s] SOLVED n=1013 t=33 flips=0
+[   1188s] SOLVED n=1014 t=33 flips=0
+[   1188s] SOLVED n=1015 t=33 flips=0
+[   1188s] SOLVED n=1016 t=33 flips=0
+[   1332s] FAIL n=1017 t=33 best=1 now=1 flips=10000000
+[   1332s] SOLVED n=1017 t=33 flips=21158
+[   1332s] SOLVED n=1018 t=33 flips=473
+[   1483s] FAIL n=1019 t=33 best=1 now=1 flips=10000000
+[   1614s] FAIL n=1019 t=33 best=1 now=3 flips=10000000
+[   1721s] FAIL n=1019 t=33 best=1 now=2 flips=10000000
+[   1786s] SOLVED n=1019 t=33 flips=6762002
+[   1786s] SOLVED n=1020 t=33 flips=0
+[   1786s] SOLVED n=1021 t=33 flips=0
+[   1786s] SOLVED n=1022 t=33 flips=0
+[   1787s] SOLVED n=1023 t=33 flips=0
+[   1787s] SOLVED n=1024 t=33 flips=0
+[   1787s] SOLVED n=1025 t=33 flips=0
+[   1787s] SOLVED n=1026 t=33 flips=0
+[   1787s] SOLVED n=1027 t=33 flips=0
+[   1848s] FAIL n=1028 t=33 best=1 now=1 flips=10000000
+[   1918s] FAIL n=1028 t=33 best=1 now=3 flips=10000000
+[   1918s] SOLVED n=1028 t=33 flips=0
+[   1977s] FAIL n=1029 t=33 best=1 now=1 flips=10000000
+[   2034s] SOLVED n=1029 t=33 flips=8588845
+[   2097s] FAIL n=1030 t=33 best=1 now=2 flips=10000000
+[   2160s] FAIL n=1030 t=33 best=1 now=1 flips=10000000
+[   2224s] FAIL n=1030 t=33 best=1 now=1 flips=10000000
+[   2289s] FAIL n=1030 t=33 best=1 now=1 flips=10000000
+[   2289s] SOLVED n=1030 t=33 flips=0
+[   2356s] FAIL n=1031 t=33 best=1 now=1 flips=10000000
+[   2420s] FAIL n=1031 t=33 best=1 now=1 flips=10000000
+[   2420s] SOLVED n=1031 t=33 flips=0
+[   2420s] SOLVED n=1032 t=33 flips=0
+[   2420s] SOLVED n=1033 t=33 flips=0
+[   2483s] FAIL n=1034 t=33 best=1 now=1 flips=10000000
+[   2483s] SOLVED n=1034 t=33 flips=0
+[   2483s] SOLVED n=1035 t=33 flips=0
+[   2483s] SOLVED n=1036 t=33 flips=1
+[   2483s] SOLVED n=1037 t=33 flips=0
+[   2549s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   2612s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   2680s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   2746s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   2813s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   2878s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   2943s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3006s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3074s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3139s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3202s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3268s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3332s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3396s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3462s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3524s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3589s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3684s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   3756s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3822s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3885s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   3949s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4016s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4081s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   4146s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4208s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4312s] FAIL n=1038 t=33 best=1 now=13 flips=10000000
+[   4365s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4410s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4454s] FAIL n=1038 t=33 best=1 now=4 flips=10000000
+[   4500s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4544s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4588s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4636s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4682s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4727s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4771s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4813s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4857s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   4900s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4944s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   4991s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5036s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5081s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5125s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5171s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5213s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5258s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5302s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   5347s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5390s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5433s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5478s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   5521s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5566s] FAIL n=1038 t=33 best=1 now=3 flips=10000000
+[   5617s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5694s] FAIL n=1038 t=33 best=1 now=8 flips=10000000
+[   5744s] FAIL n=1038 t=33 best=1 now=8 flips=10000000
+[   5787s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   5832s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5875s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5918s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   5961s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6002s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6045s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   6088s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6135s] FAIL n=1038 t=33 best=1 now=3 flips=10000000
+[   6177s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6220s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6262s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6303s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6346s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6386s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6427s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6470s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6536s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   6578s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6620s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6661s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6704s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6747s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   6789s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6831s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6871s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6911s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6951s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   6992s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   7032s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7076s] FAIL n=1038 t=33 best=1 now=2 flips=10000000
+[   7117s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7164s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7204s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7243s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7283s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7322s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7364s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7405s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7446s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7488s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7530s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7577s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7619s] FAIL n=1038 t=33 best=1 now=1 flips=10000000
+[   7665s] FAIL n=1038 t=33 best=1 now=1 flips=10000000

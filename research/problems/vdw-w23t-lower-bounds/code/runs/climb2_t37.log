@@ -1,0 +1,7 @@
+[    105s] FAIL n=1200 t=37 best=1 now=61 flips=10000000
+[    126s] SOLVED n=1201 t=37 flips=1604215
+[    155s] SOLVED n=1202 t=37 flips=4802232
+[    260s] SOLVED n=1203 t=37 flips=7630798
+[    263s] SOLVED n=1204 t=37 flips=272502
+[    377s] FAIL n=1205 t=37 best=1 now=1 flips=10000000
+[    388s] SOLVED n=1206 t=37 flips=466946

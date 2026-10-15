@@ -1,0 +1,9 @@
+[     28s] SOLVED n=500 t=24 flips=4659554
+[     51s] SOLVED n=501 t=24 flips=3762349
+[     68s] SOLVED n=502 t=24 flips=2384310
+[    145s] SOLVED n=503 t=24 flips=10296629
+[    163s] SOLVED n=504 t=24 flips=2291359
+[    309s] FAIL n=505 t=24 best=1 now=55 flips=20000000
+[    323s] SOLVED n=505 t=24 flips=1904931
+[    324s] SOLVED n=506 t=24 flips=153334
+[    468s] FAIL n=507 t=24 best=1 now=60 flips=20000000

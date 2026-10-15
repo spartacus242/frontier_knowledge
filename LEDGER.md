@@ -22,7 +22,7 @@ The burden of proof is on the question. The default verdict is **Rejected**. You
 
 ## Parameters (edit these)
 
-- **DOMAIN SCOPE:** all fields — or restrict, e.g. "manufacturing systems and industrial operations"
+- **DOMAIN SCOPE:** STEM, with emphasis on AI architecture (model design, training, inference, interpretability), biology, and medicine. Every candidate in a batch must sit in this scope; cross-field transplants are fine when the target field is in scope.
 - **BATCH SIZE** when generating candidates: 5
 - **MINIMUM DOCUMENTED SEARCHES** per candidate: 8
 - **LEDGER:** `ledger/unasked-ledger.md` in this repo. Read it before every run.

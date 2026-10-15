@@ -75,3 +75,40 @@ Label: NO PROGRESS. No claim was sent to the skeptic gate.
   (backtrack) when stuck at best=1.
 - Fetching the AKS certificates (arXiv:1102.5433 Appendix A) needs the full PDF text; arxiv.org is blocked for direct download
   here and WebFetch's summariser did not reach the appendix. raw.githubusercontent.com is reachable.
+
+---
+# Session 2026-10-15 (second session, same problem, focused on t = 33)
+
+## Why still tractable / status
+Re-checked 2026-10-15 (web search for w(2;3,33) and the van der Waerden pages): no newer value than AKS's w(2;3,33) > 1063
+(arXiv:1102.5433 Table 2). Yesterday's pipeline (palindromic seed + non-palindromic extension) reproduced the conjectured exact
+w(2;3,24) = 593 and reached 1039 at t=33, so the remaining 25 is a seed-quality / search-move problem, not a missing idea.
+New angles today: interior insertions and trimming/backtracking in the extension phase, and more, stronger palindromic seeds.
+
+## Frozen definition of "solved" (unchanged, frozen for this session)
+An explicit 2-colouring of {1..n}, n >= 1064, with no 3-AP in colour 0 and no 33-AP in colour 1 (proves w(2;3,33) > 1063).
+The same frozen definition from 2026-10-14 also applies to any other t in 31..39 if one happens to improve.
+
+## Approaches log (2026-10-15)
+1. **Extension with interior inserts + trimming/backtracking** (`code/climb_plain2.py`): from yesterday's 1039, after 4
+   consecutive failures trim 6 bits from random ends and re-extend; inserts at start / end / random interior. Run "y" reached
+   1046 within 45 min (yesterday's end-only extension was stuck at 1037-1039 for >1 h). Run "x" (same settings) stayed at 1039.
+2. **Deeper backtracking (trim 12)** from 1046 (run "z"): reached **1064 at ~1340 s**, one more than the published
+   w(2;3,33) > 1063. Checked by `code/verify.py` and by a separate set-based brute-force script (93 zeros, no 3-AP among zeros,
+   longest AP among ones has length 32). Saved as `best/t33_n1064.txt`. Attempted to break it myself: both independent checks
+   pass; re-confirmed the published bound from arXiv:1102.5433 Table 3 ("w(2;3,t) > ... 1063 ..." for t=33, strict).
+3. **Palindromic seeds** (climb2, runs s1/s2) from 1000 reached 1002 and 1004 (within AKS's published palindromic range
+   (996,1005)); not needed once (2) worked; stopped.
+4. **Skeptic gate on claim 2026-10-15-1 (w(2;3,33) > 1068): FAILED on novelty.** Skeptic 1 and 2 reproduced the colouring
+   (longest colour-0 AP 2, longest colour-1 AP 32) but found OEIS A171081 comments by Juan Lopez Marcano (Aug 21 2026):
+   a(31) >= 954 and a(33) >= 1072, i.e. w(2;3,33) > 1071, with certificates a171081_1.txt / a171081_2.txt and a Zenodo preprint
+   (record 21943191, 2026-08-15, main theorem w(2;3,31) >= 941). Skeptic 1 checked the 1071 certificate is valid. I confirmed
+   the OEIS comment myself via WebFetch. Our 1068 is NOT new. Lesson: the status check must include the OEIS entry itself
+   (A171081 here), not just papers; yesterday's check missed this because oeis.org search pages were not fetchable, but the
+   A-number page is.
+   Current best known (to our knowledge): t=31: >953, t=33: >1071; t=32, 34..39 unchanged from AKS as far as A171081 shows.
+5. **Same pipeline at t=35** (record 1204 per AKS; A171081 shows no newer t=35 value): from 1154, four runs with trim 12-20
+   reached 1185 in ~2.5 h, slowing to a few levels per hour. 19 short. Saved `best/t35_n1185.txt`.
+6. **t=33 past 1071**: one run from 1068 with trim 20 made no progress in 1 h.
+
+Label for 2026-10-15: NO PROGRESS (claim 2026-10-15-1 failed the gate unanimously on novelty).

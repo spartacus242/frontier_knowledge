@@ -1,0 +1,4 @@
+len=1068
+zeros=93 ones=975 other=0
+longest AP colour0=2 colour1=32 (0-index/1-index irrelevant: translation invariant)
+3AP in 0: 0 ; 33AP in 1: 0

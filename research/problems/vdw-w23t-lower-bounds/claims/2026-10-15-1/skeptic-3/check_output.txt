@@ -1,0 +1,33 @@
+raw file bytes = 1069; ends with newline: False
+claim.md string identical to file string: True
+=== file string (stripped) ===
+length = 1068
+alphabet = ['0', '1']
+count of '0' = 93, count of '1' = 975
+longest AP in colour 0: 2 (start,d 1-based = (11, 17))
+longest AP in colour 1: 32 (start,d 1-based = (13, 23))
+SAT-style: 3-AP clauses on colour 0: 284622 clauses, 0 violated, first=None
+SAT-style: 33-AP clauses on colour 1: 17292 clauses, 0 violated, first=None
+VERDICT: PASS
+=== reversed string ===
+length = 1068
+alphabet = ['0', '1']
+count of '0' = 93, count of '1' = 975
+longest AP in colour 0: 2 (start,d 1-based = (15, 2))
+longest AP in colour 1: 32 (start,d 1-based = (11, 11))
+SAT-style: 3-AP clauses on colour 0: 284622 clauses, 0 violated, first=None
+SAT-style: 33-AP clauses on colour 1: 17292 clauses, 0 violated, first=None
+VERDICT: PASS
+=== swapped colours (0<->1) ===
+length = 1068
+alphabet = ['0', '1']
+count of '0' = 975, count of '1' = 93
+longest AP in colour 0: 32 (start,d 1-based = (13, 23))
+longest AP in colour 1: 2 (start,d 1-based = (11, 17))
+SAT-style: 3-AP clauses on colour 0: 284622 clauses, 215396 violated, first=(1, 1)
+SAT-style: 33-AP clauses on colour 1: 17292 clauses, 0 violated, first=None
+VERDICT: FAIL
+append '0': longest0=3, longest1=32 -> breaks
+append '1': longest0=2, longest1=33 -> breaks
+prepend '0': longest0=3, longest1=32 -> breaks
+prepend '1': longest0=2, longest1=33 -> breaks

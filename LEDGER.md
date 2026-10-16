@@ -26,10 +26,13 @@ The burden of proof is on the question. The default verdict is **Rejected**. You
 
 ## Parameters (edit these)
 
-- **DOMAIN SCOPE:** STEM, AI (including AI architecture), biology, or medicine. A candidate qualifies if it sits in any one of these; cross-field transplants are fine when the target field is in scope.
+- **DOMAIN SCOPE:** STEM, AI (including AI architecture), biology, or medicine.
+- **ONE AREA PER BATCH, ROTATING.** Jace, 2026-10-16: all five candidates in a batch come from a single area, and the areas rotate one per batch through the cycle in `ledger/rotation.md` — other STEM, then AI architecture, then biology, then medicine. Before generating, read the last line of that file's log, take the next area in the cycle, and generate only in it; append the batch's line to the log when the batch is committed. Rotating was asked for because the ledger had drifted: at 65 entries medicine alone held 54% of them and medicine plus biology held 69%. A candidate outside the batch's area is a failed candidate however good it looks — replace it rather than stretch the area to fit.
+- Cross-field transplants are unaffected and still wanted: the method may come from anywhere, so long as the TARGET field — whose literature decides novelty and whose community would act on the answer — is the batch's area.
 - **BATCH SIZE** when generating candidates: 5
 - **MINIMUM DOCUMENTED SEARCHES** per candidate: 8
 - **LEDGER:** `ledger/unasked-ledger.md` in this repo. Read it before every run.
+- **ROTATION STATE:** `ledger/rotation.md`. The log in it is the state; do not infer the area from entry domains or from the batch count.
 
 ## Definitions
 

@@ -3,6 +3,8 @@
 One line per entry, newest last. Generated from `unasked-ledger.md`, which stays the append-only record.
 Read this file for the Gate 2 duplicate check, then open the full entry in `unasked-ledger.md` only for candidates that look close.
 
+Regenerate with `python3 -I ledger/tools/make-index.py` after appending a batch.
+
 | ID | Status | Domain | Question (truncated) |
 |---|---|---|---|
 | UQ-20261015-01 | Rejected | Cultural evolution | Does the number of distinct traditional dishes in a regional cuisine scale with region area and population as a species–area-style power law, with island and mainland curves differing? |
@@ -26,7 +28,12 @@ Read this file for the Gate 2 duplicate check, then open the full entry in `unas
 | UQ-20261015-19 | Provisional | Medicine — laboratory medicine / clinical chemistry and in-v | In biobanks linking whole-genome/exome data to routine clinical laboratory results (UK Biobank primary-care and hospital extracts, All of Us EHR labs, national lab registries), over a pre-registered a |
 | UQ-20261015-20 | Rejected | Biology / molecular methods — PCR primer and multiplex-panel | For a designed library of N >= 3,000 distinct primer pairs on identical synthetic templates, with per-pair efficiency defined as log2 relative yield at a fixed cycle number against a common spike-in s |
 | UQ-20261015-21 | Rejected | Medicine (clinical informatics, patient safety, quality meas | At sites with staggered go-live of a real-time EHR alert triggered by a threshold on a discretionary (non-device-captured) charted vital sign, with documented threshold awareness among charting staff: |
-| UQ-20261015-22 | Provisional | Medicine / clinical pharmacology (PBPK, model-informed drug  |  |
+| UQ-20261015-22 | Provisional | Medicine / clinical pharmacology (PBPK, model-informed drug  | Within openly documented platforms only (PK-Sim/OSP, published system-parameter compilations, EMA/FDA submission annexes; proprietary libraries out of scope, the coverage gap itself reportable), for a |
 | UQ-20261015-23 | Rejected | Biology (single-cell and spatial genomics, human cell atlase | For each of K published human cell atlases that release raw reads plus pipeline code, inject real foreign cell populations into the atlas's own raw data at controlled frequencies f and pre-specified d |
 | UQ-20261015-24 | Rejected | AI (large-scale training systems | For a single-cluster AI training campaign of known power profile and phase schedule, measured simultaneously inside the facility and outside its fence: (a) in the 0.05–55 Hz band, what is the ROC for  |
 | UQ-20261015-25 | Rejected | AI — training practice | For open training runs with dense terminal checkpoints, define the shippable set as terminal checkpoints whose held-out validation loss lies inside a pre-registered equivalence band (delta fixed in ad |
+| UQ-20261016-01 | Rejected | AI (large-scale training systems / AI architecture) | In large-scale neural-network training runs, (a) within a defined population of instrumented runs, what is P(hardware-fault-coincident \| loss spike or divergence not explained by batch replay or optim |
+| UQ-20261016-02 | Provisional | Medicine — clinical informatics / clinical decision support | Treating each of K commercial interaction compendia (Lexicomp, Micromedex, First Databank) as a classifier whose severity label is the configuration surface for EHR alert firing, on a pre-specified sa |
+| UQ-20261016-03 | Rejected | Biology — plant pathology / plant-disease epidemiology | Taking *Xylella fastidiosa* in Apulian olive under Commission Implementing Regulation (EU) 2020/1201 as the index programme, and defining the estimand on the TEST-POSITIVE subset only: among hosts des |
+| UQ-20261016-04 | Rejected | Medicine — infectious-disease epidemiology (variant surveill | For a designated variant's invasion window in a given sewershed, is the per-lineage sewage-to-clinical frequency odds ratio constant in time, and does its measured time-drift displace the fitted logis |
+| UQ-20261016-05 | Rejected | Medicine — clinical epidemiology, biostatistics, missing-dat | For pre-specified (dataset, variable, estimand) triples in which missingness was real and present in a frozen analysis file and the true values were later recovered from a source independent of the an |

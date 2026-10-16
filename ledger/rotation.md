@@ -20,3 +20,5 @@ The log is the state. Do not infer the area from entry domains or from the batch
 | Batch (UTC) | Area | Entries |
 |---|---|---|
 | 2026-10-15 16:05 .. 2026-10-16 16:33 | all four areas at once (pre-rotation) | UQ-20261015-01 .. UQ-20261016-45 |
+
+**The cycle starts one step in, at AI architecture.** The 16:33 batch was generated before the rotation took effect and happened to return three other-STEM entries (UQ-41 numerical computing, UQ-43 electrocatalysis, UQ-45 computer-assisted mathematics) and two medicine. Counted over all 70 entries that leaves medicine 37, other STEM 14, biology 10, AI 9 — so AI architecture, not other STEM, is now the area furthest behind, and starting there serves the balancing this rotation was asked for. Other STEM comes round in its normal place on the next pass. Recorded here rather than by reordering the cycle, so the cycle itself stays fixed.

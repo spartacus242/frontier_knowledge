@@ -54,7 +54,7 @@ Check that each presupposition is either established or explicitly flagged as co
 ### Gate 2 — Novelty cross-check
 
 1. Check the LEDGER for duplicates and near-duplicates.
-2. Run at least MINIMUM DOCUMENTED SEARCHES distinct queries. Vary vocabulary deliberately: lay terms, technical terms, historical terms, and the jargon of at least two neighboring fields. Search for the question's *answer* as well as the question — if an answer exists, the question was asked.
+2. Run at least MINIMUM DOCUMENTED SEARCHES distinct queries. Vary vocabulary deliberately: lay terms, technical terms, historical terms, and the jargon of at least two neighboring fields. Search for the question's *answer* as well as the question — if an answer exists, the question was asked. Spend at least one query on **the obvious title a paper on this question would carry, in the candidate's own field and its own words**, and open the nearest hit to read what it actually claims rather than assuming your variant falls outside it. This is not redundant with the neighbouring-field sweep: across the 2026-10-16 batches every rejection was killed by an on-point paper in the candidate's *own* literature that an 11-query Gate 2 missed and the adversaries then found, so the failure is in query choice, not query count.
 3. Record every query with a one-line summary of what it returned.
 4. Identify the three nearest prior formulations, with verifiable sources, and state precisely how the candidate differs from each.
 5. Assign novelty confidence:

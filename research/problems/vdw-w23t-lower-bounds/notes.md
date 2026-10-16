@@ -112,3 +112,27 @@ The same frozen definition from 2026-10-14 also applies to any other t in 31..39
 6. **t=33 past 1071**: one run from 1068 with trim 20 made no progress in 1 h.
 
 Label for 2026-10-15: NO PROGRESS (claim 2026-10-15-1 failed the gate unanimously on novelty).
+
+---
+# Session 2026-10-16 (third session, same problem, t = 35)
+
+## Status check and why still tractable
+Checked 2026-10-16: OEIS A171081 (fetched directly) has only Marcano's Aug 2026 updates for t=31 (>953) and t=33 (>1071),
+nothing for t=35. Zenodo record 21943191 (one version, 2026-08-15) holds only t=31 certificates; its README's theorem is
+w(2;3,31) >= 941 (the PDF itself could not be downloaded here). Web search found arXiv:2608.20824 (asymptotic two-colour w(k),
+not w(2;3,t)) and nothing for t=35. So the best known bound we can find is still AKS (arXiv:1102.5433 Table 3) w(2;3,35) > 1204.
+Also reviewed `ledger/routed-open-problems.md` (new since yesterday): UQ-20261015-02 (palindromic gap pdg, extend pdw past
+t=20) is in this area, but extending exact pdw needs complete SAT solving that AKS already took to t=27; not picked today.
+Tractable now because trim-and-regrow extension gained 31 at t=35 yesterday (1154 -> 1185) and was still moving.
+
+## Frozen definition of "solved" (frozen for this session)
+An explicit 2-colouring of {1..n}, n >= 1205, with no 3-AP in colour 0 and no 35-AP in colour 1 (proves w(2;3,35) > 1204).
+
+## Approaches log (2026-10-16)
+1. **Trim-and-regrow from 1185, trims 12/20/30/20** (4 runs, 1 h): only one trim-20 run moved, 1185 -> 1195.
+2. **Three restarts from 1195 (trims 20/20/30)** (1 h): 1195 -> 1197 (trim 20).
+3. **Deeper trims 30/40/60/40 from 1197** (90 min): no gain. (Another 90 min was lost when a kill pattern matched the
+   launching shell and killed the new runs at start. Kill by PID from `ps`, never with a `pkill -f`/`pgrep -f` pattern that
+   also appears in the same command line.)
+Best today: w(2;3,35) > 1197 (`best/t35_n1197.txt`, verified), 7 short of AKS's 1204. Hourly gains: +10, +2, 0; this basin
+looks exhausted. Label: NO PROGRESS. No claim sent to the gate.

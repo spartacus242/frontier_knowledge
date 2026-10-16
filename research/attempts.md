@@ -40,3 +40,17 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
   OEIS search pages are not). The current records are t=31: >953, t=33: >1071 (Marcano 2026); others still AKS.
 - **Ideas for tomorrow:** t=35 is 19 short with steady (slowing) gains; continue it from `best/t35_n1185.txt` with more runs
   and deeper trims, after first re-checking A171081 and the Zenodo record for any t=35 update. Or switch problem.
+
+## 2026-10-16 (scheduled run)
+- **Problem:** w(2;3,35) lower bound (record w > 1204, AKS arXiv:1102.5433; re-checked OEIS A171081, Zenodo 21943191,
+  arXiv:2608.20824: nothing newer for t=35). Also reviewed `ledger/routed-open-problems.md`; did not pick a routed problem.
+- **Frozen definition:** good 2-colouring of [1..n], n >= 1205, no 3-AP in colour 0, no 35-AP in colour 1.
+- **Approaches (verdicts):**
+  1. Trim-and-regrow from 1185 with trims 12/20/30: 1185 -> 1195 (only trim 20 moved).
+  2. Restarts from 1195: -> 1197.
+  3. Deeper trims 30-60 from 1197 for 90 min: nothing.
+- **Label:** NO PROGRESS (best w(2;3,35) > 1197, 7 short). No skeptic gate (no claim).
+- **Code/data:** `problems/vdw-w23t-lower-bounds/best/t35_n1197.txt`, `code/climb_plain2.py`.
+- **Ideas for tomorrow:** after three days on w(2;3,t) this basin looks exhausted. Either restart t=35 from a much stronger
+  palindromic seed (AKS palindromic range (1114,1155); ours was 1040) to reach a new basin, or switch problem (a routed
+  ledger problem or another Tier A target).

@@ -72,7 +72,7 @@ def main():
         # Drop a leading "(V1, ...)" or "[...]" version marker so the truncated
         # cell shows the question itself rather than the bookkeeping.
         question = re.sub(r"^\[[^\]]*\]\s*", "", question)
-        question = re.sub(r"^\((?:V\d|R\d)[^)]*\)\s*", "", question)
+        question = re.sub(r"^\((?:V\d|R\d|Gate)[^)]*\)\s*", "", question)
         if not question:
             missing.append(eid)
         rows.append(

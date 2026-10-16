@@ -100,7 +100,7 @@ Switch roles again: you are the judge. Weigh the full record and set status:
 - **Provisional** — Passes Gates 0–3 but carries an unresolved non-fatal objection, or Medium novelty with a close neighbor. State exactly what would promote it.
 - **Rejected** — State the gate and the reason. If rejected as already-asked, note where it belongs.
 
-A candidate rejected at Gate 2 has **no Gate 4 at all**, because no adversary was spawned for it. So if a Gate 2 ground is later withdrawn — on verification, or because a prior turns out not to do what the limb needed — the entry cannot simply be re-judged into a survivor: run all eight attacks from scratch against the Gate 0–3 record before giving it any status above Rejected, and say in the entry that Gate 4 ran late and separately.
+A candidate rejected at Gate 2 has **no Gate 4 at all**, because no adversary was spawned for it. So if a Gate 2 ground is later withdrawn — on verification, or because a prior turns out not to do what the limb needed — the entry cannot simply be re-judged into a survivor: run all eight attacks from scratch against the Gate 0–3 record before giving it any status above Rejected, and say in the entry that Gate 4 ran late and separately. This happened twice in the 2026-10-16 12:33 batch, so from the 14:33 batch the runner spawns one adversary even for a Gate 2 rejection, on the Gate 0–3 record only and told that the Low grade is a prior finding rather than a verdict to inherit. That is extra scrutiny, not a softened gate: the Gate 2 ground still decides the verdict, and the point is only that the log exists whichever way that ground later goes.
 
 Even for Validated entries, state the single strongest remaining objection.
 

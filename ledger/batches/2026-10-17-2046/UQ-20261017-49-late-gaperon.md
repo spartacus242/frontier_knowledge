@@ -1,0 +1,6 @@
+# Gaperon 2510.25771 late-section check
+Fetches: arxiv /pdf/ (truncated at Sec 6.4; ToC only lists 7.2.2 "Impact of Quality Filters on Contamination", p.32), arxiv /html/ (same truncation), alphaxiv abs (abstract only), ACL Anthology findings-acl.1955 PDF (read; contains section titled same, numbered 4.1.2), arxiv v3 pdf -> HTTP 429 (not read). curl blocked by proxy 403. 1 search.
+arXiv 7.2.2 body: COULD NOT READ.
+ACL Findings 2026 version Sec 4.1.2 (summary via summariser): Benchmark-In-A-hayStack: 35 benchmark instances (15 MMLU, 10 GSM8K, 10 GPQA) in 99,965 FineWeb sample-10BT docs = 100,000, 0.035%. Six classifiers (DCLM, TextbookFastText, FineWeb-Edu, EuroFilter, NemoCurator-Edu, GaperonClassifier). DCLM puts all MMLU & GSM8K in top 5 percentiles; top-5% keep => ~20x higher chance of leaked sample in batch. Gaperon classifier no notable upweighting. Fig 4 percentiles (image; values not read).
+No provenance (human vs synthetic) pass rate. No keep-rate ladder reported by provenance. Keyword hits: none for Pangram/machine-generated/AI-generated/detector (arXiv text read only to Sec 6.4; ACL summariser said none).
+Classifier: XLM-R base, 500k docs labelled by Llama3.1-70B-Instruct, F1 75.11%; TxT360-CC high-label 1.9T of 4.7T (~40%); top 10% by score = 651B; RPv2-Fr kept 715B.

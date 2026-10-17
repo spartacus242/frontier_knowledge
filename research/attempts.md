@@ -54,3 +54,18 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
 - **Ideas for tomorrow:** after three days on w(2;3,t) this basin looks exhausted. Either restart t=35 from a much stronger
   palindromic seed (AKS palindromic range (1114,1155); ours was 1040) to reach a new basin, or switch problem (a routed
   ledger problem or another Tier A target).
+
+## 2026-10-17 (scheduled run)
+- **Problem:** w(2;3,38) and w(2;3,39) lower bounds (records > 1378 and > 1418, AKS arXiv:1102.5433; OEIS A171081 re-checked,
+  no update for these t). Reason: AKS's step from t=37 to 38 to 39 is only +40, against +53..81 for t=31..37.
+- **Frozen definition:** good 2-colouring of [1..n], no 3-AP in colour 0, no t-AP in colour 1, n >= 1379 (t=38) or n >= 1419 (t=39).
+- **Approaches (verdicts):**
+  1. Cross-t seed (the t=35-good 1197 colouring is t=38/39-good) and old palindromic seeds, trim-20 regrow: t=38 1374, t=39 1412 in 2 h.
+  2. Deeper trims 40/60: t=38 1375; t=39 nothing.
+  3. Four trims 20-60 on t=38 from 1375 for 90 min: nothing.
+- **Label:** NO PROGRESS (t=38 3 short, t=39 6 short). No skeptic gate (no claim).
+- **Code/data:** `problems/vdw-w23t-lower-bounds/best/t38_n1375.txt`, `best/t39_n1412.txt`.
+- **Ideas for tomorrow:** four days on w(2;3,t) end the same way: the pipeline plateaus just below every known record.
+  Switch problem. Candidates: a routed ledger problem with a computable part, or another Tier A target where the published
+  search effort is thin (check OEIS first). If ever returning here, the missing ingredient is a fundamentally different
+  search (e.g. a complete SAT solver on a structured sub-space), not more trimming.

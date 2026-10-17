@@ -136,3 +136,30 @@ An explicit 2-colouring of {1..n}, n >= 1205, with no 3-AP in colour 0 and no 35
    also appears in the same command line.)
 Best today: w(2;3,35) > 1197 (`best/t35_n1197.txt`, verified), 7 short of AKS's 1204. Hourly gains: +10, +2, 0; this basin
 looks exhausted. Label: NO PROGRESS. No claim sent to the gate.
+
+---
+# Session 2026-10-17 (fourth session, same problem family, t = 38 and t = 39)
+
+## Why tractable now / status
+The AKS strict bounds rise by about 53-81 per step for t = 31..37 but only by 40 for 37->38 and 38->39 (1338, 1378, 1418),
+which suggests their t = 38, 39 searches were the least converged (AKS also say t > 35 values are not believed exact). Our
+trim-and-regrow pipeline reached 99.4% of the t=35 record. And any t=35-good colouring is automatically t=38- and t=39-good,
+so yesterday's 1197 is a ready-made seed for both. Status check 2026-10-17: OEIS A171081 (fetched) mentions only t=31, 33
+updates (Marcano 2026); web search found nothing newer for t = 38, 39. Best known: w(2;3,38) > 1378, w(2;3,39) > 1418
+(arXiv:1102.5433 Table 3).
+
+## Frozen definition of "solved" (frozen for this session)
+An explicit 2-colouring of {1..n} with no 3-AP in colour 0 and no t-AP in colour 1, with n >= 1379 for t = 38 or
+n >= 1419 for t = 39.
+
+## Approaches log (2026-10-17)
+1. **Cross-t seeding + trim-and-regrow (trim 20)**: seeds were yesterday's t=35-good colouring of [1197] (automatically
+   t=38/39-good) and the old palindromic t=38 (1274) / t=39 (1322) colourings. Within 1 h: t=38 reached 1373 from both seeds,
+   t=39 reached 1412 / 1411. Second hour: t=38 1374, t=39 1412.
+2. **Deeper trims 40/60 from the bests** (75 min): t=38 1374 -> 1375; t=39 no gain.
+3. **All four runs on t=38 from 1375, trims 20/30/40/60** (90 min): no gain.
+Best today: w(2;3,38) > 1375 (`best/t38_n1375.txt`, 3 short of 1378) and w(2;3,39) > 1412 (`best/t39_n1412.txt`, 6 short of
+1418), both verified. The hypothesis that AKS's t=38/39 bounds were weak (their +40 steps) is NOT supported: our independent
+search plateaus just below both, as it did at t=35 (7 short) and t=33 (where the true record turned out to be 1071, 3 above
+our plateau). This pipeline seems to saturate a few percent-of-a-percent below the best known values for every t tried.
+Label: NO PROGRESS. No claim sent to the gate.

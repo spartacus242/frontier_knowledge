@@ -1,0 +1,4 @@
+Survey notes. 7 searches, 6 fetches (1 returned content).
+OPENED: STORM (J Aerosol Med Pulm Drug Deliv 2022, doi 10.1089/jamp.2021.0046, via journals.sagepub.com mirror): asthma n=9, healthy n=10, BDP/FF/GB extrafine pMDI, intrapulmonary deposition 25.50% +/- 6.81% nominal dose (SD, % points; CV ~26.7% computed by me); "no significant correlations between drug deposition and any of the baseline lung function parameters" (no coefficients reported).
+FAILED: erj/21/6/1007 (server error); PMC (blocked redirect); ScienceDirect S0954611101911072 (robots disallowed); dx.doi.org/10.1089/jamp.2009.0772 (HTTP 429, do not retry); liebertpub (redirect, followed once).
+Titles only (NOT opened): De Backer 2010 BDP/formoterol HFA pMDI (JAMPDD); NEXThaler BDP/FF healthy/asthma/COPD; Easyhaler/Turbuhaler/pMDI budesonide (Respir Med); Newman 2000 BJCP "Can lung deposition data act as a surrogate for the clinical response"; Usmani 2021 FRI in silico COPD.

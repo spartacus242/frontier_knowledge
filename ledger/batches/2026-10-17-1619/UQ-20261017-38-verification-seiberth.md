@@ -1,0 +1,4 @@
+Seiberth S, Terstegen T, Strobach D, Czock D. Accuracy of freely available online GFR calculators using the CKD-EPI equation. Eur J Clin Pharmacol 2020;76(10):1465-1470 (issue 10 not 11). DOI 10.1007/s00228-020-02932-x
+Routes: doi.org guessed DOI -> 429 (recalled DOI, wrong anyway?); epub.ub.uni-muenchen.de listing OK; link.springer.com HTML OK (summariser); springer PDF OK (summariser). Searches 2, fetches 4.
+Read level: full text via summariser, quotes partly fragmentary.
+Q1 single equation: 2009 creatinine CKD-EPI. Q2 47 = online calculators (49 found, 2 gave no result), 11 countries; 5 reference cases. Q3 two Excel sheets independently by two authors, compared. Q4 partial: errors by cause counted (ethnicity 4, indexed/non-indexed 2, unexplained 2, creat units 1, displayed units 1, equation selection 1), no source-under-specification adjudication. Q5 NOT FOUND. Q6 NOT FOUND for CKD stage; only error-size sensitivity 2/5/10 ml/min.

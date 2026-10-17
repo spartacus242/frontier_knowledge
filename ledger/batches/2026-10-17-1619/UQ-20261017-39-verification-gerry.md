@@ -1,0 +1,4 @@
+Gerry BMJ 2020;369:m1501. All reads via WebFetch summariser (no raw text). 5 fetches (2 errors), 1 search.
+bmj.com/content/369/bmj.m1501.full (HTML): summariser said string NOT FOUND (contradicted by PDF read).
+bmj.com/content/369/bmj.m1501.full.pdf: string FOUND, section "Recommendations for future research practice > Assess all aspects of model performance", 2nd paragraph. Preceding: "For example, NEWS ranges from 0 to 20 points." Following: "Overall performance measures, which combine discrimination and calibration, should also be considered, such as R2 and the Brier score."
+No mapping/recalibration discussion in that paragraph. Counts: 23 modelling studies; 9 full regression formula (39%); 13 (57%) enough info to compute individual risk; abstract says 9; 10 simplified models, points-based, "no method of calculating predicted risks". NEWS: consensus-developed (Table 1), no explicit statement about risk mapping. "NEWS2" string absent (only "NEWS 2" in refs).

@@ -1,0 +1,6 @@
+Counts: 8 searches, 7 fetch calls (1 over the 6 budget; 2 of the 7 errored: doi.org/Bentham, benthamdirect cdt guess). Fetches were summarised by a small model with a 125-char quote limit, so "opened" = page text passed through a summariser, not raw read.
+(1) Chrystyn/eLung: not found used as x-axis of clinical dose-response. Opened Chrystyn&Milton-Edwards 2025 JAMP (doi 10.1089/jamp.2024.0063): inhaled volume digital biomarker; no emitted dose, no dose-response. eLung ELLIPTA 2015 (Hamilton) seen only as title/snippet.
+(2) Dundee thesis: W.J. Anderson, MD 2016, supervisors Lipworth & Fardon. Page opened, abstract only, no mention of delivered dose/technique/flow. Full PDF not obtained.
+ Related: Anderson et al Ann Allergy Asthma Immunol 2017;118:179-185 (AAM pdf opened): nominal BDP-equivalent ug/day, pooled 4 RCTs n=121, no delivered dose.
+(3) Mouksassi PAGE 21 (2012) Abstr 2480: opened. Variability: between-subject, relative potency point estimate, within-subject/residual. No delivered dose / inhaler terms.
+(4) 10.2174/157488507779422392 = Selroos O, "Some Aspects on Comparative Efficacy Studies with Inhaled Corticosteroids in Asthma", Current Drug Therapy 2007 (Crossref record only; abstract not read; Bentham page could not be fetched).

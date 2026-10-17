@@ -1,0 +1,9 @@
+# Working notes UQ-20261017-49 (budget used: 7 of 8 searches, 6 of 6 fetches)
+
+## (a) Runnability
+- FineWeb-Edu: HF HuggingFaceFW/fineweb-edu-classifier. Read level: model card via summariser (fetch). Weights listed (safetensors, 0.1B, Apache-2.0). Card recommends int_score >= 3 for curation; F1 82% at threshold 3.
+- DCLM fastText: HF mlfoundations/fasttext-oh-eli5, MIT. Read level: model card via summariser. Weight files NOT confirmed from page (file list not shown). Card: percentile-based threshold on __label__hq score; points to DCLM repo. DCLM paper (arXiv 2406.11794 PDF via summariser, excerpt): top 10% by fastText score, Sec 4.4; top-10% beat top-15/20%. Paper excerpt did not confirm weight release.
+- Nemotron-CC: arXiv 2412.02595 abs (ABSTRACT ONLY; no classifier info) then /html/ (via summariser). Ensemble = max of integer (0-19, ~5% buckets) scores from 3 classifiers: Ours-mistral, Ours-nemotron-340B (embedding + linear head), DCLM fastText. Buckets regrouped into 5 quality labels by downstream performance. Two edu classifiers reported released on HF; reference impl in NeMo Curator (summariser; I did not open HF or NeMo pages). No single shipped threshold; cutoffs percentile/bucket based. FineWeb-Edu excluded from ensemble (license).
+## (b) Detectors on web text
+- Allaham & Diakopoulos arXiv 2605.23684 (PDF via summariser): independent (Northwestern). Pangram and GPTZero; FPR check = 200 pre-2022 human texts from RAID (abstracts, Wikipedia, Reddit, news; Wayback), 0 false positives, benchmark not in-the-wild; no FPR on their 19,154 cited web sources. Vendor figure cited ~1 in 10,000 (Emi 2025). Real-web FNR: 105 articles from 7 sites reported as AI, 31.4% missed; labels not independently verified.
+- Seen only as search result titles (COULD NOT READ): Jabarian & Imas NBER w34223 (independent, Chicago); Brooks/Eggert/Peskoff arXiv 2410.08044 (Wikipedia); Pangram tech report arXiv 2402.14873 (vendor).

@@ -1,0 +1,10 @@
+# Working notes UQ-20261017-49 (8 searches, 6 fetches used)
+Read levels (via summariser, so full-text claims are the summariser's reports, not my own verbatim reads):
+- arXiv 2601.17036 (LLM-generated or human-written, review vs non-review arXiv papers): PDF, full doc reported visible. Rogan-Gladen applied to Alpha estimator only (FPR 13.1% review, 1.9% non-review, FNR assumed 0). Pangram left raw. Corpus = arXiv papers. No quality filter, no kept-vs-source ratio. Cross-group contrast (review vs non-review), not filter enrichment.
+- arXiv 2510.00866v1 (Removing Noise, not Finding Gold): HTML, main body up to start of Sec 6.2 only; appendices B-F NOT read. No AI-text share measured in kept/discarded, no correction in visible part.
+- arXiv 2605.23684 (Synthetic Sources, search-engine citations): PDF full text reported. Raw Pangram counts (~16% of 19,154 scraped); FNR 31.4%, FPR 0/200; no correction; not a quality filter; no source-pool comparison.
+- arXiv 2605.00087 (DeGenTWeb): PDF full text reported. 6.0% CC vs 15.4% search; no sens/spec correction (FPR upper bound 0.29% only); no enrichment ratio (9.5 pp difference; 2.6x is arithmetic not in paper). Not a pretraining quality filter.
+- arXiv 2507.13933 (He, Govindan, Madhyastha): PDF full text reported. Post-filter prevalence only; no sens/spec correction. CC 4.30%, search 9.96%.
+- arXiv 2403.07183 (Liang et al.): PDF, main text + appendix through D.3. Distributional mixture MLE, not Rogan-Gladen; no quality filter.
+- Search snippets only (not opened): 2506.17467 survey; Indeed blog "Calibrating LLM-Based Population Estimates with Human Validation"; NeurIPS 2024 "Estimating and Correcting for Misclassification Error in Empirical Textual Research"; QuaPy/quantification literature; Wikipedia Quantification. These show correction methods exist for text-corpus composition generally, but I did not open them.
+- Search 1-8 returned no paper reporting corrected enrichment ratio for a quality filter. Absence = within search results + 6 opened docs, not exhaustive. PMC/EuropePMC blocked; epidemiology literature (Rogan-Gladen 1978) not opened.

@@ -1,0 +1,10 @@
+# Croft & Dailey, arXiv:1112.3108 (read via arxiv.org/abs and /pdf; 4 fetches, 0 searches)
+Verdict: CONFIRMED for 637 measurements; blinding is a recommendation only, not a measured covariate.
+1. 637 measurements of 12 parameters (Omega_M, Omega_Lambda, H0, sigma8, Omega_b, n, w0, ...), 1990-2010, from NASA ADS abstracts.
+   Quote: "The total number of parameter measurements in the 20 year period shown is 637."
+2. Error bars: abstract "consistent with an average underestimate of the error bars by a factor of ~2" before 2000. Sec 4.1 "Before 2000, the accuracy N_sigma as closer to 2, indicating underestimation of the error bars by a factor of 2."
+   Recent: "results in the last 10 years are consistent with expectations, given their error bars." Sec 3.4 gives ~2003 cutoff for some params (inconsistent with 2000).
+   By method (qualitative, mostly Fig 13): peculiar velocities ~2x under; clusters under in 1990s; CMB and redshift distortions accurate throughout; SN recent N_sigma = 0.5+-0.07, 0.77+-0.12 (overestimated errors, "factor of 3" per summariser). No per-era numeric means in text.
+3. Blinding recommended: abstract "Wider use of blind analyses in cosmology could help to avoid this." Sec 4.4 "carrying out more blind analyses (as in particle physics) may be a good idea."
+4. Blinding is NOT a covariate; no comparison of blind vs non-blind measurements. Recommendation only.
+5. Unit: individual published measurement (value + quoted 1-sigma error; 2-sigma halved; stat+sys summed) in an abstract. Endpoint: N_sigma = |measured - fiducial| / quoted 1-sigma error (fiducial mostly WMAP7 posterior mean, Table 1). Comparator: WMAP7 fiducial values (not a blind/non-blind contrast); expected N_sigma=1 for Gaussian errors. Estimand: mean (unweighted, binned by year/technique) N_sigma, i.e. average over/under-estimation of quoted errors. Caveat: ~40% of estimates missed; abstract-only extraction; fiducial is itself a measurement; summariser-sourced quotes (garbled "as closer to 2").

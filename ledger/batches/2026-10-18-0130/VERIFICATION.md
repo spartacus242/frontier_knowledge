@@ -81,9 +81,12 @@ form: the recorded-resolution code and the prescribing-cessation fallback are no
 independent endpoints, and a third of the resolved cohort fails the prescribing criterion
 the code is supposed to follow.
 
-**Aaron 2017 — the title in the record is a paraphrase.** The real title is "Reevaluation of
-Diagnosis in Adults With Physician-Diagnosed Asthma" (JAMA 2017;317(3):269-279, doi
-10.1001/jama.2016.19627). Read at full text from an author copy. Current asthma was ruled
+**Aaron 2017 — verified; the paraphrased title was MINE, not the record's.** The reader was
+asked about "Reevaluation of Diagnosis of Asthma in Adults" and corrected it to
+"Reevaluation of Diagnosis in Adults With Physician-Diagnosed Asthma" (JAMA
+2017;317(3):269-279, doi 10.1001/jama.2016.19627). The entry already carries the correct
+title verbatim; the paraphrase was introduced by my verification brief. Read at full text
+from an author copy. Current asthma was ruled
 out in 203 of 613 participants, 33.1% (95% CI 29.4-36.8); 613 is the completers who could
 be conclusively evaluated, out of 701 enrolled. De-labelling was performed by the study
 team under protocol, with no routine-care follow-up of the label or the medication, and no
@@ -91,7 +94,9 @@ statement about what routine care does with a disconfirming result already on fi
 internal inconsistency worth recording: the discussion is reported to say more than 90% of
 those ruled out stayed off medication for a year, while 181 of 203 is about 89%.
 
-**Rimawi — real, and the 36% has a narrower denominator than it looks.** Rimawi RH, Shah KB,
+**Rimawi — real, and the entry's denominator is right as written.** The entry already says
+"20/55 (36%) relabelled within a year"; what follows is confirmation, plus two internal
+inconsistencies in the source that a later reader should know about. Rimawi RH, Shah KB,
 Cook PP, "Risk of Redocumenting Penicillin Allergy in a Cohort of Patients With Negative
 Penicillin Skin Tests", J Hosp Med 2013;8(11):615-618, doi 10.1002/jhm.2083, read at PDF
 level, with the companion intervention paper (J Hosp Med 2013;8:341-345, doi
@@ -131,26 +136,43 @@ longitudinal design in this literature and a later reader should not have to fin
 
 ---
 
-## UQ-20261018-02 — Provisional (cap at Gate 4 attack 7). Verdict stands; the cap's evidence largely falls.
+## UQ-20261018-02 — Provisional (cap at Gate 4 attack 7). Verdict stands. THREE OF MY OWN BRIEFS WERE DEFECTIVE; the entry was right where I said it was wrong.
 
 This entry is capped because both adversaries pressed the reason-for-silence mechanism and
 adversary 2 graded it Unresolved, on the ground that the question is voiced in the field's
 own words three times across 29 years — Phelps 1995, Roper 2023, Hanidu 2024, "each stating
 the downstream implication and declining to compute it" — and that the wider artefact
-question is actively contested in the candidate's own journal. **Two of those three legs do
-not survive, and the third is not what it was taken for.**
+question is actively contested in the candidate's own journal.
 
-**"Roper 2023" could not be identified.** Six searches found no 2023 paper by that author on
-labour progress or cervical dilatation measurement. This is not-found in search rather than
-proof of non-existence, and the reader said so. The nearest real paper making a similar
-point is Huurnink JME et al., "Labor curves based on cervical dilatation over time and their
-accuracy and effectiveness: A systematic scoping review", PLoS ONE 2024;19(3):e0298046 —
-different authors, 2024 not 2023, and qualitative: it says the exact timepoint at which
-dilatation reaches 10 cm is not known, and that examination frequency may affect the
-perceived duration of first stage, with nothing computed. **This is the third load-bearing
-citation on this ledger that no reader can locate**, after "Elmore 2022" and "Brewer 1995".
+**My first reading of this section was wrong, and the error was mine, not the batch's.** I
+wrote the three briefs for these priors from the labels in the adversarial log rather than
+from the full citations the entry carries, and I asked each reader whether the paper states
+a downstream implication for "labour-progress curves or dystocia thresholds" — which is NOT
+what the entry claims of any of them. The entry claims an implication for evaluating
+dysfunctional labour (Phelps), for the decision-making process (Roper) and for variable
+clinical decisions (Hanidu). A NOT FOUND against my narrower question does not touch those
+claims.
 
-**Hanidu 2024 is a real paper doing something else.** Hanidu A, Kovalenko M, Usman S,
+**The "Roper 2023 cannot be located" finding is VOID.** I gave that reader an author name and
+a topic and no identifier. The entry carries a full citation — Roper JC et al., Eur J Obstet
+Gynecol Reprod Biol 2023;280:154-159, doi 10.1016/j.ejogrb.2022.11.026, described as 369
+clinicians estimating known-size circles — which my brief omitted, so the reader searched
+labour-progress topics and found nothing, as it would. This is the failure mode this
+project's own notes warn about: an identifier taken from a summary rather than from the
+record, and a checker sent after the wrong thing. It is NOT a fourth unlocatable citation,
+and it must not be counted as one alongside "Elmore 2022" and "Brewer 1995". A re-check
+against the real DOI is running; what it returns is recorded below.
+
+What that first reader did usefully establish is a nearby real paper nobody had: Huurnink
+JME et al., "Labor curves based on cervical dilatation over time and their accuracy and
+effectiveness: A systematic scoping review", PLoS ONE 2024;19(3):e0298046, which says the
+exact timepoint at which dilatation reaches 10 cm is not known and that examination
+frequency may affect the perceived duration of first stage, computing nothing.
+
+**Hanidu 2024 — the entry had it RIGHT; my brief had it wrong.** My brief called it a study of
+"the accuracy of digital cervical dilatation assessment"; the entry describes it correctly as
+147 paired DVE/TPUS observations. So the reader's finding confirms the entry rather than
+correcting it. The substance: Hanidu A, Kovalenko M, Usman S,
 Monasta L, Zamagni G, Stampalija T, Lees C, "Intrapartum ultrasound for cervical dilatation:
 Inter- and intra-observer agreement", Acta Obstet Gynecol Scand 2024;103(12):2455-2464, doi
 10.1111/aogs.14970, read at PDF level from an open-access repository copy. It compares
@@ -169,7 +191,9 @@ labour-progress curves or dystocia thresholds** — no partograph, no Friedman-t
 alert or action line. The one progress figure it cites (0.5 cm/hour for nulliparous women)
 is used only to justify the 60-minute pairing window and is not computed from its data.
 
-**Phelps 1995 is a simulator study.** "Accuracy and intraobserver variability of simulated
+**Phelps 1995 — the entry had this right too.** It cites the paper under its real title,
+"Accuracy and intraobserver variability of SIMULATED cervical dilatation measurements", so
+the simulated object was never in doubt in the record. The substance: "Accuracy and intraobserver variability of simulated
 cervical dilatation measurements", AJOG 1995;173(3 Pt 1):942-945, doi
 10.1016/0002-9378(95)90371-2. The 89.5% is the share of **1,574 measurements by 102
 examiners** within ±1 cm of the **known inner diameter of PVC pipes mounted in cardboard
@@ -195,11 +219,21 @@ body.**
 **What this does to the entry.** The verdict does not move, and cannot: Validated is barred
 independently by Gate 5's "Medium novelty with a close neighbor" — P1 is that neighbour and
 its methods are unread — and by the Unverified residual inside attack 2. The entry is
-already at its floor, so no late Gate 4 is owed. But the cap's stated ground must be
-rewritten. It no longer rests on three voicings across 29 years: it rests on one simulator
-study whose abstract names an implication for dysfunctional labour, and on a BJOG exchange
-nobody has opened. An Unverified residual caps at Provisional in its own right, so the
-entry lands in the same place on weaker and more honest ground.
+already at its floor, so no late Gate 4 is owed.
+
+On the cap's ground, my first draft of this section claimed two of its three voicings had
+fallen. That claim was an artefact of my defective briefs and is withdrawn. What the reads
+do establish about the three voicings is narrower and mostly confirms the record: each of
+the three papers measures dilatation assessment against something that is not a labouring
+woman's true dilatation (pipes, circles, or an ultrasound comparator), and none of them
+computes a measurement-attributable share or a reclassification count — which is exactly the
+"noted-but-not-asked border" the record itself names. The re-check below settles whether the
+three attributed quotes are in their papers. The one leg that is genuinely unevidenced
+rather than merely narrow is the second: the BJOG 2021-22 exchange, whose two letter bodies
+six independent route-sweeps have not opened, so the claim that the artefact question is
+"actively contested in the candidate's own journal" rests on titles and metadata alone.
+An Unverified residual caps at Provisional in its own right, so the entry lands where Gate 4
+put it either way.
 
 The promotion condition must be rewritten too, because two of its items are now ill-formed:
 item (1) requires reading two letter bodies that four route-sweeps have not opened, and item
@@ -353,19 +387,29 @@ candidate's own alternative formulation 1 is substantially Yoshikawa's title and
 service-life question was asked and answered in the candidate's own named data substrate.
 But the objection must be rewritten to say which leg carries it.
 
-**Nichol 2024 — the claim attributed to it is not in it.** The paper is real: Nichol PF,
-Saari MJ, Navas N, et al., "Observed rates of surgical instrument errors point to
-visualization tasks as being a critically vulnerable point in sterile processing and a
-significant cause of lost chargeable OR minutes", BMC Surgery 2024;24(1), doi
-10.1186/s12893-024-02407-1, read at full text. It is about sterile-processing errors, and
-**it nowhere states that intraoperative instrument malfunction is not routinely recorded in
-OR documentation.** What it does say, in the introduction and discussion, is that staff
-reporting is frequently incomplete, delayed and underreporting, and that the historical
-reporting database is not integrated into the medical record. The entry's secondary point
-survives in that narrower form, and the real support for it is the figure the entry did not
-have: Patient Safety Notices were filed on 368 of about 33,000 cases, 1.11%, against a
-directly observed 147 of 562 cases (26.16%) with at least one instrument error, 44 of the
-236 errors being broken or poorly functioning instruments. Table 6 (232 errors) disagrees
+**Nichol 2024 — the batch could not open it; this pass did, and it confirms the entry's
+primary reading.** The entry records "publisher full text still COULD NOT READ
+(link.springer.com/article, doi.org, bmcsurg.biomedcentral.com all client-errored)", so its
+characterisation was abstract-level. The paper is Nichol PF, Saari MJ, Navas N, et al.,
+"Observed rates of surgical instrument errors point to visualization tasks as being a
+critically vulnerable point in sterile processing and a significant cause of lost chargeable
+OR minutes", BMC Surgery 2024;24(1), doi 10.1186/s12893-024-02407-1, and this reader
+reached its full text.
+
+The entry's load-bearing characterisation — that instrument errors "are logged by manual
+database entry not linked to the EMR" — is **confirmed essentially verbatim**: the paper
+says the historical reporting database is not integrated into the electronic medical record,
+and that staff reporting is frequently incomplete, delayed and underreporting. What the
+paper does NOT say, in these words, is that intraoperative instrument malfunction "is not
+routinely recorded" — the entry's own shorthand for this at one point in its significance
+discussion, which is looser than its source and should be read as the narrower claim the
+paper actually supports.
+
+Two figures the entry did not have, both useful: Patient Safety Notices were filed on 368 of
+about 33,000 cases (1.11%), against a directly observed 147 of 562 cases (26.16%) carrying
+at least one instrument error, with 44 of the 236 errors being broken or poorly functioning
+instruments. So an observed malfunction rate does exist — from trained observers, not from
+records — which is the sharper form of the entry's point. Table 6 (232 errors) disagrees
 with Table 2 and the text (236).
 
 **van der Ploeg 2024 — figures confirmed, one characterisation softened.** "Impact of
@@ -480,9 +524,11 @@ ranking; but "per-antibiotic phlebitis ORs" overstates what anyone has seen. Not
 later separate paper (Scand J Infect Dis 2003;35:397-400) comparing dicloxacillin with
 cloxacillin, so no such figure should be credited to the 2002 paper.
 
-**Dugan 2014 — verified at abstract level, with its real title.** "Maximum Tolerated
-Osmolarity for Peripheral Administration of Parenteral Nutrition in Pediatric Patients",
-JPEN 2014;38(7):847-851, doi 10.1177/0148607113495569. A retrospective matched cohort of
+**Dugan 2014 — verified at abstract level; the paraphrased title was MINE, not the record's.**
+The real title is "Maximum Tolerated Osmolarity for Peripheral Administration of Parenteral
+Nutrition in Pediatric Patients", JPEN 2014;38(7):847-851, doi 10.1177/0148607113495569.
+The entry cites this prior without a title, so it asserted nothing wrong; the paraphrase was
+introduced by my verification brief. A retrospective matched cohort of
 352 patients aged 18 or under on peripheral parenteral nutrition; the exposure is the single
 dichotomy above against at or below 1,000 mOsm/L; the multivariable OR is 1.67 (95% CI
 1.08-2.52, P = .02) for the composite of phlebitis or infiltration, reference at or below
@@ -505,3 +551,217 @@ only as literature background and the vascular-access algorithm is proposed, not
 The paper adopts risk tiers of under 450, 450-600 and over 600 mOsm/L, attributing the
 600 mOsm/L peripheral limit to other authors and noting that the current INS standard uses
 900 mOsm/L for central access while an earlier edition used 600 and pH 5-9.
+
+---
+
+## Residual pass — six readers on routes nobody had tried
+
+Run after the main pass, under the amended preamble that forbids putting any personal
+identifier into a URL, query string, header or form. Caps raised to 8 searches and 8
+fetches, and each reader was required to return a full route log so a later pass does not
+repeat the dead ends. All six returned. Two changed a verdict's supporting detail; none
+changed a verdict.
+
+**Fortis 2016 — a fifth failure on the body, and two gains from the abstract.** Thirteen
+further routes logged and exhausted: CORE search (returns only a promotional page from
+here), Google Scholar (robots-disallowed), ResearchGate (no page for this paper),
+springermedicine.com (JavaScript challenge), PubMed Central (reCAPTCHA), and the Iowa
+Esploro record twice. The Iowa record is marked open access but carries no PDF and links
+only to the DOI. Untried and named for a later pass: the ResearchGate author page directly,
+the VA author pages, a BJGP ijlink redirect, and a Respiratory Care editorial on VA COPD
+care (doi 10.4187/respcare.10550643) that might restate the figures.
+
+The gains. **208 of 855 (24%) is confirmed present in the abstract**, verbatim as
+"Persistent empiric treatment (208 of 855, 24%)" for bronchodilators and/or inhaled
+glucocorticoids — so the earlier split between two readers resolves in favour of the reader
+who found it, and the entry's use of both limbs is sound. And on the decisive question the
+abstract now **leans against** a label-conditional denominator: it describes the 855 as all
+subjects with a normal PFT (473) or a restrictive ventilatory defect (382), drawn from
+1,805 reviewed single PFT sessions, and nowhere says a pre-test COPD diagnosis was required.
+That is a lean from inclusion wording, not a finding from the Methods, which remain unread.
+It cuts the way the entry already argues: if the denominator is unrestricted, the 7% and
+24% are shares of everyone with a non-obstructive test, including people never labelled
+COPD, and cannot be converted into the candidate's conditional retraction rate.
+
+One earlier Fortis paper surfaced that nobody had: **Fortis 2013, BMC Pulm Med 13:68** —
+155 obese patients, of whom **33.9% (21 of 62) with normal spirometry kept
+obstructive-disease medications**. Same author, same manoeuvre, three years before the 2016
+paper, in a different population. It belongs in the routing row.
+
+**The allergy-reinstatement residual — it exists, and it is two pages.** The paper the main
+pass glimpsed is a **SHEA Spring 2022 conference abstract**, not a full article:
+reinstatement in **19 of 81 (23%)** previously de-labelled patients over 8-16 months of
+follow-up. It reports a single proportion, **not a time-to-event quantity**, and has **no
+kept-label comparator**. So it does not supply the candidate's estimand, and the reader's
+own wider sweep found nothing that does — the third independent confirmation, after the
+subject-first Fortis reader and both in-batch adversaries, that the conditional,
+comparator-controlled, event-level quantity is unpublished.
+
+**de Vries 2021 — a fifth failure, with the Crossref abstract as the gain.** Only the
+Crossref-deposited structured abstract was reached, corroborated by a ResearchGate
+abstract-level summary and a truncated PubMed snippet. The methods remain unread, so the
+decisive question — whether the simulation injects a dilatation measurement-error term — is
+still COULD NOT READ and not NOT FOUND. But the abstract settles the paper's own framing,
+which is what the novelty distinction turns on: it tests **whether polynomial and
+interval-censored regression can detect an acceleration phase**, and what it manipulates is
+the data-generating model (Friedman parameters against a progressively increasing rate), the
+analysis method, the examination frequency, and the dilatation level at which results are
+read. Its reported bias is method-against-truth — a two-fold overestimation of the mean 4-6
+cm dilatation rate by the polynomial method — not a measurement-attributable share. The
+ResearchGate summary adds that it found no description of simulated measurement error. So
+the entry's distinction ("P1's artefact is the ESTIMATOR, the candidate's is the
+MEASUREMENT") is now evidenced from the paper's own abstract rather than assumed, while
+remaining formally unverified. Routes left untried and named: the Wiley PDF and full-xml
+URLs that Crossref lists, and a Western Sydney record labelled "authors reply 5".
+
+**The BJOG 2022 letters — a sixth failure, and nothing but metadata.** Authorea, ESSOAr and
+a third mirror (radiopharmaconnect.srsweb.org) all expose landing metadata only through the
+summariser; doi.org, Wiley and PubMed all failed again. **Not one word of either body has
+been read by anyone.** The de Vries reply has no established published citation: its only
+located identifier is the Authorea preprint doi 10.22541/au.164970189.91525293/v1, and the
+page names BJOG as target journal without volume, pages or journal DOI. Six independent
+route-sweeps across two passes is enough to call this an interlibrary-request item rather
+than a search problem, which is why UQ-02's promotion condition has been rewritten to say so.
+
+**Yasuda 2025 — the abstract reached at last, and it carries one figure that matters.** The
+Griffith handle, the Wiley epdf route and the Griffith repository all failed; the abstract
+came through an aggregator page, and the DOAJ record holds no abstract text at all, only the
+trial registration UMIN000028019. The body, results and supplements remain unread.
+
+What the abstract confirms: **3,410 PIVCs, 1,351 patients, 23 ICUs** in Japan, a post hoc
+analysis of a prospective multicentre cohort — so these are the 2025 paper's own figures and
+not the Front Med 2022 cohort's 3,429, and the entry quotes them correctly. The exposure is
+the total noradrenaline dose given via PIVCs, modelled time-dependently; the adjusted HR is
+1.06 (95% CI 0.93-1.20).
+
+The figure nobody had: **noradrenaline was given to only 70 patients (5.2%) through 91 PIVCs
+(2.6%).** So the drug-attribution analysis rests on 91 exposed catheters, not 3,410. The
+entry's attack-7 ground — that Yasuda "populates exactly that regime at 3,410 catheters
+across 23 ICUs" — overstates it: the cohort is that size, the exposed subgroup is 91
+catheters and one drug. The mechanism it falsifies is still falsified, because the regime
+demonstrably exists, but at a far smaller scale than the sentence implies. Two further
+qualifications: the 6 mg figure comes from **an exploratory spline, not a formal change-point
+model**, and the abstract's conclusion that a dose at or below 6 mg reduces risk rests on
+that spline rather than on the non-significant primary HR. Whether any variance component is
+reported is still COULD NOT READ.
+
+**Hockenberry et al. 2008 — a prior nobody had read, and it bears directly on UQ-03's limb
+(b).** Jason Hockenberry, Hsien-Ming Lien, Shin-Yi Chou, "The Impacts of Task Repetition and
+Temporal Breaks in Production on Human Capital and Productivity", Journal of Human Capital
+2(3):303-335, 2008, doi 10.1086/593064, read at near-full text through a ResearchGate page
+summariser (100,000 of 102,699 characters). Taiwan National Health Insurance data, 1998-2004
+claims; PTCA n = 107,747 and CABG n = 20,798; outcome 1-month mortality, with 12-month
+mortality secondary; year, county, hospital and surgeon fixed effects, log 12-month surgeon
+and hospital volume, surgeon-clustered standard errors.
+
+**It estimates mortality for CATEGORICAL bins of days since the surgeon's last procedure** —
+CABG 0-2 days as reference against 3-14 and 15+; PTCA 0-2 against 3-7, 8-14, 15-21 and 22+.
+Full-fixed-effects linear-probability coefficients on 1-month mortality: CABG 3-14 =
+0.008562 (5%), CABG 15+ = 0.013499 (5%), PTCA 15-21 = 0.006477 (5%), PTCA 22+ = 0.008565
+(1%), against reference-group mortality of 5.03% (CABG) and 1.66% (PTCA). It recommends no
+day threshold, and the only thresholds in it are volume thresholds in robustness checks.
+
+This is the nearest thing in print to the candidate's limb (b), and the entry and routing
+row did not have it. It is still not an outcome-calibrated action interval — bins with
+coefficients are not a threshold with a confidence interval, and the paper declines to
+recommend one — but "no source anywhere derives an interval" must be narrowed accordingly.
+
+**And a citation-number defect in the chain.** NBER WP 20017 attributes to this paper "a
+break from performing CABG of 3-14 days raised mortality by 11-14%" and 22% for breaks over
+15 days. **Neither figure appears in the extract of the paper itself**, whose own
+coefficients imply about 17% for CABG 3-14 days (0.008562 / 0.0503) and about 27% for 15+.
+WP 20017 also describes the bins as 2-14 and 15+ where the paper's tables show 3-14 and 15+.
+So a 2014 paper misquotes its own first author's 2008 numbers, and a reader who takes the
+11-14% from the later paper is quoting a figure the earlier one does not contain. Read at
+summariser level from a ResearchGate copy, so the discrepancy is recorded as unreconciled
+rather than settled against either paper.
+
+---
+
+## Re-check pass — UQ-02's three priors, against the identifiers the entry actually carries
+
+Run after I found that my own briefs for these three had omitted the citations in the record
+and had asked each reader about an implication for "labour-progress curves or dystocia
+thresholds" that the entry never claims. Three readers, full identifiers this time, each
+quoted string checked on its own.
+
+**Roper 2023 exists and the entry's quote is verbatim.** Roper JC, Naidu M, Thakar R, Sultan
+AH, "Getting the size right: Are clinicians ready for it?", Eur J Obstet Gynecol Reprod Biol
+2023;280:154-159, doi 10.1016/j.ejogrb.2022.11.026, read at PDF level from the St George's
+open-access repository. 369 participants confirmed (310 O&G physicians, 59 midwives, at two
+perineal-trauma training events in 2019 and 2020). The string "could change the
+decision-making process" is **found once, in the Comment section**, in the sentence "an error
+of 1.4 cm from the actual dilatation could change the decision-making process" — exactly as
+the entry quotes it. The entry's gloss "369 clinicians, known-size circles … computes
+nothing downstream" is accurate on every element.
+
+Two things the entry did not have. **The 1.4 cm is not a measured dilatation error**: it is
+20% of the study's mean index-finger length of 7.2 cm, defined as an accuracy threshold in
+the Methods and then applied to dilatation in the Comment as a hypothetical. And the paper's
+own measured dilatation figures: for the 7 cm circle, 17.1% exactly correct (63 of 369),
+60.4% within 1 cm, mean signed difference -1.24 cm (95% CI -1.37 to -1.13); for the 9 cm
+circle, 29.6% (109 of 369), 81.3% within 1 cm, mean -0.57 cm (-0.69 to -0.45). No women were
+examined — the materials were paper tape, a 3.5 cm sphincter model and paper-cut circles —
+and the words partogram, curve, Friedman, Zhang and reclassif do not appear.
+
+**Two of the three attributed quotations are paraphrases presented as quotations.** Phelps:
+the abstract's conclusion reads "Intraobserver variability is >50% and is an important
+consideration when evaluating dysfunctional labor", not "relevant when evaluating
+dysfunctional labor". Hanidu: the Discussion reads "An imprecise evaluation of cervical
+dilatation can contribute to variability in clinical decisions within obstetrics", not "can
+contribute to variable clinical decisions". Both corrected in the entry. The substance of
+attack 7's point is untouched — each paper does state a decision-making implication and
+compute nothing downstream — but a quotation mark is a claim about wording, and these two
+were not the papers' wording. Hanidu's second attributed quote, "not standardized in respect
+of anteroposterior or transverse measurements", **is verbatim**.
+
+**Hanidu's pairs are not same-time-point, and that is a real demotion for presupposition 4.**
+The Methods exclude data where "the interval between the DVE and TPUS assessments exceeded
+60 min", and TPUS followed DVE at a median of 27.2 minutes (range 4-50). The entry's attack-4
+response offered those 147 pairs as the instrumented route "already instantiated with real
+data" on the strength of their being same-time-point; over an hour, dilatation can genuinely
+change, so the pairs conflate measurement discrepancy with real progression. What the entry
+got right: the intra-observer spread it cites (LOA -0.29 to 0.30 cm, ICC 0.995) is indeed
+instrument repeat-measurement — one observer re-measuring saved 2D cine-loops about ten days
+apart — and a second reading is also reported (LOA -0.31 to 0.28, ICC 0.996). **No figure in
+the paper describes the reproducibility of digital examination**, and digital examination is
+never validated against an independent reference.
+
+**Phelps's object and denominators are exactly as the record has them**: 1,574 simulated
+measurements by 102 examiners against the known inner diameter of PVC pipes in cardboard
+boxes, 56.3% exact rising to 89.5% within ±1 cm, with intraobserver variability 52.1% falling
+to 10.5% within ±1 cm. The full text remains unread after five routes (doi.org to an empty
+Elsevier page, ScienceDirect robots-disallowed, Semantic Scholar openAccessPdf closed,
+PubMed an empty shell, the UTMB record DOI-only); Unpaywall was correctly skipped because it
+asks for an email.
+
+**The pattern this pass established, which is the most useful thing in it.** None of the
+three papers measures digital-examination error against a labouring woman's TRUE dilatation:
+Phelps compares proprioception with PVC pipes, Roper compares estimates with paper circles,
+and Hanidu uses digital examination as the comparator for ultrasound and never validates it.
+So the field has repeatedly characterised the instrument against surrogate references and
+never against the quantity the curves are built from. That is the candidate's own point, and
+it is also why its primary identification route stays unevidenced.
+
+---
+
+## Corrections to this pass's own first draft
+
+Recorded because a verification pass that hides its own errors is worth less than one that
+does not.
+
+1. **Three briefs for UQ-02's priors were written from the adversarial log's labels rather
+   than from the entry's full citations**, and all three asked about an implication for
+   labour-progress curves or dystocia thresholds that the entry never claims. The resulting
+   "Roper 2023 cannot be located" finding was void and is withdrawn; it is not a fourth
+   unlocatable citation on this ledger.
+2. **Two "title paraphrase" findings were my briefs' errors, not the records'.** The entry
+   carries Aaron 2017's correct title verbatim, and cites Dugan 2014 without a title at all.
+3. **The commit message of `4b28099` states both of those claims as entry defects.** Git
+   history is not rewritten here, so the correction lives in this file and in the batch
+   report: that commit message is wrong on those two points, and on the Nichol point, which
+   is better described as a loose shorthand in the entry over a source the batch could not
+   open and this pass could.
+4. **The first draft of the UQ-02 section claimed two of the cap's three voicings had
+   fallen.** They had not. What the reads establish is narrower and partly confirms the
+   record, and the section now says so.

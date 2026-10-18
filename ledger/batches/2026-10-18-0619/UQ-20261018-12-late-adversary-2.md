@@ -1,0 +1,65 @@
+# UQ-20261018-12 — LATE Gate 4, adversary 2 of 2 (independent, cold)
+Date: 2026-10-18. Prior Gate 2 grade and struck Gate 4 verdict treated as void.
+Files opened in batch dir: UQ-20261018-12-record.md ONLY.
+Budget used: 7 web searches (cap 8), 5 fetches (cap 6). No call was refused or errored.
+
+## My own disguise sweep — queries run (vocabularies the record did not try)
+1. percentage of weight updates cancelled by rounding to nearest bfloat16 embedding layer MLP layer late in training
+2. mixed precision training weight update becomes zero fp32 master weights percentage of updates lost underflow
+3. which layers stop learning in low precision training frozen parameter subset normalization gains embeddings quantified fraction
+4. percentage of canceled weight updates per module transformer language model bfloat16 master weights embedding normalization measured 2026
+5. embedding table rows rarely updated low precision rounding rare items recommendation model update lost quantified
+6. weight update sparsity breakdown per layer per tensor embedding layernorm distributed RL delta weight synchronization
+7. RLVR sparse subnetwork could be artifact of bfloat16 rounding absorption alternative explanation sparsity floor
+New vocabularies vs the record: "cancelled/canceled updates" (Zamirai's own term), FP16 underflow/master-copy (Micikevicius), recsys embedding-table, per-tensor compression payload, sparse-subnetwork-confound.
+
+## Reads and read levels
+- UQ-20261018-12-record.md — FULL TEXT.
+- arXiv:2010.06192 Zamirai "Revisiting BFloat16 Training", https://arxiv.org/pdf/2010.06192 — PDF via WebFetch summariser, scoped to the cancelled-update measurement. Appendix D.3 / Figure 9 WAS readable this way (the established-facts block records two ar5iv attempts truncating; the arXiv PDF route worked). Figure 9's per-iteration numeric series itself: COULD NOT READ (axis ranges only).
+- arXiv:2607.09800 (Zekai Shang), https://arxiv.org/abs/2607.09800 — ABSTRACT ONLY, and from a RECORD PAGE; the author line was NOT checked against the document's own first page, so authorship is unverified and nothing here leans on it.
+- arXiv:2405.03637 COLLAGE, https://arxiv.org/pdf/2405.03637 — PDF via summariser, scoped to the imprecision metric. Figure 3 left PLOT: COULD NOT READ (not available through the summariser).
+- arXiv:2605.07330 SparseRL-Sync, https://arxiv.org/pdf/2605.07330 — PDF via summariser, scoped. Figure numeric series not read directly.
+- "Training with Low-precision Embedding Tables", Jian Zhang (Stanford), Jiyan Yang and Hector Yuen (Facebook), NIPS 2018, https://research.facebook.com/file/1502359620108917/Training-with-Low-precision-Embedding-Tables_v2.pdf — PDF via summariser; author line confirmed from the document's OWN FIRST PAGE.
+- All other items in the 7 searches: SEARCH RESULT TITLES AND URLS ONLY (this WebSearch build returned no snippets). Nothing is graded on them.
+
+## New facts this pass established (not in the established-facts block)
+Z1. Zamirai Fig 9 (App. D.3) caption, as read: "The percentage of weight updates that are non-zero but get canceled in the standard 16-bit-FPU training." Four panels: Terabyte-embedding, Terabyte-linear, Kaggle-embedding, Kaggle-linear. => the estimand IS stratified by layer type, in print, since 2020.
+Z2. Text: the percentage "increases as the training progresses"; "the percentage of canceled weight updates can be larger than 80% in the mid-to-late training stage."
+Z3. Text decomposes the rise BY DESIGN: Kaggle (constant LR) rise attributed to "the shrinking gradient magnitude because we use a constant learning rate on this dataset"; Terabyte rise "is a consequence of the compound effect from decaying gradient magnitude and decaying learning rates." => the candidate's limb (c), including the gradient-shrinkage-vs-LR-decay confound, is POSED AND PARTLY ANSWERED in print, with a constant-LR control arm.
+Z4. Zamirai NOT FOUND: magnitude deciles/percentiles; rare-vs-frequent embedding ROW binning; the cancellation fraction plotted alongside a matched Kahan/SR/FP32 held-out metric (Table 4 / Fig 8 do compare 32-bit, SR, Kahan and standard BF16 on validation accuracy, but never paired with the cancellation fraction). Unit: DLRM on Kaggle/Terabyte; all 16-bit runs SIMULATED with QPyTorch.
+S1. SparseRL-Sync 2605.07330 (never opened by the record): Table 2 BF16 sparsity 99.30-99.40% at 30B across five RL settings; Fig 7 >=98% across scales; models Qwen3-8B-Base, Qwen3-30B-A3B, GLM-4.5-Air (106B), DeepSeek-V3.1-Base (671B) — far above Prior 1's 0.5-7B.
+S2. SparseRL-Sync DOES volunteer a coarse group stratification: inactive-TENSOR ratio ~5-6% of tensors have no changed element (Table 2 / Fig 6, plotted over steps, ~4.5-8%); for 30B MoE, 14 expert tensors (0.46%) never updated and 3,010 (97.98%) updated at all 10 tracked steps. Per-module (attn/MLP/embedding/LM head) and magnitude bins: NOT FOUND.
+S3. SparseRL-Sync Fig 7: BF16 sparsity "tends to increase over training"; Fig 4a changed-element ratio ~0.75% early -> <0.56% by step 8. LR: cites eta ~3e-6 and a "higher LR -> sparsity drops" counterfactual ATTRIBUTED to "Zhu et al. (2025)", not run here. (That citation is an unchased lead; I did not identify Zhu et al. — COULD NOT IDENTIFY, not NOT FOUND.) No FP32-master/Kahan/SR arm with a held-out metric; RL only.
+C1. COLLAGE: the imprecision-percentage trend over iterations is NOT STATED IN TEXT anywhere; it exists only in the Figure 3 left plot, which I COULD NOT READ. Pooled over all parameters; no per-group breakdown; no LR/schedule link in text. Figure 3 is BERT phase-1 PRE-TRAINING (so an aggregate pretraining trajectory of the estimand is published, but its direction is not stated in words).
+C2. COLLAGE Appendix D does write out the ulp(1.0) threshold arithmetic: the weight-decay product alpha*lambda must exceed about half ulp(1.0) in BF16 to take effect. This is the normalization-gain case (|w| ~ 1) derived in print.
+A1. 2607.09800 measures what its abstract calls low-precision write-back erasing "nonzero optimizer proposals", audited coordinatewise against a HIGH-PRECISION REFERENCE TRACE, with matched decoder experiments comparing stochastic vs nearest write-back and a comparison across schedules. That is the candidate's "distortion" limb's instrument (FP32 replay reference) already posed. NOT FOUND there: any unchanged-fraction, any parameter-group breakdown, any within-schedule-phase breakdown. Single-author arXiv preprint, v4; abstract only; quality not assessed.
+R1. My search 7 found NO paper posing BF16 absorption as an alternative explanation for the RLVR sparse-subnetwork results. It surfaced the sparse-subnetwork camp instead: 2511.08567 (NeurIPS 2026 poster), 2602.01599 "Random Sparse Subnetworks Suffice for RLVR" (ICML 2026), plus 2507.17107 from the record. Combined with the established fact that AuroraRL does not cite 2602.03839, the two literatures appear not to be in contact. Record's claim that this is "already being contested in print" is UNSUPPORTED by my sweep.
+E1. The recsys route (Zhang/Yang/Yuen NIPS 2018) states the LR-decay direction QUALITATIVELY as early as 2018: "when using decayed learning rate or Adagrad optimizer, the model updates usually become smaller as the training progresses." No measured fraction, no row-frequency breakdown, no magnitude breakdown there.
+
+## Arithmetic that bears on triviality/dissolution
+BF16 has 8 mantissa bits, so ulp(w) = 2^-8|w| and round-to-nearest absorbs |delta| < |w|/512. Adam's step magnitude is bounded ~lr. => absorbed set is approximately {|w| > ~256*lr}. Prior 1's Eq. 16 critical magnitude 7.68e-4 = 256 * 3e-6 confirms the constant. Consequences:
+(i) The magnitude-decile stratification is, to first order, the published whole-model magnitude histogram (Prior 1 Table 2: 94.8-97.6% above threshold) read against 256*lr. Desk-derivable.
+(ii) Normalization gains cluster near 1, so half-ulp ~ 2e-3 >> lr=3e-6: frozen at essentially every step. Desk-derivable, and the same threshold algebra is already written out in COLLAGE App. D (C2). Prior 2's Table 3 normalization relative delta norm 0.0000-0.0002% is weakly consistent.
+(iii) Limb (c)'s DIRECTION is desk-derivable (lr falls -> threshold falls -> absorbed fraction rises). Its ATTRIBUTION is not, because gradient-magnitude shrinkage produces the same rise at constant LR — exactly Zamirai's Kaggle/Terabyte contrast (Z3) and SparseRL-Sync's constant-LR rise (S3).
+(iv) The candidate's small-magnitude-weight hypothesis is BACKWARDS on the mechanism: absorption requires |w| large relative to lr, so small weights keep moving. Independently corroborated in direction by Prior 2's bottom-magnitude coverage (36.68% vs 10% baseline).
+(v) Counter to (i)-(iii): the magnitude-only prediction gives 95-98% against a measured ~99% (established facts) — a 1-4 point gap, underpredicting — so the histogram reduction is not the whole phenomenon. And Zamirai's per-layer rates diverge far more than a magnitude histogram predicts (Terabyte-embedding vs Kaggle-embedding panels are on visibly different levels).
+(vi) Against the "deferral, not freezing" objection: because Adam's step is BOUNDED near lr rather than growing, lr < half-ulp(w) means permanent immobility under round-to-nearest, not a delayed jump. The deferral intuition is an SGD/momentum-accumulation intuition and does not transfer. So "effectively frozen" is well-founded inside the declared frame.
+
+## Classification on the ledger's trichotomy
+- Limb (a), aggregate per-step annihilation rate: POSED AND ANSWERED. RL fine-tuning: 2602.03839 (0.5-7B), 2602.11456 (7 models), 2605.07330 (8B-671B). Pretraining, pooled, vs iterations: COLLAGE Fig 3. => disguised known.
+- Limb (c), schedule-phase dependence: POSED AND ANSWERED IN DIRECTION, on a different unit, WITH the confound decomposed — Zamirai Z2/Z3 (DLRM, 2020); plus "rises over training" for LLM RL at constant LR (S3). The candidate's version is the same question on a new unit with a finer partition. Under the ledger's own rule (a method applied to a new unit is not a new question unless the question differs), the question does NOT differ. => disguised known / method-transfer.
+- Limb (b) as a coarse layer-type claim: POSED AND PARTLY ANSWERED (Z1 embedding vs linear; S2 inactive-tensor ratio and never-updated MoE experts; Prior 2 Table 3 module-group delta norms).
+- Limb (b) at the candidate's declared partition (embedding rows binned by CORPUS TOKEN FREQUENCY; normalization gains as a named zero-fraction group; magnitude deciles as a zero-fraction): NOT FOUND by four independent readers plus my 7 searches. Of these three, the magnitude-decile and norm-gain sub-limbs are largely desk-derivable ((i),(ii)); the token-frequency sub-limb is NOT, since visit frequency and Adam's second moment enter and no magnitude histogram predicts it. => the token-frequency sub-limb is the one genuinely UN-ASKED sliver.
+- Matched-arm held-out consequence of the annihilated set: POSED BUT NOT ANSWERED (ingredients exist separately — Zamirai Table 4/Fig 8, 2502.20566's matched loss arms, 2607.09800's nearest-vs-SR decoder arms — but never joined to the measured fraction for a named group). => open problem, not un-asked.
+- "Distortion" limb (FP32-replay reference): POSED by 2607.09800 (A1), abstract only. => likely open problem; Partial grounding.
+HEADLINE: predominantly a DISGUISED KNOWN plus an open-problem residue, with one narrow un-asked sliver.
+
+## Attack grades (detail in the structured return)
+1 Triviality — PARTIAL. 2 Disguise — UNRESOLVED (key kill; objection's own sources opened at first hand). 3 Combinatorial novelty — RESOLVED. 4 Presupposition failure — PARTIAL. 5 Vagueness — RESOLVED (with the record's "nothing here" threshold flagged as already-falsified and needing per-limb restatement). 6 Significance inflation — RESOLVED, but on the third-named audience, not the first. 7 Reason for silence — PARTIAL. 8 Dissolution — PARTIAL.
+No attack graded Unverified: all eight checks ran, so no Provisional cap from this pass.
+
+## Failed routes
+None. No search or fetch was refused or returned an error. Two read-level shortfalls, which are NOT failed routes and NOT "not found": COLLAGE Figure 3 left plot — COULD NOT READ; Zamirai Figure 9 per-iteration series — COULD NOT READ. One unchased lead: "Zhu et al. (2025)" cited by SparseRL-Sync for the LR counterfactual — COULD NOT IDENTIFY (budget), and it is a plausible location for a published LR-dependence measurement, which a judge should weigh as an unclosed risk against limb (c).
+
+## Note for the judge on the struck pass
+The struck Gate 2/4 ground was defective in the way the verification pass found (Prior 2 does not carry a magnitude-decile zero-fraction, and its direction opposes the candidate's hypothesis). That repair does NOT revive the candidate, because a closer prior exists that neither the struck pass nor the by-subject reader read in full: Zamirai App. D.3 / Figure 9, reachable from the arXiv PDF. The kill survives on better ground than it was first made on, and on limb (c) rather than limb (b).

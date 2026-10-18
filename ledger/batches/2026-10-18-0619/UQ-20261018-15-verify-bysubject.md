@@ -1,0 +1,28 @@
+# UQ-20261018-15 verify by subject (2026-10-18)
+
+Read level overall: mixed. Bunn et al. PDF = PDF (through summariser). OLMo 2 Furious = PDF (summariser, selected tables/text). Dremov et al. = RECORD/ABSTRACT ONLY (mlanthology page). Belloni et al. arXiv 2601.09000 = HTML via summariser. All other hits = SEARCH SNIPPETS ONLY (titles/URLs, not opened).
+
+## Searches (7 of 7; WebSearch returns titles+URLs only, no error text on any)
+1. "learning rate decay phase WSD benchmark gains cooldown analysis what improves format versus knowledge checkpoints" -> Dremov TMLR, Wen river valley (2410.05192), Belloni 2601.09000, 2608.24814 (effective LR / loss dynamics). None about benchmark decomposition by title.
+2. "annealing data mix downstream benchmark jump cooldown phase decomposition sharpening vs knowledge acquisition pretraining checkpoints" -> Gu et al. data mixing phase transitions in knowledge acquisition (2505.18091), Hagele scaling laws beyond fixed durations (2405.18392), Marin wandb cooldown ablations. Not opened.
+3. "format sensitivity answer extraction across pretraining checkpoints multiple choice emergence is format learning not knowledge" -> 2606.11643 (cross-format robustness, multi-format training), 2601.22699 (model-preferred formats), 2502.18798, 2503.14996. Not opened.
+4. "intermediate checkpoints evaluation format-free probing knowledge pretraining MMLU score gap cloze versus multiple-choice symbol binding emergence" -> Bunn/Wiegreffe/Bogin GEM 2025 (opened), 2601.03914 two-stage MCQA decide-and-bind (not opened).
+5. "mid-training annealing high-quality data benchmark gains from format familiarity rather than knowledge, label-emission calibration rescoring" -> OLMo 2 Furious (opened), Llama 3, Zyda-2, 2509.25380 re-evaluation curves. 
+6. "calibration entropy temperature rescaling pretraining checkpoints benchmark accuracy sharpening learning rate decay" -> 2511.11966 entropy calibration of LMs (not opened); nothing on checkpoints x decay.
+7. "learning rate annealing benchmark improvement attributable to instruction-format data in annealing mix, ablation separating format from knowledge, within single pretraining run" -> Deep Ignorance 2508.06601, Marin wandb mix ablations, Llama 3. Nothing matching by title.
+
+## Fetches (6 of 7; no errors)
+1. aclanthology.org/2025.gem-1.46/ -> OK, landing page/abstract.
+2. mlanthology.org/tmlr/2025/dremov2025tmlr-training -> OK, abstract only.
+3. aclanthology.org/2025.gem-1.46.pdf -> OK, full paper via summariser.
+4. arxiv.org/html/2601.09000v1 -> OK.
+5. aclanthology.org/2025.gem-1.46.pdf (2nd question) -> OK.
+6. arxiv.org/pdf/2501.00656 (OLMo 2 Furious) -> OK, summariser saw Tables 9, 11.
+
+## Findings
+Q1 Decomposition of cooldown-phase score change into format vs knowledge: NOT FOUND. Candidates opened: Dremov et al. (abstract only; loss/"performance" vs cooldown shape, no decomposition stated; full paper not read); Belloni et al. (loss, sharpness; not benchmarks); OLMo 2 Furious (reports anneal gain, no decomposition). OLMo 2 numbers: Table 9 Avg 7B 53.0 -> 62.9 (pretrain 4T checkpoint -> after mid-training, mean of 3 Dolmino 50B-token runs); text says "10.6 points" but table difference is 9.9 (13B: text 10.3, table 58.9->68.3 = 9.4). Unit = mean over dev+held-out benchmark columns; comparator = pre-anneal checkpoint. Not a decomposition. Not read: the full body of OLMo 2 (summariser selection only) and full Dremov.
+Q2 Format sensitivity across checkpoints in one run: FOUND (partial). Bunn, Wiegreffe, Bogin (that order), "Fine-Tune on the Format: First Improving Multiple-Choice Evaluation for Intermediate LLM Checkpoints", GEM2 workshop, July 2025, pp. 511-521. OLMo-1B, 1T tokens/400k steps, Dolma 1.6, 10 checkpoints every 40k steps, single run. Unit: accuracy on random 1,000 test examples per dataset (SciQ, SWAG, ARC-Easy, HellaSwag, OBQA, PIQA, SocialIQA, CopyColors 2/4/10). Final checkpoint zero-shot label-based near chance (SciQ 24.6, ARC 24.7); zero-shot sequence-based SciQ 58.6, ARC 46.1, PIQA 73.4; fine-tuned on SciQ+SWAG mix SciQ 95.1, ARC 57.9. Text: fine-tuned metric the only one with "consistent, monotonic increase" on ARC-Easy and SIQA; others "largely flat or noisy". Comparators: zero-shot/3-shot label scoring, zero-shot sequence (likelihood) scoring, chance. No per-checkpoint numbers in text; no cooldown/annealing analysis (LR 1e-6 linear decay is for the fine-tuning only); no numeric format/knowledge decomposition.
+Q3 Fixed-weight output transform to separate format from knowledge: NOT FOUND in opened docs. Bunn et al. uses no calibration, no length normalisation (says normalisation "does not consistently improve performance"), plain argmax over symbol probs. Their format-separation is by a trained (fine-tuned) auxiliary step, not a fixed-weight transform. Entropy calibration paper 2511.11966 seen as a snippet only.
+Q4 Format-free probe panel fixed across checkpoints: NOT FOUND as such. Closest: Bunn's sequence-based (likelihood) scoring is format-free but they find it flat/noisy; and the auxiliary-fine-tune is not fixed-weight. Not opened: 2601.03914, 2606.11643.
+Q5 Re-ranking published annealing mixes under knowledge-only measure: NOT FOUND. OLMo 2 Table 11 ranks mixes with OLMES MCF, OLMES generative, MMLU MCF, GSM* (the summariser says best is "Web FT7 FW2 + Math + Ins"); still format-dependent. Marin wandb mix ablations seen as snippets only.
+Q6 Absence: no hit joins (cooldown/decay stage) x (within-run checkpoints) x (format vs knowledge). This is "not found in 7 searches/6 fetches", not proof of absence. Search tool returns titles only, so many papers were judged on titles.

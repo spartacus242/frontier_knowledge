@@ -1,0 +1,19 @@
+G s=7 n=30 SAT 1.5s
+G s=7 n=31 SAT 0.3s
+G s=7 n=32 SAT 0.4s
+G s=7 n=33 UNSAT 16.3s
+RESULT G(3,7) = 33
+G s=8 n=33 SAT 1.4s
+G s=8 n=34 SAT 6.5s
+G s=8 n=35 SAT 0.1s
+G s=8 n=36 SAT 105.4s
+G s=8 n=37 UNSAT 2912.6s
+RESULT G(3,8) = 37
+G s=9 n=37 SAT 0.6s
+G s=9 n=38 SAT 5.3s
+G s=9 n=39 SAT 1.7s
+G s=9 n=40 SAT 2.0s
+G s=9 n=41 SAT 41.2s
+G s=9 n=42 SAT 44.0s
+G s=9 n=43 SAT 57.0s
+G s=9 n=44 SAT 1496.7s

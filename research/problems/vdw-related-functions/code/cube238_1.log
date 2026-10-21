@@ -1,0 +1,4 @@
+cube 1 (i=1,j=2) UNSAT 1018.8s
+cube 4 (i=1,j=5) UNSAT 1382.7s
+cube 7 (i=1,j=8) UNSAT 1309.0s
+cube 10 (i=2,j=4) UNSAT 1812.5s

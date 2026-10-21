@@ -1,0 +1,11 @@
+M s=6 n=35 SAT 41.6s
+M s=6 n=36 SAT 6.6s
+M s=6 n=37 SAT 1239.1s
+M s=6 n=38 UNSAT 5517.4s
+RESULT M(3,6) = 38
+M s=7 n=38 SAT 0.0s
+M s=7 n=39 SAT 0.0s
+M s=7 n=40 SAT 0.6s
+M s=7 n=41 SAT 2.0s
+M s=7 n=42 SAT 15.9s
+M s=7 n=43 SAT 42.6s

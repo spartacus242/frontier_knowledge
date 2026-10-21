@@ -87,6 +87,7 @@ If independent reproduction would need more compute or time than a skeptic has, 
 
 - Append to `attempts.md`: date, problem, frozen definition of "solved," approaches tried (each with a one-line verdict), label, skeptic verdicts (if any), code and data locations, ideas for tomorrow.
 - Write the daily summary: problem, label, best insight, next step. Plain language, short. Send it to the notification destination.
+- Two runs share each date (08:53 and 20:53 UTC). If today's `attempts.md` entry or `summaries/<YYYY-MM-DD>.md` already exists, never overwrite or merge into it: add this run's entry and summary as a new section under its own `HH:MM UTC` heading.
 
 ## CELEBRATION PROTOCOL 🎉
 

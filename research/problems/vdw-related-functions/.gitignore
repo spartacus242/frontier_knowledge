@@ -12,3 +12,5 @@ claims/*/skeptic-*/search
 claims/*/skeptic-*/span
 claims/*/skeptic-*/table
 code/cubes/*.tmp
+code/fcf
+code/lsM

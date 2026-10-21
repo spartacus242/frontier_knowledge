@@ -5,7 +5,8 @@
 #  Extra cube kinds for testing the 2007 search-shortcut hypothesis: Mfirst0 (x_1 = 0 only), Ggap1 (first gap = 1 only).
 # Usage: cube1.py KIND s n a b outdir
 import sys, os, time
-from pysat.solvers import Cadical153
+import pysat.solvers as _ps
+SOLVER = os.environ.get("SOLVER", "Cadical153"); Cadical153 = getattr(_ps, SOLVER)
 from pysat.card import CardEnc, EncType
 from pysat.formula import IDPool
 kind, s, n, a, b, out = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5]), sys.argv[6]

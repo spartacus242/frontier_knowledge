@@ -103,3 +103,23 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
   2nd ed. (2014) sections on these functions; if it settles novelty, send a NEW claim packet to three NEW skeptics. Separately,
   finish M(3,7) and G(3,9) (printed 48 each; true values >= 46 and >= 45 from our witnesses) with symmetry-broken SAT or
   cube-and-conquer: an exact value there that differs from print would be a stronger result.
+
+### 08:53 UTC (scheduled run)
+- **Problem:** same as 04:52: BLR Table 1 (arXiv:0706.4420), now targeting M(3,7) and G(3,9) (printed 48 each).
+- **Frozen definition:** unchanged from 04:52.
+- **Approaches (verdicts):**
+  1. Looked again for the Landman-Robertson book: its 1st ed. (2004) notation index does define the one-per-block function,
+     so the book treats it; the text is unreadable here (Google Books robots-blocked). Novelty question still open.
+  2. Shortcut-hypothesis predictions: restricted (first gap 1) G(3,8) = 37 and G(3,9) = 48, both equal to the printed values
+     (SAT and exhaustive C, 2.0e10 nodes for s = 9). Strong support for the 04:52 explanation of the table's errors.
+     Gives true G(3,9) >= 48 (47-element witness in `code/btv2_G9_gap1.log`).
+  3. Resumable cube-and-conquer for unrestricted n = 48 (`code/cube1.py`, `code/runjobs.sh`): too slow, no cube finished in ~2 h.
+  4. Forward-checking search for a restricted 47-block M(3,7) witness: not found in 15 min.
+  5. Solver comparison: CaDiCaL 1.9.5 ~20% faster, Kissat slower and ignores assumptions in python-sat. Not worth switching.
+  6. Min-conflicts local search for M witnesses: too weak beyond s = 5.
+- **Label:** NO PROGRESS (no entry settled this run). No skeptic gate (no claim).
+- **Code/data:** `problems/vdw-related-functions/code/` (`cube1.py`, `runjobs.sh`, `jobs1.txt`, `jobs2.txt`, `cubes/`, `fcf.c`,
+  `lsM.c`, `bench/`, `btv2_G9_gap1.log`).
+- **Ideas for next run:** M(3,7)/G(3,9) at 48 need a better method than plain cubes: e.g. G via a DFS that also uses the
+  reversal symmetry and a "remaining length" bound, or an order/ladder encoding for M. The novelty blocker for the 04:52
+  claim (the book) needs a human with the book; ask Jace. Otherwise consider a different problem.

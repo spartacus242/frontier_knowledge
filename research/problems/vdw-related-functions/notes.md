@@ -145,3 +145,14 @@ independent method, not published elsewhere. Today's targets: M(3,7) and G(3,9) 
    witness in the log is a valid gap-9 set). M(3,7) prediction (restricted x_1 = 0: SAT at 47, UNSAT at 48) running.
 3. **Unrestricted n = 48 cubes** (`code/jobs2.txt`): M(3,7), 28 cubes (p, q) with p <= q, the p = 0 cubes last (they are
    implied by the restricted x_1 = 0 run); G(3,9), 81 cubes on the first two gaps. Any SAT cube makes the printed 48 wrong.
+4. **Restricted M(3,7) witness by forward checking** (`code/fcf.c`, fc.c with x_1 forced): 47 blocks with x_1 = 0 not found in
+   15 min. The SAT jobs `Mfirst0 s=7 n=47` (predicted SAT) and `n=48` (predicted UNSAT) had no answer after ~3 h.
+5. **Faster solvers?** (`code/bench/`): on the restricted G(3,8) UNSAT instance, CaDiCaL 1.5.3 360 s, CaDiCaL 1.9.5 298 s,
+   Kissat 4.0.4 no answer in 1200 s. Kissat in python-sat IGNORES assumptions (it warns), so it must never be used with
+   `cube1.py` as written: a cube would silently be solved as the whole instance. Not worth switching.
+6. **Min-conflicts local search for M witnesses** (`code/lsM.c`): finds the extremal 30-block M(3,5) witness in 2e6 steps but
+   not a 37-block M(3,6) witness in 200 s. Ruled out for M(3,7) at 48 (moderate confidence: simple heuristic, no tuning).
+7. **Status at end of run:** M(3,7) n = 48 cubes (1,1) and (1,2) running for ~2 h with no answer; G(3,9) n = 48 cubes not
+   started. The cube runner is resumable: rerun `code/runjobs.sh code/jobs1.txt 2` and `code/runjobs.sh code/jobs2.txt 2`
+   after a container restart; finished cubes are skipped. At this rate the full n = 48 split is many CPU-days, so a
+   stronger encoding or symmetry argument is needed before the cubes can finish.

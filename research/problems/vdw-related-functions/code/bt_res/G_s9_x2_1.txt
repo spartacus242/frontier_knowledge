@@ -1,0 +1,1 @@
+DONE max n = 47, value = 48, nodes = 19848987449

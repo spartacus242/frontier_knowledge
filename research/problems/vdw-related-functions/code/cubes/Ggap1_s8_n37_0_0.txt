@@ -1,0 +1,1 @@
+Ggap1 s=8 n=37 cube=(0,0) UNSAT 360.5s

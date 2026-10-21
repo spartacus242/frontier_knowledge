@@ -14,3 +14,5 @@ claims/*/skeptic-*/table
 code/cubes/*.tmp
 code/fcf
 code/lsM
+code/fcp
+code/fcp_res/*.tmp

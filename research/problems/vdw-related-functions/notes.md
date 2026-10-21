@@ -156,3 +156,26 @@ independent method, not published elsewhere. Today's targets: M(3,7) and G(3,9) 
    started. The cube runner is resumable: rerun `code/runjobs.sh code/jobs1.txt 2` and `code/runjobs.sh code/jobs2.txt 2`
    after a container restart; finished cubes are skipped. At this rate the full n = 48 split is many CPU-days, so a
    stronger encoding or symmetry argument is needed before the cubes can finish.
+
+---
+
+# Session 2026-10-21 (20:53 UTC run)
+
+## Why tractable now
+The 08:53 run showed the printed G(3,9) = 48 is exactly what a first-gap-1 search gives, so it is only a lower bound until the
+unrestricted case is searched. Plain SAT cubes were far too slow (no cube finished in hours, and container restarts killed
+them twice). The forward-checking backtracker `fc.c` decided G(3,8) at 37 in 76 s on one core, so a version that fixes the
+first two gaps splits G(3,9) at T = 48 into 81 independent, resumable subproblems that four cores can work through.
+
+Status check 2026-10-21 20:53: no reply on the Landman-Robertson book; no new source found since 08:53 (searches listed in the
+04:52 and 08:53 sections). The routed ledger problems (`ledger/routed-open-problems.md`) were reviewed; none is a better fit
+for a day of compute than finishing this table.
+
+## Frozen definition of "solved" (this session)
+Unchanged: the correct exact value of a k = 3 M or G entry of BLR Table 1 that is "?" or wrong in the table, with a witness
+of size v - 1, an exhaustive impossibility proof at v reproduced independently, and not published elsewhere. If G(3,9) turns
+out to equal the printed 48, that is a sub-result (printed value confirmed), not a solution.
+
+## Approaches (20:53 run)
+1. `code/fcp.c` (fc.c plus forced first gaps) and the resumable driver `code/runfcp.sh` (one result file per cube in
+   `code/fcp_res/`): G(3,9) at T = 48, 81 cubes on the first two gaps, 4 in parallel. Cube (1,1) is trivially NONE (0,1,2).

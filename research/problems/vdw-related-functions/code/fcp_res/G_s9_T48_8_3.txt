@@ -1,0 +1,1 @@
+G s=9 T=48 pre=8,3, NONE nodes=949893642 secs=190

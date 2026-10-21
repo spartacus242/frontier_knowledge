@@ -179,3 +179,7 @@ out to equal the printed 48, that is a sub-result (printed value confirmed), not
 ## Approaches (20:53 run)
 1. `code/fcp.c` (fc.c plus forced first gaps) and the resumable driver `code/runfcp.sh` (one result file per cube in
    `code/fcp_res/`): G(3,9) at T = 48, 81 cubes on the first two gaps, 4 in parallel. Cube (1,1) is trivially NONE (0,1,2).
+   RESULT T = 48: 79 cubes NONE, 2 FOUND (first gaps (8,1) and (9,8), mirror images of each other): a 48-element 3-AP-free
+   set with every gap <= 9 (`witness/G_s9_48elements.txt`, re-checked by brute force). So G(3,9) >= 49 and the printed 48 is
+   WRONG. 14,200 CPU-s in total.
+2. G(3,9) at T = 49 by the same split search (running).

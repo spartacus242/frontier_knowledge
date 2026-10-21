@@ -10,3 +10,4 @@ Result: 2 of 3. Not unanimous, so the claim DOES NOT COUNT (RULE ZERO). Label: P
 Remaining objection: novelty against the Landman-Robertson 2nd edition. A skeptic would need to see that book's treatment of the
 bounded-gap and one-per-block functions (or a statement from the authors) to answer NOVEL = YES.
 Per PROMPT.md the objecting skeptic is not re-asked; any revised or re-checked claim goes to a NEW set of three skeptics.
+- Skeptic 1's SAT check of M(3,6) at 38 blocks finished after the gate: UNSAT in 6451 s (`skeptic-1/sat_M6_38.txt`), so M(3,6) = 38 now has a second method too.

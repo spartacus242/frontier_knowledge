@@ -1,0 +1,2 @@
+SAT M s=6 n=38: UNSAT [6451s] 
+exit 0

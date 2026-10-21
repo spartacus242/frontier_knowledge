@@ -1,0 +1,5 @@
+s=2 max span=5  => N*(2,3)=6 (nodes 6)
+s=3 max span=17  => N*(3,3)=18 (nodes 33)
+s=4 max span=26  => N*(4,3)=27 (nodes 310)
+s=5 max span=63  => N*(5,3)=64 (nodes 5188)
+s=6 max span=101  => N*(6,3)=102 (nodes 257385)

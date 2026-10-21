@@ -69,3 +69,37 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
   Switch problem. Candidates: a routed ledger problem with a computable part, or another Tier A target where the published
   search effort is thin (check OEIS first). If ever returning here, the missing ingredient is a fundamentally different
   search (e.g. a complete SAT solver on a structured sub-space), not more trimming.
+
+## 2026-10-18 (scheduled run; cut off before END OF DAY, entry written 2026-10-21 from its notes)
+- **Problem:** unknown "?" entries of Brown-Landman-Robertson's Table 1 for k = 3 (arXiv:0706.4420): w1(3,s) s >= 8, M(3,s)
+  s >= 8, G(3,s) s >= 10. Tier A.
+- **Frozen definition:** exact value of a "?" entry: witness of size v - 1 plus an UNSAT proof at v.
+- **Approaches (verdicts):** SAT encodings for w1, M, G (worked); probSAT lower bounds for w1 (n = 192 at s = 7, stalls near 238
+  at s = 8); upward SAT scan w1(3,8) (SAT to 237); 357 local-search attempts at 238 (all fail); cube-and-conquer at 238 (11/36
+  cubes UNSAT, stopped); monolithic CaDiCaL proved 238 UNSAT, so w1(3,8) = 238, but NOT NEW (Ahmed 2009, Integers 9 A06, as
+  wd(2;3,8) = 238). Recomputing the table disagreed with the printed M(3,4..6) and G(3,6).
+- **Label:** NO PROGRESS (the one exact value found was already published). No skeptic gate.
+- **Code/data:** `problems/vdw-related-functions/` (committed 2026-10-21 as work in progress).
+- **Lesson:** search notation variants (w_d, "common difference at most d") in the status check.
+
+## 2026-10-21
+
+### 04:52 UTC (run fired on request)
+- **Problem:** the M(3,s) and G(3,s) rows of BLR Table 1 (arXiv:0706.4420), following up the 2026-10-18 disagreement.
+- **Frozen definition:** the correct exact value of at least one k = 3 M or G entry that is "?" or wrong in the table: witness of
+  size v - 1 under the printed definition, exhaustive impossibility at v by an independent method, not published elsewhere.
+- **Approaches (verdicts):**
+  1. Re-read definitions and table from the arXiv PDF: quoted correctly; the disagreement is real.
+  2. Plain C backtracking (`code/bt.c`): M = 7, 11, 19, 31, 38 (s = 2..6), G = 5, 9, 11, 17, 23, 33, 37 (s = 2..8).
+  3. Search-shortcut hypothesis (`code/btv*.c`): forcing x_1 = 0 in M reproduces the printed M row exactly; forcing the first
+     gap to 1 in G reproduces the printed G row exactly. Likely mechanism of the errors (inferred, moderate confidence).
+  4. Forward-checking search (`code/fc.c`): third method, same values.
+  5. CaDiCaL scans for M(3,7) from n = 46 and G(3,9) from n = 45: no result (died once, restarted, still running at log time).
+  6. Skeptic gate on "M(3,4) = 19, M(3,5) = 31, M(3,6) = 38, G(3,6) = 23 (printed 18, 29, 37, 22)".
+- **Label:** PROMISING. Skeptics: 1 SIGN-OFF, 2 (Sonnet) REJECT on novelty only (Landman-Robertson 2nd ed. not inspectable),
+  3 (Fable) SIGN-OFF. All three reproduced every value. 2 of 3, does not count.
+- **Code/data:** `problems/vdw-related-functions/` (`code/bt.c`, `code/fc.c`, `code/btv.c`, `code/btv2.c`, `claims/2026-10-21-1/`).
+- **Ideas for next run:** the only open objection is the book. Find a readable copy or table of contents of Landman-Robertson
+  2nd ed. (2014) sections on these functions; if it settles novelty, send a NEW claim packet to three NEW skeptics. Separately,
+  finish M(3,7) and G(3,9) (printed 48 each; true values >= 46 and >= 45 from our witnesses) with symmetry-broken SAT or
+  cube-and-conquer: an exact value there that differs from print would be a stronger result.

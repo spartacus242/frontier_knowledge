@@ -1,0 +1,23 @@
+== G(3,s), gap<=s, s=2..8 (printed 5 9 11 17 22 33 37 48 for s=2..9) ==
+G stride=2 width/gap=2 : max size=4  value=5 (nodes at failing n=7)
+G stride=3 width/gap=3 : max size=8  value=9 (nodes at failing n=34)
+G stride=4 width/gap=4 : max size=10  value=11 (nodes at failing n=311)
+G stride=5 width/gap=5 : max size=16  value=17 (nodes at failing n=5189)
+G stride=6 width/gap=6 : max size=22  value=23 (nodes at failing n=257386)
+G stride=7 width/gap=7 : max size=32  value=33 (nodes at failing n=9699464)
+G stride=8 width/gap=8 : max size=36  value=37 (nodes at failing n=987327046)
+== M(3,s), width s, s=2..6 (printed 7 11 18 29 37 48 for s=2..7) ==
+M stride=2 width/gap=2 : max size=6  value=7 (nodes at failing n=21)
+M stride=3 width/gap=3 : max size=10  value=11 (nodes at failing n=381)
+M stride=4 width/gap=4 : max size=18  value=19 (nodes at failing n=26273)
+M stride=5 width/gap=5 : max size=30  value=31 (nodes at failing n=3839906)
+M stride=6 width/gap=6 : max size=37  value=38 (nodes at failing n=1502148753)
+== variant readings ==
+M stride=4 width/gap=3 : max size=16  value=17 (nodes at failing n=1885)
+M stride=5 width/gap=4 : max size=24  value=25 (nodes at failing n=233779)
+M stride=6 width/gap=5 : max size=34  value=35 (nodes at failing n=117120397)
+G stride=6 width/gap=5 : max size=16  value=17 (nodes at failing n=5189)
+G stride=6 width/gap=7 : max size=32  value=33 (nodes at failing n=9699464)
+M stride=4 width/gap=5 : max size=37  value=38 (nodes at failing n=8894145)
+M stride=5 width/gap=6 : max size=54  value=55 (nodes at failing n=5525096828)
+M stride=5 width/gap=6 : max size=54  value=55 (nodes at failing n=5525096828)

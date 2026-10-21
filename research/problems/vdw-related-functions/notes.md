@@ -102,3 +102,9 @@ A witness alone (showing a published value too small) is a sub-result: "publishe
 5. **Monolithic CaDiCaL for M(3,7) from n = 46 and G(3,9) from n = 45** (`code/scan_MG.py`, logs `code/M7b.log`, `code/G9b.log`),
    running.
 6. **Skeptic gate, claim 2026-10-21-1**: M(3,4) = 19, M(3,5) = 31, M(3,6) = 38, G(3,6) = 23 (packet in `claims/2026-10-21-1/`).
+   Outcome: skeptics 1 and 3 SIGN-OFF, skeptic 2 REJECT (novelty unsure: the Landman-Robertson 2nd edition was unreadable).
+   2 of 3, so it does not count. All three reproduced every value, two of them also by SAT. See `claims/2026-10-21-1/gate.md`.
+   Skeptic 3 found that the 2008 journal version (JCTA 115, 1304-1309) contains no M or G at all.
+7. M(3,7) and G(3,9): the CaDiCaL scans (n = 46 and n = 45) died unexplained once (empty logs, likely killed while the skeptics
+   were running) and were restarted at 06:12 UTC; no result by the end of this run. Still open: true M(3,7) >= 46,
+   G(3,9) >= 45 from our witnesses; >= 48 each if the printed values are restricted-search counts as hypothesised in approach 3.

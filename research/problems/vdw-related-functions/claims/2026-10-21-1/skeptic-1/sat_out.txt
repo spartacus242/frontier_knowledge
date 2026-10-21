@@ -1,0 +1,8 @@
+witness M(3,4) size 18 valid=True
+witness M(3,5) size 30 valid=True
+witness M(3,6) size 37 valid=True
+witness G(3,6) size 22 valid=True
+M(3,2) = 7 (printed 7) [0.0s]; closed-block variant 9; witness [0, 2, 5, 6, 9, 11]
+M(3,3) = 11 (printed 11) [0.0s]; closed-block variant 13; witness [0, 3, 8, 10, 14, 15, 19, 21, 26, 29]
+M(3,4) = 19 (printed 18) [0.1s]; closed-block variant 21; witness [2, 5, 10, 12, 16, 21, 24, 28, 33, 39, 41, 47, 48, 52, 59, 60, 67, 69]
+M(3,5) = 31 (printed 29) [8.0s]; closed-block variant 33; witness [3, 6, 11, 15, 20, 26, 33, 35, 42, 48, 53, 57, 62, 65, 74, 75, 84, 87, 92, 96, 101, 107, 114, 116, 123, 129, 134, 138, 143, 146]

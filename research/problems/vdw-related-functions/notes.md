@@ -138,3 +138,10 @@ independent method, not published elsewhere. Today's targets: M(3,7) and G(3,9) 
 
 ## Approaches (08:53 run)
 1. Resumable cube runner (`code/cube1.py`, `code/runjobs.sh`, results one file per cube in `code/cubes/`).
+2. **Shortcut hypothesis, predictions for larger entries.** Forcing the first gap to 1 in G: restricted maximum at s = 8 is
+   36 (SAT `Ggap1 s=8 n=36`, UNSAT n=37 in 360 s; exhaustive `btv2 G 8 0 1`: 1.1e8 nodes, 17 s), so restricted G(3,8) = 37 =
+   printed; at s = 9 the exhaustive restricted search (`btv2 G 9 0 1`, 2.0e10 nodes, ~1 h, log `code/btv2_G9_gap1.log`) gives
+   maximum 47, so restricted G(3,9) = 48 = printed. Both predictions hold. Corollary: true G(3,9) >= 48 (the 47-element
+   witness in the log is a valid gap-9 set). M(3,7) prediction (restricted x_1 = 0: SAT at 47, UNSAT at 48) running.
+3. **Unrestricted n = 48 cubes** (`code/jobs2.txt`): M(3,7), 28 cubes (p, q) with p <= q, the p = 0 cubes last (they are
+   implied by the restricted x_1 = 0 run); G(3,9), 81 cubes on the first two gaps. Any SAT cube makes the printed 48 wrong.

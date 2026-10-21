@@ -108,3 +108,33 @@ A witness alone (showing a published value too small) is a sub-result: "publishe
 7. M(3,7) and G(3,9): the CaDiCaL scans (n = 46 and n = 45) died unexplained once (empty logs, likely killed while the skeptics
    were running) and were restarted at 06:12 UTC; no result by the end of this run. Still open: true M(3,7) >= 46,
    G(3,9) >= 45 from our witnesses; >= 48 each if the printed values are restricted-search counts as hypothesised in approach 3.
+
+---
+
+# Session 2026-10-21 (08:53 UTC run)
+
+## Why tractable now
+The 04:52 run settled four small entries (M(3,4..6), G(3,6)) and found a search shortcut that reproduces the printed M and G
+rows exactly. That hypothesis makes falsifiable predictions for the larger printed entries: if the 2007 search fixed x_1 = 0
+(M) or a first gap of 1 (G), the restricted maxima must be exactly 47 for M(3,7), 36 for G(3,8) and 47 for G(3,9), and the
+true values can only be larger or equal. Restricted instances are much smaller SAT problems (a fixed first element), and the
+unrestricted M(3,7) and G(3,9) can be split into resumable cubes (the container restarted twice during the last run, killing
+two monolithic CaDiCaL runs).
+
+Status check 2026-10-21 08:53: no new source since 04:52. The Landman-Robertson book, 1st ed. (AMS STML 24, 2004), lists in
+its notation index "Least n so that every {x1, . . . , xn} with xi ∈ [(i − 1)m, im − 1] contains a k-term arithmetic
+progression" (via the academia.edu record of the book), so the book does treat the one-per-block function; whether it prints
+values is unknown. Its text could not be read: Google Books search pages are robots-blocked, the AMS endmatter PDF of the 2nd
+ed. failed to fetch, core.ac.uk failed. Queries run this session: "Ramsey Theory on the Integers second edition table of
+contents ... bounded gaps ..." (extended); "Landman Robertson ... 2014 gaps x_i - x_{i-1} ... M(k,s) OR G(k,s) OR w_1(k,s)";
+"gap sequences Landman Robertson ... x_i in [(i-1)m, im-1] ... table values" (extended); "Ramsey Theory on the Integers pdf
+Supersets of AP m-gap"; fetched moreDoAFinal.pdf (Landman-Robertson-Robertson, restricted gaps: no M or G values) and the
+Gasarch review (no M or G). This remains the open novelty question; it needs someone with the book.
+
+## Frozen definition of "solved" (this session)
+Unchanged from 04:52: the correct exact value of at least one k = 3 entry of BLR Table 1 for M or G that is "?" or wrong in the
+table, with a witness of size v - 1 under the printed definition and an exhaustive impossibility proof at v reproduced by an
+independent method, not published elsewhere. Today's targets: M(3,7) and G(3,9) (printed 48 each).
+
+## Approaches (08:53 run)
+1. Resumable cube runner (`code/cube1.py`, `code/runjobs.sh`, results one file per cube in `code/cubes/`).

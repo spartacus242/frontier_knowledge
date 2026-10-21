@@ -1,0 +1,1 @@
+M s=4 n=19 cube=(2,3) UNSAT 0.0s

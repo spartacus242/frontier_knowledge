@@ -1,0 +1,1 @@
+Ggap1 s=6 n=22 cube=(0,0) UNSAT 0.2s

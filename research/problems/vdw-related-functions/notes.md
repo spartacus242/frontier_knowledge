@@ -52,3 +52,53 @@ A lower or upper bound alone is a sub-result, not a solution.
    Our value independently confirms his. Lesson: search the notation variants (w_d, "common difference at most d").
 8. Next targets today: M(3,7), M(3,8), G(3,9), G(3,10) (our recomputation disagrees with BLR's M and G entries, so these are
    genuinely uncertain), and w1(3,9) where the best known is > 346 (Ahmed 2009).
+
+---
+
+# Session 2026-10-21 (04:52 UTC run)
+
+## Why tractable now
+The 2026-10-18 run found that Brown-Landman-Robertson's Table 1 (arXiv:0706.4420, "computed with a standard backtrack
+algorithm", 2007) disagrees with explicit, brute-force-checkable objects at four entries: M(3,4), M(3,5), M(3,6) and G(3,6).
+Each disagreement is a 3-AP-free object one element LARGER than the table allows, so either the table is wrong there or the
+definitions are not the ones printed. Re-read 2026-10-21 (WebFetch of arxiv.org/pdf/0706.4420): the definitions are exactly
+"xi in [(i-1)s, is-1], 1 <= i <= n" for M and "xi - xi-1 <= s, 2 <= i <= n" for G, and the table reads
+G(3,s) = 5 9 11 17 22 33 37 48 ? and M(3,s) = 7 11 18 29 37 48 ?. Small values are seconds of SAT or backtracking, so they can
+be settled exactly today, and the published M(3,7) = 48 and G(3,9) = 48 can be tested with a few hours of CDCL.
+
+Status check 2026-10-21: searches for later computations of M(k,s) / G(k,s) (queries listed below) found Brown-Hare 1997
+(JCTA 77, the bounded-gaps function, no table of values), Ahmed 2009 (Integers 9 A06: wd numbers only, no M or G) and the
+2004 errata sheet of Landman-Robertson's book (no M or G entry). OEIS search pages are blocked here (403 / robots), so the
+sequences 7,11,19,31,38 and 5,9,11,17,23,33,37 could not be searched in OEIS directly; skeptics must try. The journal
+version (JCTA 115 (2008)) and the book's 2nd edition (2014) could not be read here.
+
+Queries run: "Brown Landman Robertson bounds on van der Waerden numbers and some related functions M(k,s) G(k,s) table";
+"3-term arithmetic progression free set gaps at most s maximum size ... G(3,s)" (extended); "one element from each block ...
+M(3,s) exact values"; "5, 9, 11, 17, 22, 33, 37, 48 OR 7, 11, 18, 29, 37, 48 OEIS"; "Landman Robertson Ramsey Theory on the
+Integers second edition M(k,s) OR G(k,s)"; "Tanbir Ahmed some new van der Waerden numbers ... 2009"; "Brown, Landman and
+Robertson ... bounded gaps ... computed values SAT" (extended); "0706.4420 ... cited by ..." (extended).
+
+## Frozen definition of "solved" (this session)
+Solved = the correct exact value of at least one k = 3 entry of BLR Table 1 for M or G that is either "?" or wrong in the
+table, established by (a) an explicit 3-AP-free object of size v - 1 meeting the definition exactly as printed, and (b) an
+exhaustive proof that size v is impossible, reproduced by an independent method; and not already published elsewhere.
+A witness alone (showing a published value too small) is a sub-result: "published value disproved", not "value determined".
+
+## Approaches (2026-10-21)
+1. **Re-read the definitions and table** (WebFetch of the arXiv PDF): definitions as quoted above; the M and G rows are as the
+   2026-10-18 notes said. Verdict: the disagreement is not a misquotation on our side.
+2. **Plain exhaustive backtracking** (`code/bt.c`, new, independent of the SAT encodings): M(3,s) = 7, 11, 19, 31, 38 for
+   s = 2..6 (s = 6: 1.5e9 nodes); G(3,s) = 5, 9, 11, 17, 23, 33, 37 for s = 2..8. Agrees with the SAT values everywhere.
+3. **Which search shortcut reproduces the printed table?** (`code/btv.c`, `code/btv2.c`, `code/variants.py`). Forcing x_1 = 0
+   in M (the first chosen element at the very start of block 1) gives exactly the printed M row 7, 11, 18, 29, 37 for s = 2..6.
+   Forcing x_2 = x_1 + 1 in G (first gap 1) gives exactly the printed G row 5, 9, 11, 17, 22, 33 for s = 2..7. Neither is a
+   valid "without loss of generality": blocks break translation symmetry in M, and nothing forces a gap of 1 in G. Other
+   variants tried and NOT matching: overlapping blocks, blocks [(i-1)s+1, is], x_1 = s-1, gaps < s, first gap = s.
+   Confidence that this is the mechanism: moderate (it matches 11 printed values with no free parameter, but is inferred).
+   Corollary: a restricted search can only under-count, so the printed M(3,7) = 48 and G(3,9) = 48 are LOWER bounds on the true
+   values if the same shortcut was used (true M(3,7) >= 48, G(3,9) >= 48), not exact values.
+4. **Forward-checking exhaustive search** (`code/fc.c`): third independent method; confirms M(3,4) = 19, M(3,5) = 31,
+   M(3,6) = 38 (3.9e8 nodes, 104 s), G(3,6) = 23, G(3,7) = 33, G(3,8) = 37 (4.5e8 nodes, 76 s).
+5. **Monolithic CaDiCaL for M(3,7) from n = 46 and G(3,9) from n = 45** (`code/scan_MG.py`, logs `code/M7b.log`, `code/G9b.log`),
+   running.
+6. **Skeptic gate, claim 2026-10-21-1**: M(3,4) = 19, M(3,5) = 31, M(3,6) = 38, G(3,6) = 23 (packet in `claims/2026-10-21-1/`).

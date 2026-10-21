@@ -1,0 +1,8 @@
+M4 18 valid witness: True
+M5 30 valid witness: True
+M6 37 valid witness: True
+G6 22 valid witness: True
+M(3,2)= 7
+M(3,3)= 11
+M(3,4)= 19
+M(3,5)= 31

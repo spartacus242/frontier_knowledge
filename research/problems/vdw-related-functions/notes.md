@@ -231,3 +231,31 @@ then needs the next size impossible. If none exists, M(3,7) <= 48, and with a 47
 3. Correction to the 2026-10-21 explanation of the errors: the "x_1 = 0" shortcut reproduces the printed M row only for
    s <= 6. At s = 7 the true value is at least 51 and a 48-block choice with x_1 = 0 exists, so whatever produced the printed
    48 was not that shortcut alone. The G-row explanation (first gap 1) still matches every printed G entry.
+
+# Session 2026-10-22 20:53 UTC
+
+## Why tractable now
+The 08:53 run left M(3,7) = 51 resting on one program (`fcpm.c`, 32 CPU-hours). A different search that branches on the most
+constrained block, starts from the middle and uses the reflection symmetry might finish the same question in under two
+CPU-hours, which is both an independent check and fast enough for skeptics to rebuild. Status check: a web search for the
+BLR table and M(3,7) found nothing newer than arXiv:0706.4420; the AMS page for the Landman-Robertson 2nd ed. lists no errata.
+
+## Frozen definition of "solved" (this session)
+Unchanged from 2026-10-21 04:52. Target: M(3,7) = 51 (witness of 50 blocks in `witness/M_s7_50blocks.txt`, impossibility at 51).
+
+## Approaches (20:53 run)
+1. `code/mb.c`: bitset search placing the LAST block first (so every choice also forbids the midpoint with x_T), then
+   left-to-right. Correct (M(3,2..5) = 7, 11, 19, 31) but slower than fcpm: one fcpm cube (offsets 0,4,4) split seven ways took
+   ~240 s per part against 357 s for the whole cube. Dropped; benchmarks in `code/mb_bench/`.
+2. `code/mrv.c`: blocks filled in any order, always the open block with fewest free positions (cut when one has none).
+   Forbidden-set updates for all three AP roles (middle, end, either end) via shifted bitsets. Left-most tie-break: M(3,6)
+   decided in 61 s (3.3e8 nodes); outermost tie-break: > 9 min, abandoned.
+3. Innermost (most central) tie-break: M(3,6) in 20 s (7.3e7 nodes), 3x fewer nodes.
+4. Cubes on the central blocks with reflection symmetry (`code/mrvcubes.py`, `code/runmrv.sh`, results `code/mrv_res/`):
+   reflection x -> Ts-1-x sends offset a in block j to offset s-1-a in block T-1-j; a cube is kept only if its assignment over a
+   reflection-closed set of central blocks is lexicographically <= its image. Validated end to end: s = 5 T = 30 FOUND (2 of 325
+   cubes), T = 31 NONE (65/65); s = 6 T = 37 FOUND (1/108), T = 38 NONE (666/666); FOUND witnesses re-checked by `code/checkM.py`.
+   **s = 7, T = 51: all 175 canonical cubes NONE, 6188 CPU-s, 1.9e10 nodes.** s = 7, T = 50: FOUND in cube 23:0,24:6,25:0,26:6
+   (witness re-checked), run stopped after 299 of 1225 cubes. So two independently written searches agree: M(3,7) = 51.
+5. Novelty: searched for the Landman-Robertson 2nd ed. table or errata (AMS post-publication page: nothing). Still unreadable.
+6. Skeptic gate, claim 2026-10-22-1 "M(3,7) = 51": see `claims/2026-10-22-1/`.

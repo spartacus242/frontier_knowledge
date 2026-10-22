@@ -220,3 +220,5 @@ then needs the next size impossible. If none exists, M(3,7) <= 48, and with a 47
    T = 48 were deleted; `runfcpm.sh` and `runfcp.sh` now write only non-empty results. All G(3,9) result files were checked
    and every one carries a NONE or FOUND verdict, so the G(3,9) result is unaffected.
 2. M(3,7) at T = 49 by the same split (running).
+   RESULT T = 49: cubes (0,2,1) and (0,2,3) FOUND again: a 49-block choice (re-checked; it extends the 48-block witness by
+   336). So M(3,7) >= 50. T = 49 run stopped after 20 cubes; probing T = 50..53 in cube (0,2,1) and running the T = 50 split.

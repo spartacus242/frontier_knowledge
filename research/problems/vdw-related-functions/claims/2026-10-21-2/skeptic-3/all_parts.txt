@@ -1,0 +1,729 @@
+PART s=9 target=49 pd=3 idx=0 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=1 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=10 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=100 prefix=2,3,2 best=41 nodes=107697373 result=NO
+PART s=9 target=49 pd=3 idx=101 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=102 prefix=4,3,2 best=43 nodes=273106623 result=NO
+PART s=9 target=49 pd=3 idx=103 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=104 prefix=6,3,2 best=43 nodes=264192301 result=NO
+PART s=9 target=49 pd=3 idx=105 prefix=7,3,2 best=42 nodes=228215990 result=NO
+PART s=9 target=49 pd=3 idx=106 prefix=8,3,2 best=41 nodes=106250884 result=NO
+PART s=9 target=49 pd=3 idx=107 prefix=9,3,2 best=43 nodes=359287354 result=NO
+PART s=9 target=49 pd=3 idx=108 prefix=1,4,2 best=41 nodes=120343970 result=NO
+PART s=9 target=49 pd=3 idx=109 prefix=2,4,2 best=41 nodes=184127462 result=NO
+PART s=9 target=49 pd=3 idx=11 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=110 prefix=3,4,2 best=43 nodes=265067046 result=NO
+PART s=9 target=49 pd=3 idx=111 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=112 prefix=5,4,2 best=44 nodes=248942015 result=NO
+PART s=9 target=49 pd=3 idx=113 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=114 prefix=7,4,2 best=42 nodes=115597928 result=NO
+PART s=9 target=49 pd=3 idx=115 prefix=8,4,2 best=42 nodes=282186584 result=NO
+PART s=9 target=49 pd=3 idx=116 prefix=9,4,2 best=42 nodes=274937534 result=NO
+PART s=9 target=49 pd=3 idx=117 prefix=1,5,2 best=42 nodes=168195571 result=NO
+PART s=9 target=49 pd=3 idx=118 prefix=2,5,2 best=42 nodes=147969839 result=NO
+PART s=9 target=49 pd=3 idx=119 prefix=3,5,2 best=41 nodes=221004341 result=NO
+PART s=9 target=49 pd=3 idx=12 prefix=4,2,1 best=42 nodes=207989763 result=NO
+PART s=9 target=49 pd=3 idx=120 prefix=4,5,2 best=42 nodes=240382037 result=NO
+PART s=9 target=49 pd=3 idx=121 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=122 prefix=6,5,2 best=40 nodes=105170679 result=NO
+PART s=9 target=49 pd=3 idx=123 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=124 prefix=8,5,2 best=44 nodes=200306821 result=NO
+PART s=9 target=49 pd=3 idx=125 prefix=9,5,2 best=44 nodes=371239903 result=NO
+PART s=9 target=49 pd=3 idx=126 prefix=1,6,2 best=43 nodes=276576228 result=NO
+PART s=9 target=49 pd=3 idx=127 prefix=2,6,2 best=42 nodes=162118732 result=NO
+PART s=9 target=49 pd=3 idx=128 prefix=3,6,2 best=43 nodes=330742773 result=NO
+PART s=9 target=49 pd=3 idx=129 prefix=4,6,2 best=43 nodes=278712575 result=NO
+PART s=9 target=49 pd=3 idx=13 prefix=5,2,1 best=42 nodes=158607313 result=NO
+PART s=9 target=49 pd=3 idx=130 prefix=5,6,2 best=41 nodes=113143316 result=NO
+PART s=9 target=49 pd=3 idx=131 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=132 prefix=7,6,2 best=43 nodes=282366771 result=NO
+PART s=9 target=49 pd=3 idx=133 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=134 prefix=9,6,2 best=43 nodes=391498593 result=NO
+PART s=9 target=49 pd=3 idx=135 prefix=1,7,2 best=42 nodes=257752721 result=NO
+PART s=9 target=49 pd=3 idx=136 prefix=2,7,2 best=42 nodes=281759165 result=NO
+PART s=9 target=49 pd=3 idx=137 prefix=3,7,2 best=41 nodes=256162040 result=NO
+PART s=9 target=49 pd=3 idx=138 prefix=4,7,2 best=42 nodes=188475214 result=NO
+PART s=9 target=49 pd=3 idx=139 prefix=5,7,2 best=43 nodes=372130005 result=NO
+PART s=9 target=49 pd=3 idx=14 prefix=6,2,1 best=43 nodes=278771724 result=NO
+PART s=9 target=49 pd=3 idx=140 prefix=6,7,2 best=43 nodes=280726012 result=NO
+PART s=9 target=49 pd=3 idx=141 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=142 prefix=8,7,2 best=43 nodes=380192665 result=NO
+PART s=9 target=49 pd=3 idx=143 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=144 prefix=1,8,2 best=43 nodes=271568090 result=NO
+PART s=9 target=49 pd=3 idx=145 prefix=2,8,2 best=43 nodes=132476070 result=NO
+PART s=9 target=49 pd=3 idx=146 prefix=3,8,2 best=42 nodes=146479230 result=NO
+PART s=9 target=49 pd=3 idx=147 prefix=4,8,2 best=43 nodes=273185773 result=NO
+PART s=9 target=49 pd=3 idx=148 prefix=5,8,2 best=42 nodes=222556731 result=NO
+PART s=9 target=49 pd=3 idx=149 prefix=6,8,2 best=43 nodes=334398545 result=NO
+PART s=9 target=49 pd=3 idx=15 prefix=7,2,1 best=42 nodes=293591968 result=NO
+PART s=9 target=49 pd=3 idx=150 prefix=7,8,2 best=42 nodes=257265632 result=NO
+PART s=9 target=49 pd=3 idx=151 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=152 prefix=9,8,2 best=43 nodes=342674270 result=NO
+PART s=9 target=49 pd=3 idx=153 prefix=1,9,2 best=44 nodes=285229413 result=NO
+PART s=9 target=49 pd=3 idx=154 prefix=2,9,2 best=40 nodes=97761765 result=NO
+PART s=9 target=49 pd=3 idx=155 prefix=3,9,2 best=44 nodes=328304397 result=NO
+PART s=9 target=49 pd=3 idx=156 prefix=4,9,2 best=43 nodes=294670914 result=NO
+PART s=9 target=49 pd=3 idx=157 prefix=5,9,2 best=44 nodes=321347756 result=NO
+PART s=9 target=49 pd=3 idx=158 prefix=6,9,2 best=43 nodes=323497567 result=NO
+PART s=9 target=49 pd=3 idx=159 prefix=7,9,2 best=44 nodes=611929388 result=NO
+PART s=9 target=49 pd=3 idx=16 prefix=8,2,1 best=42 nodes=128227324 result=NO
+PART s=9 target=49 pd=3 idx=160 prefix=8,9,2 best=42 nodes=290868789 result=NO
+PART s=9 target=49 pd=3 idx=161 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=162 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=163 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=164 prefix=3,1,3 best=42 nodes=219712120 result=NO
+PART s=9 target=49 pd=3 idx=165 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=166 prefix=5,1,3 best=42 nodes=293074750 result=NO
+PART s=9 target=49 pd=3 idx=167 prefix=6,1,3 best=42 nodes=285810170 result=NO
+PART s=9 target=49 pd=3 idx=168 prefix=7,1,3 best=43 nodes=230676860 result=NO
+PART s=9 target=49 pd=3 idx=169 prefix=8,1,3 best=43 nodes=381231674 result=NO
+PART s=9 target=49 pd=3 idx=17 prefix=9,2,1 best=43 nodes=287902086 result=NO
+PART s=9 target=49 pd=3 idx=170 prefix=9,1,3 best=42 nodes=264209667 result=NO
+PART s=9 target=49 pd=3 idx=171 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=172 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=173 prefix=3,2,3 best=42 nodes=242946709 result=NO
+PART s=9 target=49 pd=3 idx=174 prefix=4,2,3 best=43 nodes=256801511 result=NO
+PART s=9 target=49 pd=3 idx=175 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=176 prefix=6,2,3 best=42 nodes=275921799 result=NO
+PART s=9 target=49 pd=3 idx=177 prefix=7,2,3 best=43 nodes=338155738 result=NO
+PART s=9 target=49 pd=3 idx=178 prefix=8,2,3 best=41 nodes=167602744 result=NO
+PART s=9 target=49 pd=3 idx=179 prefix=9,2,3 best=43 nodes=295448181 result=NO
+PART s=9 target=49 pd=3 idx=18 prefix=1,3,1 best=41 nodes=95327834 result=NO
+PART s=9 target=49 pd=3 idx=180 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=181 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=182 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=183 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=184 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=185 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=186 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=187 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=188 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=189 prefix=1,4,3 best=41 nodes=214805163 result=NO
+PART s=9 target=49 pd=3 idx=19 prefix=2,3,1 best=42 nodes=168633212 result=NO
+PART s=9 target=49 pd=3 idx=190 prefix=2,4,3 best=42 nodes=264863447 result=NO
+PART s=9 target=49 pd=3 idx=191 prefix=3,4,3 best=43 nodes=319523116 result=NO
+PART s=9 target=49 pd=3 idx=192 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=193 prefix=5,4,3 best=43 nodes=395606840 result=NO
+PART s=9 target=49 pd=3 idx=194 prefix=6,4,3 best=43 nodes=292147935 result=NO
+PART s=9 target=49 pd=3 idx=195 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=196 prefix=8,4,3 best=45 nodes=253415635 result=NO
+PART s=9 target=49 pd=3 idx=197 prefix=9,4,3 best=42 nodes=468339926 result=NO
+PART s=9 target=49 pd=3 idx=198 prefix=1,5,3 best=44 nodes=380518836 result=NO
+PART s=9 target=49 pd=3 idx=199 prefix=2,5,3 best=41 nodes=228799736 result=NO
+PART s=9 target=49 pd=3 idx=2 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=20 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=200 prefix=3,5,3 best=43 nodes=387678337 result=NO
+PART s=9 target=49 pd=3 idx=201 prefix=4,5,3 best=42 nodes=379805714 result=NO
+PART s=9 target=49 pd=3 idx=202 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=203 prefix=6,5,3 best=42 nodes=363946830 result=NO
+PART s=9 target=49 pd=3 idx=204 prefix=7,5,3 best=42 nodes=286185860 result=NO
+PART s=9 target=49 pd=3 idx=205 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=206 prefix=9,5,3 best=43 nodes=541048601 result=NO
+PART s=9 target=49 pd=3 idx=207 prefix=1,6,3 best=43 nodes=423134214 result=NO
+PART s=9 target=49 pd=3 idx=208 prefix=2,6,3 best=43 nodes=370841027 result=NO
+PART s=9 target=49 pd=3 idx=209 prefix=3,6,3 best=44 nodes=558982831 result=NO
+PART s=9 target=49 pd=3 idx=21 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=210 prefix=4,6,3 best=42 nodes=269578153 result=NO
+PART s=9 target=49 pd=3 idx=211 prefix=5,6,3 best=44 nodes=331283468 result=NO
+PART s=9 target=49 pd=3 idx=212 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=213 prefix=7,6,3 best=43 nodes=544441876 result=NO
+PART s=9 target=49 pd=3 idx=214 prefix=8,6,3 best=42 nodes=562472147 result=NO
+PART s=9 target=49 pd=3 idx=215 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=216 prefix=1,7,3 best=42 nodes=291799386 result=NO
+PART s=9 target=49 pd=3 idx=217 prefix=2,7,3 best=43 nodes=413552121 result=NO
+PART s=9 target=49 pd=3 idx=218 prefix=3,7,3 best=42 nodes=288573472 result=NO
+PART s=9 target=49 pd=3 idx=219 prefix=4,7,3 best=41 nodes=194556789 result=NO
+PART s=9 target=49 pd=3 idx=22 prefix=5,3,1 best=42 nodes=276510725 result=NO
+PART s=9 target=49 pd=3 idx=220 prefix=5,7,3 best=42 nodes=283401640 result=NO
+PART s=9 target=49 pd=3 idx=221 prefix=6,7,3 best=41 nodes=465362882 result=NO
+PART s=9 target=49 pd=3 idx=222 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=223 prefix=8,7,3 best=44 nodes=623387264 result=NO
+PART s=9 target=49 pd=3 idx=224 prefix=9,7,3 best=44 nodes=634655188 result=NO
+PART s=9 target=49 pd=3 idx=225 prefix=1,8,3 best=43 nodes=461300661 result=NO
+PART s=9 target=49 pd=3 idx=226 prefix=2,8,3 best=41 nodes=136220102 result=NO
+PART s=9 target=49 pd=3 idx=227 prefix=3,8,3 best=43 nodes=317805896 result=NO
+PART s=9 target=49 pd=3 idx=228 prefix=4,8,3 best=42 nodes=228312078 result=NO
+PART s=9 target=49 pd=3 idx=229 prefix=5,8,3 best=42 nodes=336610155 result=NO
+PART s=9 target=49 pd=3 idx=23 prefix=6,3,1 best=43 nodes=286090326 result=NO
+PART s=9 target=49 pd=3 idx=230 prefix=6,8,3 best=43 nodes=441761439 result=NO
+PART s=9 target=49 pd=3 idx=231 prefix=7,8,3 best=42 nodes=573539734 result=NO
+PART s=9 target=49 pd=3 idx=232 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=233 prefix=9,8,3 best=44 nodes=577479436 result=NO
+PART s=9 target=49 pd=3 idx=234 prefix=1,9,3 best=42 nodes=345810464 result=NO
+PART s=9 target=49 pd=3 idx=235 prefix=2,9,3 best=44 nodes=328913254 result=NO
+PART s=9 target=49 pd=3 idx=236 prefix=3,9,3 best=46 nodes=288446369 result=NO
+PART s=9 target=49 pd=3 idx=237 prefix=4,9,3 best=43 nodes=435961830 result=NO
+PART s=9 target=49 pd=3 idx=238 prefix=5,9,3 best=44 nodes=480204918 result=NO
+PART s=9 target=49 pd=3 idx=239 prefix=6,9,3 best=43 nodes=856386437 result=NO
+PART s=9 target=49 pd=3 idx=24 prefix=7,3,1 best=41 nodes=129730923 result=NO
+PART s=9 target=49 pd=3 idx=240 prefix=7,9,3 best=44 nodes=546161628 result=NO
+PART s=9 target=49 pd=3 idx=241 prefix=8,9,3 best=43 nodes=530355966 result=NO
+PART s=9 target=49 pd=3 idx=242 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=243 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=244 prefix=2,1,4 best=42 nodes=145416331 result=NO
+PART s=9 target=49 pd=3 idx=245 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=246 prefix=4,1,4 best=41 nodes=176103826 result=NO
+PART s=9 target=49 pd=3 idx=247 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=248 prefix=6,1,4 best=41 nodes=155688542 result=NO
+PART s=9 target=49 pd=3 idx=249 prefix=7,1,4 best=41 nodes=269588782 result=NO
+PART s=9 target=49 pd=3 idx=25 prefix=8,3,1 best=43 nodes=267877593 result=NO
+PART s=9 target=49 pd=3 idx=250 prefix=8,1,4 best=41 nodes=301257396 result=NO
+PART s=9 target=49 pd=3 idx=251 prefix=9,1,4 best=41 nodes=271090142 result=NO
+PART s=9 target=49 pd=3 idx=252 prefix=1,2,4 best=42 nodes=232848651 result=NO
+PART s=9 target=49 pd=3 idx=253 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=254 prefix=3,2,4 best=43 nodes=244302753 result=NO
+PART s=9 target=49 pd=3 idx=255 prefix=4,2,4 best=42 nodes=193360998 result=NO
+PART s=9 target=49 pd=3 idx=256 prefix=5,2,4 best=41 nodes=167380075 result=NO
+PART s=9 target=49 pd=3 idx=257 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=258 prefix=7,2,4 best=44 nodes=323052794 result=NO
+PART s=9 target=49 pd=3 idx=259 prefix=8,2,4 best=43 nodes=240787541 result=NO
+PART s=9 target=49 pd=3 idx=26 prefix=9,3,1 best=43 nodes=308935681 result=NO
+PART s=9 target=49 pd=3 idx=260 prefix=9,2,4 best=42 nodes=282205565 result=NO
+PART s=9 target=49 pd=3 idx=261 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=262 prefix=2,3,4 best=43 nodes=265591230 result=NO
+PART s=9 target=49 pd=3 idx=263 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=264 prefix=4,3,4 best=43 nodes=203425524 result=NO
+PART s=9 target=49 pd=3 idx=265 prefix=5,3,4 best=43 nodes=417297294 result=NO
+PART s=9 target=49 pd=3 idx=266 prefix=6,3,4 best=43 nodes=454972750 result=NO
+PART s=9 target=49 pd=3 idx=267 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=268 prefix=8,3,4 best=42 nodes=381794428 result=NO
+PART s=9 target=49 pd=3 idx=269 prefix=9,3,4 best=45 nodes=433214177 result=NO
+PART s=9 target=49 pd=3 idx=27 prefix=1,4,1 best=40 nodes=124820142 result=NO
+PART s=9 target=49 pd=3 idx=270 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=271 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=272 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=273 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=274 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=275 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=276 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=277 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=278 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=279 prefix=1,5,4 best=43 nodes=346894415 result=NO
+PART s=9 target=49 pd=3 idx=28 prefix=2,4,1 best=41 nodes=134198129 result=NO
+PART s=9 target=49 pd=3 idx=280 prefix=2,5,4 best=41 nodes=214080120 result=NO
+PART s=9 target=49 pd=3 idx=281 prefix=3,5,4 best=43 nodes=425286461 result=NO
+PART s=9 target=49 pd=3 idx=282 prefix=4,5,4 best=43 nodes=405686418 result=NO
+PART s=9 target=49 pd=3 idx=283 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=284 prefix=6,5,4 best=42 nodes=286985686 result=NO
+PART s=9 target=49 pd=3 idx=285 prefix=7,5,4 best=45 nodes=363691543 result=NO
+PART s=9 target=49 pd=3 idx=286 prefix=8,5,4 best=43 nodes=391105129 result=NO
+PART s=9 target=49 pd=3 idx=287 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=288 prefix=1,6,4 best=43 nodes=228240228 result=NO
+PART s=9 target=49 pd=3 idx=289 prefix=2,6,4 best=44 nodes=346189658 result=NO
+PART s=9 target=49 pd=3 idx=29 prefix=3,4,1 best=42 nodes=180196661 result=NO
+PART s=9 target=49 pd=3 idx=290 prefix=3,6,4 best=45 nodes=416174804 result=NO
+PART s=9 target=49 pd=3 idx=291 prefix=4,6,4 best=42 nodes=194710210 result=NO
+PART s=9 target=49 pd=3 idx=292 prefix=5,6,4 best=42 nodes=264123631 result=NO
+PART s=9 target=49 pd=3 idx=293 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=294 prefix=7,6,4 best=42 nodes=215650498 result=NO
+PART s=9 target=49 pd=3 idx=295 prefix=8,6,4 best=43 nodes=607769703 result=NO
+PART s=9 target=49 pd=3 idx=296 prefix=9,6,4 best=42 nodes=499744214 result=NO
+PART s=9 target=49 pd=3 idx=297 prefix=1,7,4 best=44 nodes=312719934 result=NO
+PART s=9 target=49 pd=3 idx=298 prefix=2,7,4 best=44 nodes=238622762 result=NO
+PART s=9 target=49 pd=3 idx=299 prefix=3,7,4 best=42 nodes=251581880 result=NO
+PART s=9 target=49 pd=3 idx=3 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=30 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=300 prefix=4,7,4 best=45 nodes=167960175 result=NO
+PART s=9 target=49 pd=3 idx=301 prefix=5,7,4 best=43 nodes=240754248 result=NO
+PART s=9 target=49 pd=3 idx=302 prefix=6,7,4 best=42 nodes=185757552 result=NO
+PART s=9 target=49 pd=3 idx=303 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=304 prefix=8,7,4 best=43 nodes=361805164 result=NO
+PART s=9 target=49 pd=3 idx=305 prefix=9,7,4 best=43 nodes=442023956 result=NO
+PART s=9 target=49 pd=3 idx=306 prefix=1,8,4 best=44 nodes=501138306 result=NO
+PART s=9 target=49 pd=3 idx=307 prefix=2,8,4 best=40 nodes=230714673 result=NO
+PART s=9 target=49 pd=3 idx=308 prefix=3,8,4 best=42 nodes=314393266 result=NO
+PART s=9 target=49 pd=3 idx=309 prefix=4,8,4 best=42 nodes=374792106 result=NO
+PART s=9 target=49 pd=3 idx=31 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=310 prefix=5,8,4 best=43 nodes=266689046 result=NO
+PART s=9 target=49 pd=3 idx=311 prefix=6,8,4 best=42 nodes=621446424 result=NO
+PART s=9 target=49 pd=3 idx=312 prefix=7,8,4 best=43 nodes=437318674 result=NO
+PART s=9 target=49 pd=3 idx=313 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=314 prefix=9,8,4 best=45 nodes=624243312 result=NO
+PART s=9 target=49 pd=3 idx=315 prefix=1,9,4 best=43 nodes=281807653 result=NO
+PART s=9 target=49 pd=3 idx=316 prefix=2,9,4 best=43 nodes=317537359 result=NO
+PART s=9 target=49 pd=3 idx=317 prefix=3,9,4 best=43 nodes=380275616 result=NO
+PART s=9 target=49 pd=3 idx=318 prefix=4,9,4 best=43 nodes=211824791 result=NO
+PART s=9 target=49 pd=3 idx=319 prefix=5,9,4 best=45 nodes=627925214 result=NO
+PART s=9 target=49 pd=3 idx=32 prefix=6,4,1 best=42 nodes=108978212 result=NO
+PART s=9 target=49 pd=3 idx=320 prefix=6,9,4 best=42 nodes=405545029 result=NO
+PART s=9 target=49 pd=3 idx=321 prefix=7,9,4 best=43 nodes=434987294 result=NO
+PART s=9 target=49 pd=3 idx=322 prefix=8,9,4 best=45 nodes=579551908 result=NO
+PART s=9 target=49 pd=3 idx=323 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=324 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=325 prefix=2,1,5 best=42 nodes=270415092 result=NO
+PART s=9 target=49 pd=3 idx=326 prefix=3,1,5 best=43 nodes=299847834 result=NO
+PART s=9 target=49 pd=3 idx=327 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=328 prefix=5,1,5 best=42 nodes=278932878 result=NO
+PART s=9 target=49 pd=3 idx=329 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=33 prefix=7,4,1 best=43 nodes=182740971 result=NO
+PART s=9 target=49 pd=3 idx=330 prefix=7,1,5 best=43 nodes=297777558 result=NO
+PART s=9 target=49 pd=3 idx=331 prefix=8,1,5 best=44 nodes=509149137 result=NO
+PART s=9 target=49 pd=3 idx=332 prefix=9,1,5 best=43 nodes=422067317 result=NO
+PART s=9 target=49 pd=3 idx=333 prefix=1,2,5 best=42 nodes=214999141 result=NO
+PART s=9 target=49 pd=3 idx=334 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=335 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=336 prefix=4,2,5 best=41 nodes=143143354 result=NO
+PART s=9 target=49 pd=3 idx=337 prefix=5,2,5 best=42 nodes=261445276 result=NO
+PART s=9 target=49 pd=3 idx=338 prefix=6,2,5 best=42 nodes=266806323 result=NO
+PART s=9 target=49 pd=3 idx=339 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=34 prefix=8,4,1 best=41 nodes=190463924 result=NO
+PART s=9 target=49 pd=3 idx=340 prefix=8,2,5 best=42 nodes=303840220 result=NO
+PART s=9 target=49 pd=3 idx=341 prefix=9,2,5 best=43 nodes=328648874 result=NO
+PART s=9 target=49 pd=3 idx=342 prefix=1,3,5 best=42 nodes=345404998 result=NO
+PART s=9 target=49 pd=3 idx=343 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=344 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=345 prefix=4,3,5 best=42 nodes=380322738 result=NO
+PART s=9 target=49 pd=3 idx=346 prefix=5,3,5 best=42 nodes=345086709 result=NO
+PART s=9 target=49 pd=3 idx=347 prefix=6,3,5 best=43 nodes=581261361 result=NO
+PART s=9 target=49 pd=3 idx=348 prefix=7,3,5 best=42 nodes=450130083 result=NO
+PART s=9 target=49 pd=3 idx=349 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=35 prefix=9,4,1 best=42 nodes=246050246 result=NO
+PART s=9 target=49 pd=3 idx=350 prefix=9,3,5 best=44 nodes=466322980 result=NO
+PART s=9 target=49 pd=3 idx=351 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=352 prefix=2,4,5 best=43 nodes=284622489 result=NO
+PART s=9 target=49 pd=3 idx=353 prefix=3,4,5 best=43 nodes=376364846 result=NO
+PART s=9 target=49 pd=3 idx=354 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=355 prefix=5,4,5 best=44 nodes=521676271 result=NO
+PART s=9 target=49 pd=3 idx=356 prefix=6,4,5 best=43 nodes=384194366 result=NO
+PART s=9 target=49 pd=3 idx=357 prefix=7,4,5 best=43 nodes=348281073 result=NO
+PART s=9 target=49 pd=3 idx=358 prefix=8,4,5 best=44 nodes=366436485 result=NO
+PART s=9 target=49 pd=3 idx=359 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=36 prefix=1,5,1 best=42 nodes=235085486 result=NO
+PART s=9 target=49 pd=3 idx=360 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=361 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=362 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=363 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=364 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=365 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=366 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=367 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=368 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=369 prefix=1,6,5 best=44 nodes=356499430 result=NO
+PART s=9 target=49 pd=3 idx=37 prefix=2,5,1 best=42 nodes=180323987 result=NO
+PART s=9 target=49 pd=3 idx=370 prefix=2,6,5 best=41 nodes=190397268 result=NO
+PART s=9 target=49 pd=3 idx=371 prefix=3,6,5 best=45 nodes=514006830 result=NO
+PART s=9 target=49 pd=3 idx=372 prefix=4,6,5 best=42 nodes=281476809 result=NO
+PART s=9 target=49 pd=3 idx=373 prefix=5,6,5 best=43 nodes=252727423 result=NO
+PART s=9 target=49 pd=3 idx=374 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=375 prefix=7,6,5 best=42 nodes=424495661 result=NO
+PART s=9 target=49 pd=3 idx=376 prefix=8,6,5 best=41 nodes=297476133 result=NO
+PART s=9 target=49 pd=3 idx=377 prefix=9,6,5 best=44 nodes=512751018 result=NO
+PART s=9 target=49 pd=3 idx=378 prefix=1,7,5 best=44 nodes=334568864 result=NO
+PART s=9 target=49 pd=3 idx=379 prefix=2,7,5 best=44 nodes=527178714 result=NO
+PART s=9 target=49 pd=3 idx=38 prefix=3,5,1 best=43 nodes=282643032 result=NO
+PART s=9 target=49 pd=3 idx=380 prefix=3,7,5 best=42 nodes=385357088 result=NO
+PART s=9 target=49 pd=3 idx=381 prefix=4,7,5 best=42 nodes=253600754 result=NO
+PART s=9 target=49 pd=3 idx=382 prefix=5,7,5 best=42 nodes=381590461 result=NO
+PART s=9 target=49 pd=3 idx=383 prefix=6,7,5 best=42 nodes=492057576 result=NO
+PART s=9 target=49 pd=3 idx=384 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=385 prefix=8,7,5 best=43 nodes=477249588 result=NO
+PART s=9 target=49 pd=3 idx=386 prefix=9,7,5 best=45 nodes=708135167 result=NO
+PART s=9 target=49 pd=3 idx=387 prefix=1,8,5 best=44 nodes=421819893 result=NO
+PART s=9 target=49 pd=3 idx=388 prefix=2,8,5 best=42 nodes=254975377 result=NO
+PART s=9 target=49 pd=3 idx=389 prefix=3,8,5 best=43 nodes=330862539 result=NO
+PART s=9 target=49 pd=3 idx=39 prefix=4,5,1 best=43 nodes=247896702 result=NO
+PART s=9 target=49 pd=3 idx=390 prefix=4,8,5 best=41 nodes=247391007 result=NO
+PART s=9 target=49 pd=3 idx=391 prefix=5,8,5 best=44 nodes=349717434 result=NO
+PART s=9 target=49 pd=3 idx=392 prefix=6,8,5 best=43 nodes=262718606 result=NO
+PART s=9 target=49 pd=3 idx=393 prefix=7,8,5 best=43 nodes=364511136 result=NO
+PART s=9 target=49 pd=3 idx=394 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=395 prefix=9,8,5 best=44 nodes=507135481 result=NO
+PART s=9 target=49 pd=3 idx=396 prefix=1,9,5 best=44 nodes=522449206 result=NO
+PART s=9 target=49 pd=3 idx=397 prefix=2,9,5 best=43 nodes=378646256 result=NO
+PART s=9 target=49 pd=3 idx=398 prefix=3,9,5 best=43 nodes=446541983 result=NO
+PART s=9 target=49 pd=3 idx=399 prefix=4,9,5 best=45 nodes=588433741 result=NO
+PART s=9 target=49 pd=3 idx=4 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=40 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=400 prefix=5,9,5 best=44 nodes=381950960 result=NO
+PART s=9 target=49 pd=3 idx=401 prefix=6,9,5 best=42 nodes=528305595 result=NO
+PART s=9 target=49 pd=3 idx=402 prefix=7,9,5 best=46 nodes=757186770 result=NO
+PART s=9 target=49 pd=3 idx=403 prefix=8,9,5 best=44 nodes=589804863 result=NO
+PART s=9 target=49 pd=3 idx=404 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=405 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=406 prefix=2,1,6 best=45 nodes=301751839 result=NO
+PART s=9 target=49 pd=3 idx=407 prefix=3,1,6 best=43 nodes=291557665 result=NO
+PART s=9 target=49 pd=3 idx=408 prefix=4,1,6 best=42 nodes=198949027 result=NO
+PART s=9 target=49 pd=3 idx=409 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=41 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=410 prefix=6,1,6 best=42 nodes=415038932 result=NO
+PART s=9 target=49 pd=3 idx=411 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=412 prefix=8,1,6 best=43 nodes=541660824 result=NO
+PART s=9 target=49 pd=3 idx=413 prefix=9,1,6 best=43 nodes=520228132 result=NO
+PART s=9 target=49 pd=3 idx=414 prefix=1,2,6 best=45 nodes=310462515 result=NO
+PART s=9 target=49 pd=3 idx=415 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=416 prefix=3,2,6 best=42 nodes=290722326 result=NO
+PART s=9 target=49 pd=3 idx=417 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=418 prefix=5,2,6 best=43 nodes=251337384 result=NO
+PART s=9 target=49 pd=3 idx=419 prefix=6,2,6 best=42 nodes=424171924 result=NO
+PART s=9 target=49 pd=3 idx=42 prefix=7,5,1 best=42 nodes=272871620 result=NO
+PART s=9 target=49 pd=3 idx=420 prefix=7,2,6 best=43 nodes=501041305 result=NO
+PART s=9 target=49 pd=3 idx=421 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=422 prefix=9,2,6 best=43 nodes=387672436 result=NO
+PART s=9 target=49 pd=3 idx=423 prefix=1,3,6 best=43 nodes=340565497 result=NO
+PART s=9 target=49 pd=3 idx=424 prefix=2,3,6 best=43 nodes=333519144 result=NO
+PART s=9 target=49 pd=3 idx=425 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=426 prefix=4,3,6 best=44 nodes=406169894 result=NO
+PART s=9 target=49 pd=3 idx=427 prefix=5,3,6 best=44 nodes=564891431 result=NO
+PART s=9 target=49 pd=3 idx=428 prefix=6,3,6 best=43 nodes=652622382 result=NO
+PART s=9 target=49 pd=3 idx=429 prefix=7,3,6 best=44 nodes=534053535 result=NO
+PART s=9 target=49 pd=3 idx=43 prefix=8,5,1 best=42 nodes=233350772 result=NO
+PART s=9 target=49 pd=3 idx=430 prefix=8,3,6 best=42 nodes=477262143 result=NO
+PART s=9 target=49 pd=3 idx=431 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=432 prefix=1,4,6 best=41 nodes=198731526 result=NO
+PART s=9 target=49 pd=3 idx=433 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=434 prefix=3,4,6 best=43 nodes=330117088 result=NO
+PART s=9 target=49 pd=3 idx=435 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=436 prefix=5,4,6 best=43 nodes=455879711 result=NO
+PART s=9 target=49 pd=3 idx=437 prefix=6,4,6 best=44 nodes=349169950 result=NO
+PART s=9 target=49 pd=3 idx=438 prefix=7,4,6 best=43 nodes=242722045 result=NO
+PART s=9 target=49 pd=3 idx=439 prefix=8,4,6 best=44 nodes=618824077 result=NO
+PART s=9 target=49 pd=3 idx=44 prefix=9,5,1 best=43 nodes=349369528 result=NO
+PART s=9 target=49 pd=3 idx=440 prefix=9,4,6 best=44 nodes=449127367 result=NO
+PART s=9 target=49 pd=3 idx=441 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=442 prefix=2,5,6 best=42 nodes=209406874 result=NO
+PART s=9 target=49 pd=3 idx=443 prefix=3,5,6 best=43 nodes=442459348 result=NO
+PART s=9 target=49 pd=3 idx=444 prefix=4,5,6 best=43 nodes=440738230 result=NO
+PART s=9 target=49 pd=3 idx=445 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=446 prefix=6,5,6 best=44 nodes=323023578 result=NO
+PART s=9 target=49 pd=3 idx=447 prefix=7,5,6 best=44 nodes=639344310 result=NO
+PART s=9 target=49 pd=3 idx=448 prefix=8,5,6 best=42 nodes=283572392 result=NO
+PART s=9 target=49 pd=3 idx=449 prefix=9,5,6 best=45 nodes=529257137 result=NO
+PART s=9 target=49 pd=3 idx=45 prefix=1,6,1 best=42 nodes=200701854 result=NO
+PART s=9 target=49 pd=3 idx=450 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=451 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=452 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=453 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=454 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=455 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=456 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=457 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=458 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=459 prefix=1,7,6 best=43 nodes=443321748 result=NO
+PART s=9 target=49 pd=3 idx=46 prefix=2,6,1 best=43 nodes=305973808 result=NO
+PART s=9 target=49 pd=3 idx=460 prefix=2,7,6 best=42 nodes=456356369 result=NO
+PART s=9 target=49 pd=3 idx=461 prefix=3,7,6 best=43 nodes=435445474 result=NO
+PART s=9 target=49 pd=3 idx=462 prefix=4,7,6 best=42 nodes=229532451 result=NO
+PART s=9 target=49 pd=3 idx=463 prefix=5,7,6 best=43 nodes=620163349 result=NO
+PART s=9 target=49 pd=3 idx=464 prefix=6,7,6 best=43 nodes=361192288 result=NO
+PART s=9 target=49 pd=3 idx=465 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=466 prefix=8,7,6 best=42 nodes=405707212 result=NO
+PART s=9 target=49 pd=3 idx=467 prefix=9,7,6 best=44 nodes=790594206 result=NO
+PART s=9 target=49 pd=3 idx=468 prefix=1,8,6 best=47 nodes=628974133 result=NO
+PART s=9 target=49 pd=3 idx=469 prefix=2,8,6 best=43 nodes=358287420 result=NO
+PART s=9 target=49 pd=3 idx=47 prefix=3,6,1 best=42 nodes=334303486 result=NO
+PART s=9 target=49 pd=3 idx=470 prefix=3,8,6 best=42 nodes=441113235 result=NO
+PART s=9 target=49 pd=3 idx=471 prefix=4,8,6 best=43 nodes=690097986 result=NO
+PART s=9 target=49 pd=3 idx=472 prefix=5,8,6 best=42 nodes=361964331 result=NO
+PART s=9 target=49 pd=3 idx=473 prefix=6,8,6 best=42 nodes=451583770 result=NO
+PART s=9 target=49 pd=3 idx=474 prefix=7,8,6 best=43 nodes=506455642 result=NO
+PART s=9 target=49 pd=3 idx=475 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=476 prefix=9,8,6 best=48 nodes=813078578 result=NO
+PART s=9 target=49 pd=3 idx=477 prefix=1,9,6 best=43 nodes=518629665 result=NO
+PART s=9 target=49 pd=3 idx=478 prefix=2,9,6 best=43 nodes=390696827 result=NO
+PART s=9 target=49 pd=3 idx=479 prefix=3,9,6 best=45 nodes=903799860 result=NO
+PART s=9 target=49 pd=3 idx=48 prefix=4,6,1 best=43 nodes=89309344 result=NO
+PART s=9 target=49 pd=3 idx=480 prefix=4,9,6 best=41 nodes=389451772 result=NO
+PART s=9 target=49 pd=3 idx=481 prefix=5,9,6 best=42 nodes=479840587 result=NO
+PART s=9 target=49 pd=3 idx=482 prefix=6,9,6 best=43 nodes=435904333 result=NO
+PART s=9 target=49 pd=3 idx=483 prefix=7,9,6 best=43 nodes=769757309 result=NO
+PART s=9 target=49 pd=3 idx=484 prefix=8,9,6 best=47 nodes=690832367 result=NO
+PART s=9 target=49 pd=3 idx=485 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=486 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=487 prefix=2,1,7 best=42 nodes=219483470 result=NO
+PART s=9 target=49 pd=3 idx=488 prefix=3,1,7 best=42 nodes=239022783 result=NO
+PART s=9 target=49 pd=3 idx=489 prefix=4,1,7 best=41 nodes=301598588 result=NO
+PART s=9 target=49 pd=3 idx=49 prefix=5,6,1 best=43 nodes=292891682 result=NO
+PART s=9 target=49 pd=3 idx=490 prefix=5,1,7 best=44 nodes=328980362 result=NO
+PART s=9 target=49 pd=3 idx=491 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=492 prefix=7,1,7 best=42 nodes=508212677 result=NO
+PART s=9 target=49 pd=3 idx=493 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=494 prefix=9,1,7 best=43 nodes=398751632 result=NO
+PART s=9 target=49 pd=3 idx=495 prefix=1,2,7 best=44 nodes=349350767 result=NO
+PART s=9 target=49 pd=3 idx=496 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=497 prefix=3,2,7 best=42 nodes=364472000 result=NO
+PART s=9 target=49 pd=3 idx=498 prefix=4,2,7 best=41 nodes=359163670 result=NO
+PART s=9 target=49 pd=3 idx=499 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=5 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=50 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=500 prefix=6,2,7 best=42 nodes=445436469 result=NO
+PART s=9 target=49 pd=3 idx=501 prefix=7,2,7 best=42 nodes=699544601 result=NO
+PART s=9 target=49 pd=3 idx=502 prefix=8,2,7 best=43 nodes=353417520 result=NO
+PART s=9 target=49 pd=3 idx=503 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=504 prefix=1,3,7 best=42 nodes=213229217 result=NO
+PART s=9 target=49 pd=3 idx=505 prefix=2,3,7 best=42 nodes=358848919 result=NO
+PART s=9 target=49 pd=3 idx=506 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=507 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=508 prefix=5,3,7 best=42 nodes=502856676 result=NO
+PART s=9 target=49 pd=3 idx=509 prefix=6,3,7 best=43 nodes=745994816 result=NO
+PART s=9 target=49 pd=3 idx=51 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=510 prefix=7,3,7 best=42 nodes=382683503 result=NO
+PART s=9 target=49 pd=3 idx=511 prefix=8,3,7 best=43 nodes=598512081 result=NO
+PART s=9 target=49 pd=3 idx=512 prefix=9,3,7 best=43 nodes=605310374 result=NO
+PART s=9 target=49 pd=3 idx=513 prefix=1,4,7 best=41 nodes=225735465 result=NO
+PART s=9 target=49 pd=3 idx=514 prefix=2,4,7 best=42 nodes=177244882 result=NO
+PART s=9 target=49 pd=3 idx=515 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=516 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=517 prefix=5,4,7 best=43 nodes=445603638 result=NO
+PART s=9 target=49 pd=3 idx=518 prefix=6,4,7 best=42 nodes=237514965 result=NO
+PART s=9 target=49 pd=3 idx=519 prefix=7,4,7 best=43 nodes=353969081 result=NO
+PART s=9 target=49 pd=3 idx=52 prefix=8,6,1 best=42 nodes=344715436 result=NO
+PART s=9 target=49 pd=3 idx=520 prefix=8,4,7 best=43 nodes=314590507 result=NO
+PART s=9 target=49 pd=3 idx=521 prefix=9,4,7 best=42 nodes=348366044 result=NO
+PART s=9 target=49 pd=3 idx=522 prefix=1,5,7 best=43 nodes=432127714 result=NO
+PART s=9 target=49 pd=3 idx=523 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=524 prefix=3,5,7 best=42 nodes=487220280 result=NO
+PART s=9 target=49 pd=3 idx=525 prefix=4,5,7 best=43 nodes=667201350 result=NO
+PART s=9 target=49 pd=3 idx=526 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=527 prefix=6,5,7 best=43 nodes=561462643 result=NO
+PART s=9 target=49 pd=3 idx=528 prefix=7,5,7 best=43 nodes=514308408 result=NO
+PART s=9 target=49 pd=3 idx=529 prefix=8,5,7 best=43 nodes=393468629 result=NO
+PART s=9 target=49 pd=3 idx=53 prefix=9,6,1 best=43 nodes=445843585 result=NO
+PART s=9 target=49 pd=3 idx=530 prefix=9,5,7 best=43 nodes=815443401 result=NO
+PART s=9 target=49 pd=3 idx=531 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=532 prefix=2,6,7 best=43 nodes=439947496 result=NO
+PART s=9 target=49 pd=3 idx=533 prefix=3,6,7 best=43 nodes=758544008 result=NO
+PART s=9 target=49 pd=3 idx=534 prefix=4,6,7 best=42 nodes=260192229 result=NO
+PART s=9 target=49 pd=3 idx=535 prefix=5,6,7 best=43 nodes=538396722 result=NO
+PART s=9 target=49 pd=3 idx=536 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=537 prefix=7,6,7 best=42 nodes=374852300 result=NO
+PART s=9 target=49 pd=3 idx=538 prefix=8,6,7 best=43 nodes=655418633 result=NO
+PART s=9 target=49 pd=3 idx=539 prefix=9,6,7 best=43 nodes=669535732 result=NO
+PART s=9 target=49 pd=3 idx=54 prefix=1,7,1 best=43 nodes=192343270 result=NO
+PART s=9 target=49 pd=3 idx=540 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=541 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=542 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=543 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=544 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=545 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=546 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=547 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=548 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=549 prefix=1,8,7 best=43 nodes=829655687 result=NO
+PART s=9 target=49 pd=3 idx=55 prefix=2,7,1 best=43 nodes=293119407 result=NO
+PART s=9 target=49 pd=3 idx=550 prefix=2,8,7 best=42 nodes=278153416 result=NO
+PART s=9 target=49 pd=3 idx=551 prefix=3,8,7 best=43 nodes=617216750 result=NO
+PART s=9 target=49 pd=3 idx=552 prefix=4,8,7 best=42 nodes=429597372 result=NO
+PART s=9 target=49 pd=3 idx=553 prefix=5,8,7 best=43 nodes=393596013 result=NO
+PART s=9 target=49 pd=3 idx=554 prefix=6,8,7 best=43 nodes=675327172 result=NO
+PART s=9 target=49 pd=3 idx=555 prefix=7,8,7 best=43 nodes=586629437 result=NO
+PART s=9 target=49 pd=3 idx=556 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=557 prefix=9,8,7 best=43 nodes=930563213 result=NO
+PART s=9 target=49 pd=3 idx=558 prefix=1,9,7 best=42 nodes=487644504 result=NO
+PART s=9 target=49 pd=3 idx=559 prefix=2,9,7 best=44 nodes=764906453 result=NO
+PART s=9 target=49 pd=3 idx=56 prefix=3,7,1 best=42 nodes=158476627 result=NO
+PART s=9 target=49 pd=3 idx=560 prefix=3,9,7 best=46 nodes=638594687 result=NO
+PART s=9 target=49 pd=3 idx=561 prefix=4,9,7 best=42 nodes=433377798 result=NO
+PART s=9 target=49 pd=3 idx=562 prefix=5,9,7 best=43 nodes=861144063 result=NO
+PART s=9 target=49 pd=3 idx=563 prefix=6,9,7 best=43 nodes=678066302 result=NO
+PART s=9 target=49 pd=3 idx=564 prefix=7,9,7 best=44 nodes=751514851 result=NO
+PART s=9 target=49 pd=3 idx=565 prefix=8,9,7 best=45 nodes=1101670536 result=NO
+PART s=9 target=49 pd=3 idx=566 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=567 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=568 prefix=2,1,8 best=44 nodes=378272964 result=NO
+PART s=9 target=49 pd=3 idx=569 prefix=3,1,8 best=42 nodes=388785337 result=NO
+PART s=9 target=49 pd=3 idx=57 prefix=4,7,1 best=42 nodes=175163828 result=NO
+PART s=9 target=49 pd=3 idx=570 prefix=4,1,8 best=41 nodes=295334427 result=NO
+PART s=9 target=49 pd=3 idx=571 prefix=5,1,8 best=44 nodes=507057693 result=NO
+PART s=9 target=49 pd=3 idx=572 prefix=6,1,8 best=42 nodes=534073253 result=NO
+PART s=9 target=49 pd=3 idx=573 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=574 prefix=8,1,8 best=48 nodes=843688242 result=NO
+PART s=9 target=49 pd=3 idx=575 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=576 prefix=1,2,8 best=42 nodes=203975978 result=NO
+PART s=9 target=49 pd=3 idx=577 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=578 prefix=3,2,8 best=42 nodes=223541637 result=NO
+PART s=9 target=49 pd=3 idx=579 prefix=4,2,8 best=42 nodes=238706975 result=NO
+PART s=9 target=49 pd=3 idx=58 prefix=5,7,1 best=44 nodes=225429399 result=NO
+PART s=9 target=49 pd=3 idx=580 prefix=5,2,8 best=43 nodes=299953963 result=NO
+PART s=9 target=49 pd=3 idx=581 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=582 prefix=7,2,8 best=43 nodes=444574686 result=NO
+PART s=9 target=49 pd=3 idx=583 prefix=8,2,8 best=43 nodes=463374037 result=NO
+PART s=9 target=49 pd=3 idx=584 prefix=9,2,8 best=42 nodes=347712996 result=NO
+PART s=9 target=49 pd=3 idx=585 prefix=1,3,8 best=42 nodes=362398458 result=NO
+PART s=9 target=49 pd=3 idx=586 prefix=2,3,8 best=41 nodes=219440131 result=NO
+PART s=9 target=49 pd=3 idx=587 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=588 prefix=4,3,8 best=44 nodes=438477117 result=NO
+PART s=9 target=49 pd=3 idx=589 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=59 prefix=6,7,1 best=43 nodes=275130094 result=NO
+PART s=9 target=49 pd=3 idx=590 prefix=6,3,8 best=44 nodes=657469127 result=NO
+PART s=9 target=49 pd=3 idx=591 prefix=7,3,8 best=43 nodes=627231052 result=NO
+PART s=9 target=49 pd=3 idx=592 prefix=8,3,8 best=42 nodes=396066224 result=NO
+PART s=9 target=49 pd=3 idx=593 prefix=9,3,8 best=43 nodes=652529591 result=NO
+PART s=9 target=49 pd=3 idx=594 prefix=1,4,8 best=42 nodes=275857427 result=NO
+PART s=9 target=49 pd=3 idx=595 prefix=2,4,8 best=41 nodes=383799161 result=NO
+PART s=9 target=49 pd=3 idx=596 prefix=3,4,8 best=43 nodes=438602659 result=NO
+PART s=9 target=49 pd=3 idx=597 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=598 prefix=5,4,8 best=43 nodes=635205368 result=NO
+PART s=9 target=49 pd=3 idx=599 prefix=6,4,8 best=43 nodes=549202734 result=NO
+PART s=9 target=49 pd=3 idx=6 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=60 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=600 prefix=7,4,8 best=44 nodes=352088273 result=NO
+PART s=9 target=49 pd=3 idx=601 prefix=8,4,8 best=43 nodes=563347853 result=NO
+PART s=9 target=49 pd=3 idx=602 prefix=9,4,8 best=43 nodes=637682985 result=NO
+PART s=9 target=49 pd=3 idx=603 prefix=1,5,8 best=42 nodes=350454330 result=NO
+PART s=9 target=49 pd=3 idx=604 prefix=2,5,8 best=42 nodes=335971509 result=NO
+PART s=9 target=49 pd=3 idx=605 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=606 prefix=4,5,8 best=44 nodes=443877935 result=NO
+PART s=9 target=49 pd=3 idx=607 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=608 prefix=6,5,8 best=41 nodes=299320867 result=NO
+PART s=9 target=49 pd=3 idx=609 prefix=7,5,8 best=44 nodes=397978407 result=NO
+PART s=9 target=49 pd=3 idx=61 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=610 prefix=8,5,8 best=42 nodes=476967792 result=NO
+PART s=9 target=49 pd=3 idx=611 prefix=9,5,8 best=45 nodes=584232423 result=NO
+PART s=9 target=49 pd=3 idx=612 prefix=1,6,8 best=43 nodes=564281125 result=NO
+PART s=9 target=49 pd=3 idx=613 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=614 prefix=3,6,8 best=43 nodes=752979260 result=NO
+PART s=9 target=49 pd=3 idx=615 prefix=4,6,8 best=43 nodes=567242313 result=NO
+PART s=9 target=49 pd=3 idx=616 prefix=5,6,8 best=42 nodes=361309943 result=NO
+PART s=9 target=49 pd=3 idx=617 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=618 prefix=7,6,8 best=43 nodes=602963681 result=NO
+PART s=9 target=49 pd=3 idx=619 prefix=8,6,8 best=47 nodes=703881713 result=NO
+PART s=9 target=49 pd=3 idx=62 prefix=9,7,1 best=42 nodes=418977058 result=NO
+PART s=9 target=49 pd=3 idx=620 prefix=9,6,8 best=46 nodes=747822088 result=NO
+PART s=9 target=49 pd=3 idx=621 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=622 prefix=2,7,8 best=44 nodes=621543421 result=NO
+PART s=9 target=49 pd=3 idx=623 prefix=3,7,8 best=43 nodes=666052264 result=NO
+PART s=9 target=49 pd=3 idx=624 prefix=4,7,8 best=42 nodes=318357373 result=NO
+PART s=9 target=49 pd=3 idx=625 prefix=5,7,8 best=44 nodes=528614664 result=NO
+PART s=9 target=49 pd=3 idx=626 prefix=6,7,8 best=42 nodes=547779164 result=NO
+PART s=9 target=49 pd=3 idx=627 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=628 prefix=8,7,8 best=44 nodes=692656489 result=NO
+PART s=9 target=49 pd=3 idx=629 prefix=9,7,8 best=45 nodes=1162233389 result=NO
+PART s=9 target=49 pd=3 idx=63 prefix=1,8,1 best=42 nodes=329334185 result=NO
+PART s=9 target=49 pd=3 idx=630 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=631 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=632 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=633 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=634 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=635 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=636 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=637 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=638 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=639 prefix=1,9,8 best=44 nodes=807395926 result=NO
+PART s=9 target=49 pd=3 idx=64 prefix=2,8,1 best=43 nodes=202277807 result=NO
+PART s=9 target=49 pd=3 idx=640 prefix=2,9,8 best=44 nodes=341800918 result=NO
+PART s=9 target=49 pd=3 idx=641 prefix=3,9,8 best=45 nodes=626593166 result=NO
+PART s=9 target=49 pd=3 idx=642 prefix=4,9,8 best=44 nodes=607874157 result=NO
+PART s=9 target=49 pd=3 idx=643 prefix=5,9,8 best=45 nodes=581260267 result=NO
+PART s=9 target=49 pd=3 idx=644 prefix=6,9,8 best=43 nodes=642391957 result=NO
+PART s=9 target=49 pd=3 idx=645 prefix=7,9,8 best=44 nodes=1081231334 result=NO
+PART s=9 target=49 pd=3 idx=646 prefix=8,9,8 best=45 nodes=689420168 result=NO
+PART s=9 target=49 pd=3 idx=647 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=648 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=649 prefix=2,1,9 best=44 nodes=381719583 result=NO
+PART s=9 target=49 pd=3 idx=65 prefix=3,8,1 best=43 nodes=323453292 result=NO
+PART s=9 target=49 pd=3 idx=650 prefix=3,1,9 best=43 nodes=374702993 result=NO
+PART s=9 target=49 pd=3 idx=651 prefix=4,1,9 best=42 nodes=348114834 result=NO
+PART s=9 target=49 pd=3 idx=652 prefix=5,1,9 best=44 nodes=449699726 result=NO
+PART s=9 target=49 pd=3 idx=653 prefix=6,1,9 best=43 nodes=660767093 result=NO
+PART s=9 target=49 pd=3 idx=654 prefix=7,1,9 best=43 nodes=570861191 result=NO
+PART s=9 target=49 pd=3 idx=655 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=656 prefix=9,1,9 best=44 nodes=752791276 result=NO
+PART s=9 target=49 pd=3 idx=657 prefix=1,2,9 best=44 nodes=352459285 result=NO
+PART s=9 target=49 pd=3 idx=658 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=659 prefix=3,2,9 best=42 nodes=407512124 result=NO
+PART s=9 target=49 pd=3 idx=66 prefix=4,8,1 best=43 nodes=303214896 result=NO
+PART s=9 target=49 pd=3 idx=660 prefix=4,2,9 best=44 nodes=354613328 result=NO
+PART s=9 target=49 pd=3 idx=661 prefix=5,2,9 best=44 nodes=428129362 result=NO
+PART s=9 target=49 pd=3 idx=662 prefix=6,2,9 best=42 nodes=554222059 result=NO
+PART s=9 target=49 pd=3 idx=663 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=664 prefix=8,2,9 best=44 nodes=394050152 result=NO
+PART s=9 target=49 pd=3 idx=665 prefix=9,2,9 best=43 nodes=645713356 result=NO
+PART s=9 target=49 pd=3 idx=666 prefix=1,3,9 best=42 nodes=375014336 result=NO
+PART s=9 target=49 pd=3 idx=667 prefix=2,3,9 best=42 nodes=406386197 result=NO
+PART s=9 target=49 pd=3 idx=668 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=669 prefix=4,3,9 best=42 nodes=616024260 result=NO
+PART s=9 target=49 pd=3 idx=67 prefix=5,8,1 best=44 nodes=240419160 result=NO
+PART s=9 target=49 pd=3 idx=670 prefix=5,3,9 best=42 nodes=643351161 result=NO
+PART s=9 target=49 pd=3 idx=671 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=672 prefix=7,3,9 best=43 nodes=522150081 result=NO
+PART s=9 target=49 pd=3 idx=673 prefix=8,3,9 best=42 nodes=573132840 result=NO
+PART s=9 target=49 pd=3 idx=674 prefix=9,3,9 best=44 nodes=964306107 result=NO
+PART s=9 target=49 pd=3 idx=675 prefix=1,4,9 best=42 nodes=328209387 result=NO
+PART s=9 target=49 pd=3 idx=676 prefix=2,4,9 best=44 nodes=364240116 result=NO
+PART s=9 target=49 pd=3 idx=677 prefix=3,4,9 best=46 nodes=578486037 result=NO
+PART s=9 target=49 pd=3 idx=678 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=679 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=68 prefix=6,8,1 best=44 nodes=324649634 result=NO
+PART s=9 target=49 pd=3 idx=680 prefix=6,4,9 best=42 nodes=423331167 result=NO
+PART s=9 target=49 pd=3 idx=681 prefix=7,4,9 best=42 nodes=405988840 result=NO
+PART s=9 target=49 pd=3 idx=682 prefix=8,4,9 best=43 nodes=522266298 result=NO
+PART s=9 target=49 pd=3 idx=683 prefix=9,4,9 best=44 nodes=728821740 result=NO
+PART s=9 target=49 pd=3 idx=684 prefix=1,5,9 best=43 nodes=521994863 result=NO
+PART s=9 target=49 pd=3 idx=685 prefix=2,5,9 best=42 nodes=550955684 result=NO
+PART s=9 target=49 pd=3 idx=686 prefix=3,5,9 best=43 nodes=707175449 result=NO
+PART s=9 target=49 pd=3 idx=687 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=688 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=689 prefix=6,5,9 best=42 nodes=505390656 result=NO
+PART s=9 target=49 pd=3 idx=69 prefix=7,8,1 best=45 nodes=456614287 result=NO
+PART s=9 target=49 pd=3 idx=690 prefix=7,5,9 best=43 nodes=637295982 result=NO
+PART s=9 target=49 pd=3 idx=691 prefix=8,5,9 best=43 nodes=587259876 result=NO
+PART s=9 target=49 pd=3 idx=692 prefix=9,5,9 best=44 nodes=1003307469 result=NO
+PART s=9 target=49 pd=3 idx=693 prefix=1,6,9 best=42 nodes=658224579 result=NO
+PART s=9 target=49 pd=3 idx=694 prefix=2,6,9 best=42 nodes=561808788 result=NO
+PART s=9 target=49 pd=3 idx=695 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=696 prefix=4,6,9 best=43 nodes=422873042 result=NO
+PART s=9 target=49 pd=3 idx=697 prefix=5,6,9 best=43 nodes=499694129 result=NO
+PART s=9 target=49 pd=3 idx=698 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=699 prefix=7,6,9 best=44 nodes=625642950 result=NO
+PART s=9 target=49 pd=3 idx=7 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=70 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=700 prefix=8,6,9 best=43 nodes=696758935 result=NO
+PART s=9 target=49 pd=3 idx=701 prefix=9,6,9 best=46 nodes=1041100343 result=NO
+PART s=9 target=49 pd=3 idx=702 prefix=1,7,9 best=43 nodes=793160194 result=NO
+PART s=9 target=49 pd=3 idx=703 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=704 prefix=3,7,9 best=43 nodes=642551517 result=NO
+PART s=9 target=49 pd=3 idx=705 prefix=4,7,9 best=42 nodes=510203497 result=NO
+PART s=9 target=49 pd=3 idx=706 prefix=5,7,9 best=44 nodes=722270521 result=NO
+PART s=9 target=49 pd=3 idx=707 prefix=6,7,9 best=44 nodes=756034700 result=NO
+PART s=9 target=49 pd=3 idx=708 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=709 prefix=8,7,9 best=43 nodes=980538269 result=NO
+PART s=9 target=49 pd=3 idx=71 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=710 prefix=9,7,9 best=44 nodes=1200632845 result=NO
+PART s=9 target=49 pd=3 idx=711 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=712 prefix=2,8,9 best=43 nodes=423965318 result=NO
+PART s=9 target=49 pd=3 idx=713 prefix=3,8,9 best=43 nodes=642683627 result=NO
+PART s=9 target=49 pd=3 idx=714 prefix=4,8,9 best=42 nodes=634298945 result=NO
+PART s=9 target=49 pd=3 idx=715 prefix=5,8,9 best=43 nodes=597032583 result=NO
+PART s=9 target=49 pd=3 idx=716 prefix=6,8,9 best=46 nodes=762021049 result=NO
+PART s=9 target=49 pd=3 idx=717 prefix=7,8,9 best=46 nodes=847800082 result=NO
+PART s=9 target=49 pd=3 idx=718 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=719 prefix=9,8,9 best=48 nodes=1073811644 result=NO
+PART s=9 target=49 pd=3 idx=72 prefix=1,9,1 best=44 nodes=150918587 result=NO
+PART s=9 target=49 pd=3 idx=720 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=721 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=722 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=723 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=724 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=725 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=726 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=727 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=728 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=73 prefix=2,9,1 best=44 nodes=330612980 result=NO
+PART s=9 target=49 pd=3 idx=74 prefix=3,9,1 best=44 nodes=326267544 result=NO
+PART s=9 target=49 pd=3 idx=75 prefix=4,9,1 best=42 nodes=252826578 result=NO
+PART s=9 target=49 pd=3 idx=76 prefix=5,9,1 best=42 nodes=370445861 result=NO
+PART s=9 target=49 pd=3 idx=77 prefix=6,9,1 best=45 nodes=382708820 result=NO
+PART s=9 target=49 pd=3 idx=78 prefix=7,9,1 best=42 nodes=361690262 result=NO
+PART s=9 target=49 pd=3 idx=79 prefix=8,9,1 best=43 nodes=604260415 result=NO
+PART s=9 target=49 pd=3 idx=8 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=80 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=81 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=82 prefix=2,1,2 best=42 nodes=167066831 result=NO
+PART s=9 target=49 pd=3 idx=83 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=84 prefix=4,1,2 best=40 nodes=134205366 result=NO
+PART s=9 target=49 pd=3 idx=85 prefix=5,1,2 best=43 nodes=246098770 result=NO
+PART s=9 target=49 pd=3 idx=86 prefix=6,1,2 best=43 nodes=287518518 result=NO
+PART s=9 target=49 pd=3 idx=87 prefix=7,1,2 best=42 nodes=213808360 result=NO
+PART s=9 target=49 pd=3 idx=88 prefix=8,1,2 best=43 nodes=282615605 result=NO
+PART s=9 target=49 pd=3 idx=89 prefix=9,1,2 best=43 nodes=259896880 result=NO
+PART s=9 target=49 pd=3 idx=9 prefix=1,2,1 best=43 nodes=174057511 result=NO
+PART s=9 target=49 pd=3 idx=90 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=91 prefix_infeasible_at_gap 1 best=2 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=92 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=93 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=94 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=95 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=96 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=97 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=98 prefix_infeasible_at_gap 2 best=3 nodes=0 result=NO
+PART s=9 target=49 pd=3 idx=99 prefix=1,3,2 best=42 nodes=178118807 result=NO

@@ -1,0 +1,28 @@
+== s=2 target=5
+PART s=2 target=5 pd=0 idx=0 prefix= best=4 nodes=7 result=NO
+== s=2 target=4
+FOUND 4-element set: 0 1 3 4
+PART s=2 target=4 pd=0 idx=0 prefix= best=4 nodes=4 result=YES
+== s=3 target=9
+PART s=3 target=9 pd=0 idx=0 prefix= best=8 nodes=34 result=NO
+== s=3 target=8
+FOUND 8-element set: 0 1 4 6 9 10 13 15
+PART s=3 target=8 pd=0 idx=0 prefix= best=8 nodes=11 result=YES
+== s=4 target=11
+PART s=4 target=11 pd=0 idx=0 prefix= best=10 nodes=311 result=NO
+== s=4 target=10
+FOUND 10-element set: 0 1 5 8 12 14 18 21 25 26
+PART s=4 target=10 pd=0 idx=0 prefix= best=10 nodes=63 result=YES
+== s=5 target=17
+PART s=5 target=17 pd=0 idx=0 prefix= best=16 nodes=5189 result=NO
+== s=5 target=16
+FOUND 16-element set: 0 1 4 6 10 15 18 22 27 28 31 33 37 42 45 49
+PART s=5 target=16 pd=0 idx=0 prefix= best=16 nodes=187 result=YES
+== s=6 target=22
+FOUND 22-element set: 0 3 8 12 18 22 25 30 34 40 45 51 53 59 64 70 71 74 79 85 86 92
+PART s=6 target=22 pd=0 idx=0 prefix= best=22 nodes=95003 result=YES
+== s=6 target=21
+FOUND 21-element set: 0 1 6 7 10 15 17 22 25 31 36 42 46 51 54 58 64 68 73 76 81
+PART s=6 target=21 pd=0 idx=0 prefix= best=21 nodes=18578 result=YES
+== s=6 target=23
+PART s=6 target=23 pd=0 idx=0 prefix= best=22 nodes=257386 result=NO

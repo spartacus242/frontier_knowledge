@@ -1,0 +1,9 @@
+s=6 N=22 L=126 vars=2564 clauses=16762
+SAT result for 'exists 22-element 3-AP-free set with gaps<=6': True  (0.5s)
+witness: [0, 6, 9, 13, 19, 21, 27, 31, 37, 40, 46, 51, 57, 60, 66, 70, 76, 78, 84, 88, 91, 97]
+witness verified
+s=6 N=23 L=132 vars=2796 clauses=18374
+SAT result for 'exists 23-element 3-AP-free set with gaps<=6': False  (1.6s)
+s=7 N=33 L=224 vars=6786 clauses=50708
+SAT result for 'exists 33-element 3-AP-free set with gaps<=7': False  (25.7s)
+s=8 N=37 L=288 vars=9902 clauses=81364

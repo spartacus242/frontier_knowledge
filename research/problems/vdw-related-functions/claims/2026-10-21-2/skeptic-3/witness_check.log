@@ -1,0 +1,6 @@
+n = 48
+gaps = [8, 1, 8, 6, 8, 9, 7, 9, 8, 9, 6, 5, 9, 8, 9, 7, 9, 8, 6, 8, 9, 8, 7, 4, 7, 8, 9, 8, 6, 8, 9, 7, 9, 8, 9, 5, 1, 5, 9, 8, 9, 7, 9, 8, 6, 8, 9]
+max gap = 9  min gap = 1
+3-APs found: []
+Translated to start at 1: [1, 9, 10, 18, 24] ...
+WITNESS OK: 48 elements, all consecutive gaps <= 9, no 3-term arithmetic progression.

@@ -1,0 +1,10 @@
+== s=7 target=33
+PART s=7 target=33 pd=0 idx=0 prefix= best=32 nodes=9699464 result=NO
+== s=7 target=32
+FOUND 32-element set: 0 1 8 14 21 26 33 39 43 46 50 56 63 68 75 81 88 89 96 102 109 114 121 127 131 134 138 144 151 156 163 169
+PART s=7 target=32 pd=0 idx=0 prefix= best=32 nodes=1187704 result=YES
+== s=8 target=37
+PART s=8 target=37 pd=0 idx=0 prefix= best=36 nodes=987327046 result=NO
+== s=8 target=36
+FOUND 36-element set: 0 1 5 13 16 20 23 28 34 42 49 57 62 66 73 74 81 87 95 102 110 115 121 129 136 144 150 153 160 165 172 175 182 183 187 195
+PART s=8 target=36 pd=0 idx=0 prefix= best=36 nodes=30431978 result=YES

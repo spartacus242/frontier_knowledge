@@ -123,3 +123,21 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
 - **Ideas for next run:** M(3,7)/G(3,9) at 48 need a better method than plain cubes: e.g. G via a DFS that also uses the
   reversal symmetry and a "remaining length" bound, or an order/ladder encoding for M. The novelty blocker for the 04:52
   claim (the book) needs a human with the book; ask Jace. Otherwise consider a different problem.
+
+### 20:53 UTC (scheduled run; ran into 2026-10-22 UTC through four container restarts)
+- **Problem:** G(3,9) in BLR Table 1 (arXiv:0706.4420), printed 48.
+- **Frozen definition:** unchanged from 04:52 (exact value of a wrong or "?" k = 3 M/G entry, witness + exhaustive
+  impossibility, unpublished).
+- **Approaches (verdicts):**
+  1. Forward-checking search split on the first two gaps (`code/fcp.c`, `code/runfcp.sh`, 81 resumable cubes): at T = 48,
+     2 cubes FOUND a 48-element gap-9 3-AP-free set (mirror images); at T = 49 all 81 NONE. About 4 CPU-h each.
+  2. Independent plain backtracking without forward checking (`code/btv2.c`, `code/btp.c`, `code/bt_res/`, `code/btp_res/`):
+     maximum 48 exactly, only for first gaps (8,1) and (9,8). Agrees with 1.
+  3. Skeptic gate, claim 2026-10-21-2 "G(3,9) = 49": 3 of 3 SIGN-OFF.
+  (Earlier SAT cube runs and local search from the 08:53 run were abandoned for this; the M(3,7) work did not continue.)
+- **Label:** CONFIRMED. G(3,9) = 49, correcting the printed 48. Skeptics: SIGN-OFF (default model), SIGN-OFF (Sonnet),
+  SIGN-OFF (Fable). Shared caveat: the Landman-Robertson book text could not be read.
+- **Code/data:** `problems/vdw-related-functions/` (`witness/G_s9_48elements.txt`, `claims/2026-10-21-2/`, code above).
+- **Ideas for next run:** M(3,7) (printed 48) with the same split forward-checking search (`code/fcpm.c` forces the first
+  block offsets; validated on M(3,4)); then G(3,10), the first "?" entry. The 04:52 claim (M(3,4..6), G(3,6)) could go to a new
+  gate with the journal-version finding added to its packet.

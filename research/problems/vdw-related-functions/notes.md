@@ -188,3 +188,5 @@ out to equal the printed 48, that is a sub-result (printed value confirmed), not
    `code/btp_res/`; finer split because the container restarted twice mid-run): maximum 47 (first gap 1), 45 (2, 4, 5),
    and 48 only for first gaps (8,1) and (9,8). So the maximum is 48 and G(3,9) = 49, agreeing with approach 1 cube by cube.
 4. **Skeptic gate, claim 2026-10-21-2: G(3,9) = 49 (printed 48).**
+   **Outcome: 3 of 3 SIGN-OFF (default model, Sonnet, Fable), each with its own exhaustive search; CONFIRMED.**
+   See `claims/2026-10-21-2/gate.md`. Shared caveat: the Landman-Robertson book text was not readable.

@@ -225,3 +225,9 @@ then needs the next size impossible. If none exists, M(3,7) <= 48, and with a 47
    RESULT T = 50: after 94 of 343 cubes, cube (6,4,6) FOUND a 50-block choice (re-checked; `witness/M_s7_50blocks.txt`).
    So M(3,7) >= 51. (The 49-block witness's cube (0,2,1) has maximum exactly 49: NONE at T = 50..53.) T = 50 run stopped.
    T = 51: cube (6,4,6) NONE (1.0e9 nodes); full T = 51 split running (`runfcpm.sh` forward, `runfcpm_rev.sh` from the end).
+   RESULT T = 51: all 343 cubes NONE (every result file carries a verdict). With the 50-block witness, the forward-checking
+   search gives **M(3,7) = 51** (printed 48). This rests on ONE program (`fcpm.c`) so far: needs an independent exhaustive
+   check and the skeptic gate before it counts.
+3. Correction to the 2026-10-21 explanation of the errors: the "x_1 = 0" shortcut reproduces the printed M row only for
+   s <= 6. At s = 7 the true value is at least 51 and a 48-block choice with x_1 = 0 exists, so whatever produced the printed
+   48 was not that shortcut alone. The G-row explanation (first gap 1) still matches every printed G entry.

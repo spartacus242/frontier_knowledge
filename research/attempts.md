@@ -141,3 +141,23 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
 - **Ideas for next run:** M(3,7) (printed 48) with the same split forward-checking search (`code/fcpm.c` forces the first
   block offsets; validated on M(3,4)); then G(3,10), the first "?" entry. The 04:52 claim (M(3,4..6), G(3,6)) could go to a new
   gate with the journal-version finding added to its packet.
+
+## 2026-10-22
+
+### 08:53 UTC (scheduled run; ran until 20:35 UTC)
+- **Problem:** M(3,7) in BLR Table 1 (arXiv:0706.4420), printed 48.
+- **Frozen definition:** unchanged from 2026-10-21 04:52.
+- **Approaches (verdicts):**
+  1. Split forward-checking search on the first three block offsets (`code/fcpm.c`, `code/runfcpm.sh`, `runfcpm_rev.sh`,
+     343 resumable cubes, `code/fcpm_res/`): FOUND at T = 48, 49 and 50 (witnesses in `witness/M_s7_48blocks.txt`,
+     `witness/M_s7_50blocks.txt`, all re-checked by brute force); T = 51 all 343 cubes NONE (about 8 h on 4 cores).
+  2. Driver bug found and fixed: a killed cube could leave a result file with no verdict. All result files re-checked.
+- **Label:** PROMISING (not verified). M(3,7) >= 51 is certain from the witness (printed 48 is wrong); M(3,7) = 51 rests on one
+  exhaustive program, with no independent check and no skeptic gate yet.
+- **Correction to an earlier record:** the 2026-10-21 summaries said the printed M and G rows come out exactly from a
+  search that fixes the first element (M) or first gap (G). That holds for M only up to s = 6: at s = 7 a 48-block choice
+  with x_1 = 0 exists, so the shortcut does not explain the printed M(3,7) = 48. The G explanation still holds through s = 9.
+- **Code/data:** `problems/vdw-related-functions/` (`code/fcpm.c`, `code/runfcpm*.sh`, `code/fcpm_res/`, `witness/`).
+- **Ideas for next run:** an independent exhaustive check of T = 51 (a separately written search, ideally faster, e.g. using
+  the reflection symmetry x -> 51*7-1-x to halve it), then a skeptic gate on "M(3,7) = 51". Budget: about 30 CPU-hours per
+  independent check with the current method, so skeptics need a faster method or the result stays PROMISING.

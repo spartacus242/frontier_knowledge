@@ -222,3 +222,6 @@ then needs the next size impossible. If none exists, M(3,7) <= 48, and with a 47
 2. M(3,7) at T = 49 by the same split (running).
    RESULT T = 49: cubes (0,2,1) and (0,2,3) FOUND again: a 49-block choice (re-checked; it extends the 48-block witness by
    336). So M(3,7) >= 50. T = 49 run stopped after 20 cubes; probing T = 50..53 in cube (0,2,1) and running the T = 50 split.
+   RESULT T = 50: after 94 of 343 cubes, cube (6,4,6) FOUND a 50-block choice (re-checked; `witness/M_s7_50blocks.txt`).
+   So M(3,7) >= 51. (The 49-block witness's cube (0,2,1) has maximum exactly 49: NONE at T = 50..53.) T = 50 run stopped.
+   T = 51: cube (6,4,6) NONE (1.0e9 nodes); full T = 51 split running (`runfcpm.sh` forward, `runfcpm_rev.sh` from the end).

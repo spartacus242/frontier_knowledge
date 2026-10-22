@@ -1,0 +1,1 @@
+RESULT S=9 N=49 D=9 part=818/1000 found=0 nodes=57140625 prefixes=1716873 pruned=24192318 maxdepth=37

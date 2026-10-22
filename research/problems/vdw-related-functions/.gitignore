@@ -20,3 +20,7 @@ code/fcpm
 code/bt_res/*.tmp
 code/btp
 code/btp_res/*.tmp
+claims/*/skeptic-*/dfs
+claims/*/skeptic-*/dfs2
+claims/*/skeptic-*/g3s
+__pycache__/

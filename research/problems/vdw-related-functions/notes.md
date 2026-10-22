@@ -211,3 +211,12 @@ then needs the next size impossible. If none exists, M(3,7) <= 48, and with a 47
 ## Approaches (08:53 run)
 1. `code/runfcpm.sh` (343 cubes on the first three offsets, results in `code/fcpm_res/`), validated on M(3,4): all 64 cubes
    NONE at T = 19, 4 FOUND at T = 18. Running M(3,7) at T = 48.
+   RESULT T = 48: after 17 cubes, cubes (0,2,1) and (0,2,3) FOUND a 48-block 3-AP-free choice (re-checked by brute force;
+   `witness/M_s7_48blocks.txt`). So M(3,7) >= 49 and the printed 48 is WRONG. The T = 48 run was stopped there.
+   **This contradicts the search-shortcut hypothesis for M:** the witness has x_1 = 0, so a search fixing x_1 = 0 would have
+   found 48 blocks and printed at least 49. The hypothesis matched every printed M entry for s <= 6 and every G entry for
+   s <= 9, but it does not explain M(3,7) = 48; the 2007 search may simply have been cut short there. Mechanism: unknown for M(3,7).
+   Bug found and fixed in the drivers: a killed cube wrote a result file with no verdict (`r` empty). Eight such files for
+   T = 48 were deleted; `runfcpm.sh` and `runfcp.sh` now write only non-empty results. All G(3,9) result files were checked
+   and every one carries a NONE or FOUND verdict, so the G(3,9) result is unaffected.
+2. M(3,7) at T = 49 by the same split (running).

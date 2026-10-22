@@ -25,3 +25,7 @@ claims/*/skeptic-*/dfs2
 claims/*/skeptic-*/g3s
 __pycache__/
 code/fcpm_res/*.tmp
+code/mb
+code/mrv
+code/mrv_res/*.tmp
+claims/*/skeptic-*/*.bin

@@ -1,0 +1,1 @@
+mrv s=6 T=38 fixed=17:1,18:5,19:0,20:1, NONE nodes=65724 secs=0

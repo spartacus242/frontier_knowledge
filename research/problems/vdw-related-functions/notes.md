@@ -190,3 +190,24 @@ out to equal the printed 48, that is a sub-result (printed value confirmed), not
 4. **Skeptic gate, claim 2026-10-21-2: G(3,9) = 49 (printed 48).**
    **Outcome: 3 of 3 SIGN-OFF (default model, Sonnet, Fable), each with its own exhaustive search; CONFIRMED.**
    See `claims/2026-10-21-2/gate.md`. Shared caveat: the Landman-Robertson book text was not readable.
+
+---
+
+# Session 2026-10-22 (08:53 UTC run)
+
+## Why tractable now
+The split forward-checking search settled G(3,9) = 49 in about 4 CPU-hours per size (claim 2026-10-21-2, CONFIRMED). The same
+idea applies to M(3,7) (printed 48): `code/fcpm.c` forces the offsets of the first blocks, and splitting on three offsets gives
+343 independent, resumable cubes, each short enough to survive the hourly container restarts. Calibration: M(3,6) at T = 38 splits
+into cubes of about 1e7 nodes each.
+
+Status check 2026-10-22 08:53: nothing new since the 2026-10-21 runs (all searches listed there). No reply yet on the
+Landman-Robertson book.
+
+## Frozen definition of "solved" (this session)
+Unchanged from 2026-10-21. Target: M(3,7). If a 48-block choice exists, M(3,7) >= 49 and the printed 48 is wrong; the exact value
+then needs the next size impossible. If none exists, M(3,7) <= 48, and with a 47-block witness the printed 48 stands (sub-result).
+
+## Approaches (08:53 run)
+1. `code/runfcpm.sh` (343 cubes on the first three offsets, results in `code/fcpm_res/`), validated on M(3,4): all 64 cubes
+   NONE at T = 19, 4 FOUND at T = 18. Running M(3,7) at T = 48.

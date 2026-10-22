@@ -183,3 +183,8 @@ out to equal the printed 48, that is a sub-result (printed value confirmed), not
    set with every gap <= 9 (`witness/G_s9_48elements.txt`, re-checked by brute force). So G(3,9) >= 49 and the printed 48 is
    WRONG. 14,200 CPU-s in total.
 2. G(3,9) at T = 49 by the same split search (running).
+3. **Independent recheck of G(3,9) by plain backtracking** (no forward checking; `code/btv2.c` with x_2 forced for first gaps
+   1, 2, 4, 5 in `code/bt_res/`, and `code/btp.c` with the first two gaps forced for first gaps 3, 6, 7, 8, 9 in
+   `code/btp_res/`; finer split because the container restarted twice mid-run): maximum 47 (first gap 1), 45 (2, 4, 5),
+   and 48 only for first gaps (8,1) and (9,8). So the maximum is 48 and G(3,9) = 49, agreeing with approach 1 cube by cube.
+4. **Skeptic gate, claim 2026-10-21-2: G(3,9) = 49 (printed 48).**

@@ -27,3 +27,8 @@ progression, and there is no such set of 49 integers.
 Claimed: no 3-AP-free set of 49 integers with all consecutive gaps ≤ 9 exists. This is a finite search (translate so x_1 = 0;
 then all elements lie in [0, 432]). Reproduce it with your own exhaustive method. Expect it to need on the order of a few CPU-hours
 for a straightforward backtracking search in C; splitting the search into independent parts and running them in parallel helps.
+
+## Practical note for skeptics
+This machine has 4 cores shared with other skeptics, and it has been restarting roughly once an hour, killing running processes
+(files on disk survive). Keep each process short (well under 30 minutes), write each part's result to its own file as soon as
+it finishes, and make your runs resumable so that a restart costs at most the parts in flight.

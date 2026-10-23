@@ -1,0 +1,1 @@
+gm s=8 T=36 fix=8/3,4/2, NONE nodes=12175 secs=0

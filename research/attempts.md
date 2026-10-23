@@ -217,7 +217,7 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
 - **Problem:** G(3,10) in BLR Table 1 (arXiv:0706.4420), "?" in print; lower bound 55 from the 08:53 run.
 - **Frozen definition:** unchanged from 2026-10-23 08:53.
 - **Approaches (verdicts):**
-  1. Exact least spans of gap-bounded 3-AP-free sets, H_10(1..28) (`code/hmin.c`, validated on s = 4, 5): within ~5% of Lmin.
+  1. Exact least spans of gap-bounded 3-AP-free sets, H_10(1..29) (`code/hmin.c`, validated on s = 4, 5): within ~5% of Lmin.
   2. That bound in gm.c: no speed-up (732 s vs 730 s on the same cube). Ruled out, high confidence.
   3. Hole refilling (`code/regrow.c`): 54 -> 55 -> 56 elements. **G(3,10) >= 57** (`witness/G_s10_56elements*.txt`, checked).
      Sanity: on s = 9 it finds nothing past the known maximum 48.

@@ -306,8 +306,8 @@ Unchanged from 2026-10-23 08:53 (target G(3,10); a witness alone is a sub-result
 
 ## Approaches (20:53 run)
 1. `code/hmin.c`: H_10(k), the least N with a k-element 3-AP-free subset of N consecutive integers with all gaps <= 10.
-   Validated: H_4 and H_5 stop exactly at G(3,4) = 11 and G(3,5) = 17. H_10(1..28) in `code/hmin10.out` (k = 29 did not finish
-   in 50 min); it first exceeds Lmin at k = 16 (45 vs 41) and stays within about 5% of it.
+   Validated: H_4 and H_5 stop exactly at G(3,4) = 11 and G(3,5) = 17. H_10(1..29) in `code/hmin10.out` (stopped after k = 29;
+   the gm test used the 1..28 snapshot); it first exceeds Lmin at k = 16 (45 vs 41) and stays within about 5% of it.
 2. That bound in gm.c (`code/mergeLM.py` -> `code/lm_s10.txt`): no gain. T = 55 cube (1,2): 8.93e8 nodes, 732 s, against
    9.05e8 nodes, 730 s with plain Lmin (`code/gm10/cube12_lms10.txt`). Ruled out as a speed-up, high confidence.
 3. `code/regrow.c` hole refilling (exhaustive per hole, node cap per hole): from the 54-element witness, holes up to 30: two

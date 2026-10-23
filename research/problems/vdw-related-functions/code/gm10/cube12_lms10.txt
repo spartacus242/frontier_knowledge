@@ -1,0 +1,2 @@
+gm s=10 T=55 fix=1/2, NONE nodes=892995585
+exit 0 732s

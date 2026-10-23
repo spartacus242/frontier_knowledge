@@ -293,3 +293,29 @@ that v integers are impossible, not published elsewhere. A witness alone is a su
    15 min cap. Stopped: at that rate the full T = 55 decision is roughly 30-80 CPU-hours, too much for one run or a skeptic.
 7. Witness hunt at T = 55 with four different search orders (GM_ORD 0 and 2, GM_SEED 7 and 11), 50 min each: none found.
    So the best lower bound this run is G(3,10) >= 55.
+
+# Session 2026-10-23 20:53 UTC
+
+## Why tractable now
+The 08:53 run left G(3,10) >= 55 with a systematic search that stalls at 55 elements. Two new angles: local search (remove a
+run of consecutive elements and exhaustively refill the hole with one more), and a sharper span bound for the exhaustive
+search (exact least spans of gap-bounded 3-AP-free sets). Status: unchanged since 08:53 (no source gives G(3,10)).
+
+## Frozen definition of "solved" (this session)
+Unchanged from 2026-10-23 08:53 (target G(3,10); a witness alone is a sub-result).
+
+## Approaches (20:53 run)
+1. `code/hmin.c`: H_10(k), the least N with a k-element 3-AP-free subset of N consecutive integers with all gaps <= 10.
+   Validated: H_4 and H_5 stop exactly at G(3,4) = 11 and G(3,5) = 17. H_10(1..28) in `code/hmin10.out` (k = 29 did not finish
+   in 50 min); it first exceeds Lmin at k = 16 (45 vs 41) and stays within about 5% of it.
+2. That bound in gm.c (`code/mergeLM.py` -> `code/lm_s10.txt`): no gain. T = 55 cube (1,2): 8.93e8 nodes, 732 s, against
+   9.05e8 nodes, 730 s with plain Lmin (`code/gm10/cube12_lms10.txt`). Ruled out as a speed-up, high confidence.
+3. `code/regrow.c` hole refilling (exhaustive per hole, node cap per hole): from the 54-element witness, holes up to 30: two
+   different 55-element sets (`witness/G_s10_55elements*.txt`); from those, two 56-element sets (`witness/G_s10_56elements*.txt`).
+   **G(3,10) >= 57.** All re-checked by `code/checkG.py`. Sanity check on s = 9: from the 48-element G(3,9) witness, holes up to
+   30 find nothing, as G(3,9) = 49 requires.
+4. `code/climb.sh` (repeat refilling on the set and its mirror image until stuck), from four starts (both 56-element sets and
+   the 52- and 53-element witnesses of 08:53): all four stop at exactly 56 (`code/climb10*/`, `code/climb10*.log`).
+   Holes of 31-45 on the first 56-element set: see below.
+5. Plateau moves (refill a hole with the same count but a different content, random holes, `REGROW_SEED`, `SAME`): no
+   alternative refill for any hole up to 14 elements in the 56-element set: the sets are locally rigid.

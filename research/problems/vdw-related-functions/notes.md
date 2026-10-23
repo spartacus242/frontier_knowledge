@@ -319,3 +319,6 @@ Unchanged from 2026-10-23 08:53 (target G(3,10); a witness alone is a sub-result
    Holes of 31-45 on the first 56-element set: see below.
 5. Plateau moves (refill a hole with the same count but a different content, random holes, `REGROW_SEED`, `SAME`): no
    alternative refill for any hole up to 14 elements in the 56-element set: the sets are locally rigid.
+   RESULT: holes of 31-45 on the first 56-element set: nothing (`code/regrow_out/w56a_big.txt`).
+6. Cost sample for the exhaustive check at T = 57 (gm, plain Lmin): cube (1,2) NONE in 734 s (8.2e8 nodes); cubes (3,7) and
+   (5,9) unfinished at 1500 s. So a full T = 57 decision (55 canonical cubes) is again tens of CPU-hours.

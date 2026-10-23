@@ -212,3 +212,22 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
   rewrite of gm (2-3x), a gap-bounded analogue of Lmin (least span of a k-element 3-AP-free set with gaps <= 10, likely far
   above Lmin for large k, judging by the witness), or a SAT/cube hybrid on the hardest cubes. Witness side: a 55-element set
   may still exist; try local search seeded from the 54-element witness. The book remains the blocker for the earlier claims.
+
+### 20:53 UTC (scheduled run)
+- **Problem:** G(3,10) in BLR Table 1 (arXiv:0706.4420), "?" in print; lower bound 55 from the 08:53 run.
+- **Frozen definition:** unchanged from 2026-10-23 08:53.
+- **Approaches (verdicts):**
+  1. Exact least spans of gap-bounded 3-AP-free sets, H_10(1..28) (`code/hmin.c`, validated on s = 4, 5): within ~5% of Lmin.
+  2. That bound in gm.c: no speed-up (732 s vs 730 s on the same cube). Ruled out, high confidence.
+  3. Hole refilling (`code/regrow.c`): 54 -> 55 -> 56 elements. **G(3,10) >= 57** (`witness/G_s10_56elements*.txt`, checked).
+     Sanity: on s = 9 it finds nothing past the known maximum 48.
+  4. Repeated refilling from four different starts (`code/climb.sh`): all stop at exactly 56; holes up to 45 tried on one set.
+  5. Plateau moves (same-size refills): no alternative refill for any hole up to 14 elements; the sets are locally rigid.
+  6. Timing sample for the T = 57 exhaustive check: one cube 734 s, two over 1500 s; tens of CPU-hours in all. Not run.
+- **Label:** PROMISING (sub-result): G(3,10) >= 57, up from 55 this morning; four independent climbs stopping at 56 suggest
+  G(3,10) = 57, but there is no impossibility proof. No skeptic gate (no full claim).
+- **Code/data:** `problems/vdw-related-functions/` (`code/hmin.c`, `code/hmin10.out`, `code/mergeLM.py`, `code/lm_s10.txt`,
+  `code/regrow.c`, `code/climb.sh`, `code/climb10*/`, `code/regrow_out/`, `witness/G_s10_5[56]elements*.txt`).
+- **Ideas for next run:** the exact value needs an exhaustive "no 57-element set" check, tens of CPU-hours with gm. Options:
+  run it across runs as resumable cubes (results persist in `code/gm_res/`), or find a stronger pruning idea first (a bitset
+  gm for 2-3x; a SAT solver on the hardest cubes). Otherwise turn to another table entry.

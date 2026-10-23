@@ -1,0 +1,4 @@
+REPRODUCED: YES - witness checked (50 elements, correct blocks, no 3-AP); own forward-checking CSP search (validated vs plain backtracking and SAT for s=2..6) refutes all 196 symmetry-reduced cubes for s=7, n=51, so M(3,7)=51.
+NOVEL: UNSURE (leaning yes) - no reachable source gives M(3,7)=51 or corrects the arXiv Table 1 row (journal version dropped M; Fox-Schildkraut 2026 and Nathanson 1980 give no values), but OEIS sequence search and the full text of Landman-Robertson 2nd ed. (2014) were blocked and could not be checked.
+HONEST: YES - exact printed definition (blocks [7(i-1),7i-1], k=3), explicit 50-element witness plus exhaustive impossibility for 51; goal not narrowed or weakened.
+REJECT - The math reproduces, but I could not reach two required sources (Landman-Robertson 2nd ed. and OEIS), so novelty is not a clear YES; sign off once those are checked.

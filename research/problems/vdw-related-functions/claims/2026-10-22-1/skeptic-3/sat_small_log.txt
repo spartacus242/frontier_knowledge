@@ -1,0 +1,84 @@
+RESULT 2 5 SAT solver=cadical153 clauses=30 time=0.0s sol: 0 2 5 6 9
+RESULT 2 6 SAT solver=cadical153 clauses=42 time=0.0s sol: 0 2 5 6 9 11
+RESULT 2 7 UNSAT solver=cadical153 clauses=56 time=0.0s
+RESULT 3 5 SAT solver=cadical153 clauses=69 time=0.0s sol: 0 3 7 9 12
+RESULT 3 6 SAT solver=cadical153 clauses=96 time=0.0s sol: 0 3 7 9 12 16
+RESULT 3 7 SAT solver=cadical153 clauses=128 time=0.0s sol: 0 3 7 9 12 16 19
+RESULT 3 8 SAT solver=cadical153 clauses=164 time=0.0s sol: 1 3 7 10 14 16 20 23
+RESULT 3 9 SAT solver=cadical153 clauses=205 time=0.0s sol: 0 5 7 11 12 16 18 23
+RESULT 3 10 SAT solver=cadical153 clauses=250 time=0.0s sol: 0 3 8 10 14 15 19 2
+RESULT 3 11 UNSAT solver=cadical153 clauses=300 time=0.0s
+RESULT 4 5 SAT solver=cadical153 clauses=125 time=0.0s sol: 0 4 9 12 16
+RESULT 4 6 SAT solver=cadical153 clauses=174 time=0.0s sol: 0 4 9 12 16 21
+RESULT 4 7 SAT solver=cadical153 clauses=231 time=0.0s sol: 0 4 9 12 16 21 25
+RESULT 4 8 SAT solver=cadical153 clauses=296 time=0.0s sol: 0 4 9 12 16 21 25 31
+RESULT 4 9 SAT solver=cadical153 clauses=369 time=0.0s sol: 0 4 9 12 16 21 25 31
+RESULT 4 10 SAT solver=cadical153 clauses=450 time=0.0s sol: 0 4 9 12 16 21 25 3
+RESULT 4 11 SAT solver=cadical153 clauses=539 time=0.0s sol: 0 4 9 12 16 21 25 3
+RESULT 4 12 SAT solver=cadical153 clauses=636 time=0.0s sol: 0 4 9 12 16 21 25 3
+RESULT 4 13 SAT solver=cadical153 clauses=741 time=0.0s sol: 0 4 9 12 16 21 25 3
+RESULT 4 14 SAT solver=cadical153 clauses=854 time=0.0s sol: 3 7 10 15 19 22 24 
+RESULT 4 15 SAT solver=cadical153 clauses=975 time=0.0s sol: 2 4 11 12 19 23 24 
+RESULT 4 16 SAT solver=cadical153 clauses=1104 time=0.0s sol: 3 5 8 14 17 21 27 
+RESULT 4 17 SAT solver=cadical153 clauses=1241 time=0.0s sol: 2 4 10 12 17 21 27
+RESULT 4 18 SAT solver=cadical153 clauses=1386 time=0.0s sol: 2 5 10 12 16 21 24
+RESULT 4 19 UNSAT solver=cadical153 clauses=1539 time=0.0s
+RESULT 5 5 SAT solver=cadical153 clauses=199 time=0.0s sol: 0 5 11 15 20
+RESULT 5 6 SAT solver=cadical153 clauses=276 time=0.0s sol: 0 5 11 15 20 26
+RESULT 5 7 SAT solver=cadical153 clauses=366 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 8 SAT solver=cadical153 clauses=468 time=0.0s sol: 0 5 11 15 20 26 31 3
+RESULT 5 9 SAT solver=cadical153 clauses=583 time=0.0s sol: 0 5 11 15 20 26 31 3
+RESULT 5 10 SAT solver=cadical153 clauses=710 time=0.0s sol: 0 5 11 15 20 26 31 
+RESULT 5 11 SAT solver=cadical153 clauses=850 time=0.0s sol: 0 5 11 15 20 26 31 
+RESULT 5 12 SAT solver=cadical153 clauses=1002 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 13 SAT solver=cadical153 clauses=1167 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 14 SAT solver=cadical153 clauses=1344 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 15 SAT solver=cadical153 clauses=1534 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 16 SAT solver=cadical153 clauses=1736 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 17 SAT solver=cadical153 clauses=1951 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 18 SAT solver=cadical153 clauses=2178 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 19 SAT solver=cadical153 clauses=2418 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 20 SAT solver=cadical153 clauses=2670 time=0.0s sol: 0 5 11 15 20 26 31
+RESULT 5 21 SAT solver=cadical153 clauses=2935 time=0.0s sol: 0 5 14 15 22 27 34
+RESULT 5 22 SAT solver=cadical153 clauses=3212 time=0.0s sol: 2 7 10 16 20 27 32
+RESULT 5 23 SAT solver=cadical153 clauses=3502 time=0.0s sol: 1 8 12 19 21 28 32
+RESULT 5 24 SAT solver=cadical153 clauses=3804 time=0.0s sol: 0 8 10 17 21 28 30
+RESULT 5 25 SAT solver=cadical153 clauses=4119 time=0.0s sol: 0 9 12 19 23 28 31
+RESULT 5 26 SAT solver=cadical153 clauses=4446 time=0.2s sol: 3 8 14 17 24 29 32
+RESULT 5 27 SAT solver=cadical153 clauses=4786 time=0.0s sol: 3 8 11 15 21 26 33
+RESULT 5 28 SAT solver=cadical153 clauses=5138 time=0.1s sol: 3 7 10 15 21 28 30
+RESULT 5 29 SAT solver=cadical153 clauses=5503 time=0.1s sol: 2 7 10 17 21 28 30
+RESULT 5 30 SAT solver=cadical153 clauses=5880 time=0.0s sol: 3 6 11 15 21 26 33
+RESULT 5 31 UNSAT solver=cadical153 clauses=6270 time=4.3s
+RESULT 6 5 SAT solver=cadical153 clauses=290 time=0.0s sol: 0 6 13 18 24
+RESULT 6 6 SAT solver=cadical153 clauses=402 time=0.0s sol: 0 6 13 18 24 31
+RESULT 6 7 SAT solver=cadical153 clauses=532 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 8 SAT solver=cadical153 clauses=680 time=0.0s sol: 0 6 13 18 24 31 37 4
+RESULT 6 9 SAT solver=cadical153 clauses=846 time=0.0s sol: 0 6 13 18 24 31 37 4
+RESULT 6 10 SAT solver=cadical153 clauses=1030 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 11 SAT solver=cadical153 clauses=1232 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 12 SAT solver=cadical153 clauses=1452 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 13 SAT solver=cadical153 clauses=1690 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 14 SAT solver=cadical153 clauses=1946 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 15 SAT solver=cadical153 clauses=2220 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 16 SAT solver=cadical153 clauses=2512 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 17 SAT solver=cadical153 clauses=2822 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 18 SAT solver=cadical153 clauses=3150 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 19 SAT solver=cadical153 clauses=3496 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 20 SAT solver=cadical153 clauses=3860 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 21 SAT solver=cadical153 clauses=4242 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 22 SAT solver=cadical153 clauses=4642 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 23 SAT solver=cadical153 clauses=5060 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 24 SAT solver=cadical153 clauses=5496 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 25 SAT solver=cadical153 clauses=5950 time=0.0s sol: 0 6 13 18 24 31 37
+RESULT 6 26 SAT solver=cadical153 clauses=6422 time=0.0s sol: 5 8 12 23 26 31 37
+RESULT 6 27 SAT solver=cadical153 clauses=6912 time=0.0s sol: 1 11 14 18 29 32 3
+RESULT 6 28 SAT solver=cadical153 clauses=7420 time=0.0s sol: 1 7 14 19 26 35 36
+RESULT 6 29 SAT solver=cadical153 clauses=7946 time=0.0s sol: 4 10 13 18 25 34 4
+RESULT 6 30 SAT solver=cadical153 clauses=8490 time=0.0s sol: 3 8 17 19 24 34 38
+RESULT 6 31 SAT solver=cadical153 clauses=9052 time=0.0s sol: 2 8 13 22 25 30 40
+RESULT 6 32 SAT solver=cadical153 clauses=9632 time=0.1s sol: 4 7 12 23 27 35 36
+RESULT 6 33 SAT solver=cadical153 clauses=10230 time=0.0s sol: 5 11 15 23 26 32 
+RESULT 6 34 SAT solver=cadical153 clauses=10846 time=1.1s sol: 4 9 15 23 28 34 3
+RESULT 6 35 SAT solver=cadical153 clauses=11480 time=4.9s sol: 0 8 17 23 24 30 3
+RESULT 6 36 SAT solver=cadical153 clauses=12132 time=521.5s sol: 1 6 13 19 28 30

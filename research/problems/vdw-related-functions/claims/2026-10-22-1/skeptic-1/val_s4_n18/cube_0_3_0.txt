@@ -1,0 +1,1 @@
+s=4 n=18 UNSAT nodes=75

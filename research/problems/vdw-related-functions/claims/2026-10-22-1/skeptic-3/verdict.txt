@@ -1,0 +1,4 @@
+REPRODUCED: UNSURE (witness verified YES; own exhaustive search for n=51 incomplete at hand-back: 4/49 parts done, all UNSAT so far, no SAT part; driver still running in parts_s7n51/)
+NOVEL: YES
+HONEST: YES
+REJECT - cannot sign off: the impossibility half (no 51-element choice) was not fully reproduced by my own search before hand-back, although every finished part and all smaller cases agree with the claim.

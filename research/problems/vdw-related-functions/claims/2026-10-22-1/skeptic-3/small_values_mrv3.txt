@@ -1,0 +1,16 @@
+s=2 opt=[] M=7 ; RESULT 2 7 UNSAT nodes=11 tie=0
+s=2 opt=[--sym] M=7 ; RESULT 2 7 UNSAT nodes=12 sym tie=0
+s=2 opt=[--tie=1] M=7 ; RESULT 2 7 UNSAT nodes=8 tie=1
+s=2 opt=[--sym --tie=1] M=7 ; RESULT 2 7 UNSAT nodes=8 sym tie=1
+s=3 opt=[] M=11 ; RESULT 3 11 UNSAT nodes=179 tie=0
+s=3 opt=[--sym] M=11 ; RESULT 3 11 UNSAT nodes=160 sym tie=0
+s=3 opt=[--tie=1] M=11 ; RESULT 3 11 UNSAT nodes=116 tie=1
+s=3 opt=[--sym --tie=1] M=11 ; RESULT 3 11 UNSAT nodes=115 sym tie=1
+s=4 opt=[] M=19 ; RESULT 4 19 UNSAT nodes=8894 tie=0
+s=4 opt=[--sym] M=19 ; RESULT 4 19 UNSAT nodes=10219 sym tie=0
+s=4 opt=[--tie=1] M=19 ; RESULT 4 19 UNSAT nodes=4587 tie=1
+s=4 opt=[--sym --tie=1] M=19 ; RESULT 4 19 UNSAT nodes=4573 sym tie=1
+s=5 opt=[] M=31 ; RESULT 5 31 UNSAT nodes=993139 tie=0
+s=5 opt=[--sym] M=31 ; RESULT 5 31 UNSAT nodes=2444554 sym tie=0
+s=5 opt=[--tie=1] M=31 ; RESULT 5 31 UNSAT nodes=333416 tie=1
+s=5 opt=[--sym --tie=1] M=31 ; RESULT 5 31 UNSAT nodes=333203 sym tie=1

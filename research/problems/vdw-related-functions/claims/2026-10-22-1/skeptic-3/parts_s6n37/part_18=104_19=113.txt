@@ -1,0 +1,2 @@
+RESULT 6 37 UNSAT nodes=1643733 tie=1 fix:18=104 fix:19=113
+elapsed=1s

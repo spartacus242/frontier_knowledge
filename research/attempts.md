@@ -161,3 +161,27 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
 - **Ideas for next run:** an independent exhaustive check of T = 51 (a separately written search, ideally faster, e.g. using
   the reflection symmetry x -> 51*7-1-x to halve it), then a skeptic gate on "M(3,7) = 51". Budget: about 30 CPU-hours per
   independent check with the current method, so skeptics need a faster method or the result stays PROMISING.
+
+### 20:53 UTC (scheduled run; ran into 2026-10-23 UTC)
+- **Problem:** M(3,7) in BLR Table 1 (arXiv:0706.4420), printed 48: independent check of the 08:53 result M(3,7) = 51.
+- **Frozen definition:** unchanged from 2026-10-21 04:52.
+- **Approaches (verdicts):**
+  1. `code/mb.c`, bitset search placing the last block first: correct on s = 2..5 but ~5x slower than fcpm. Dropped.
+  2. `code/mrv.c`, most-constrained block first, all three AP roles forbidden via shifted bitsets: correct on s = 2..6, about
+     as fast as fcpm with a left-most tie-break.
+  3. Most-central tie-break: 3x fewer nodes on M(3,6). Outermost tie-break: far slower.
+  4. Central-block cubes with the reflection symmetry (`code/mrvcubes.py`, `code/runmrv.sh`, `code/mrv_res/`), validated on
+     s = 5, 6 both ways: **s = 7, T = 51 all 175 canonical cubes NONE, 6188 CPU-s (about 20x faster than fcpm)**; T = 50
+     FOUND (witness re-checked). Two independently written programs now agree: M(3,7) = 51.
+  5. Novelty: AMS post-publication page of the Landman-Robertson 2nd ed. lists no errata; book still unreadable.
+  6. Skeptic gate, claim 2026-10-22-1 "M(3,7) = 51": 0 of 3. Skeptic 1 reproduced it fully with its own search but rejected
+     on novelty (book and OEIS search unreachable); skeptic 2 could not finish the search; skeptic 3 finished 16 of 49 parts
+     (all impossible) and rejected for incompleteness.
+- **Label:** PROMISING (not verified). M(3,7) >= 51 is certain (witness); = 51 now rests on three independent exhaustive
+  searches, but the gate did not sign off.
+- **Code/data:** `problems/vdw-related-functions/` (`code/mrv.c`, `code/mrvcubes.py`, `code/runmrv.sh`, `code/checkM.py`,
+  `code/mrv_res/`, `code/mb.c`, `code/mb_bench/`, `claims/2026-10-22-1/`).
+- **Ideas for next run:** the remaining blocker for all three claims is the same: the Landman-Robertson book (ask Jace again
+  only through the thread). A new gate for M(3,7) should tell skeptics the search takes 1-2 CPU-hours with a good branching
+  order, so they budget for it (that is a compute note, not a method hint beyond what the packet already says). Otherwise move
+  to G(3,10), the first "?" entry, where `mrv`-style ordering may also help.

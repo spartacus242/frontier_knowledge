@@ -1,0 +1,1 @@
+RESULT 6 38 UNSAT nodes=1298820591 sym tie=0

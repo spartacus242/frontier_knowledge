@@ -1,0 +1,3 @@
+count: 50
+3-APs found: 0
+WITNESS VALID

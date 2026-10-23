@@ -1,0 +1,4 @@
+s=2 longest=6 M=7 nodes=22
+s=3 longest=10 M=11 nodes=382
+s=4 longest=18 M=19 nodes=26274
+s=5 longest=30 M=31 nodes=3839907

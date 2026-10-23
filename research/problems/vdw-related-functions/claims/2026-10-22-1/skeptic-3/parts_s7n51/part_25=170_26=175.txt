@@ -1,0 +1,2 @@
+RESULT 7 51 UNSAT nodes=688582128 tie=1 fix:25=170 fix:26=175
+elapsed=380s

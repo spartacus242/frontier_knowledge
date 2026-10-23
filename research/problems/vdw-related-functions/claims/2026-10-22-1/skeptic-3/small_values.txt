@@ -1,0 +1,5 @@
+s=2 first UNSAT n=7 -> M(3,2)=7 ; RESULT 2 7 UNSAT nodes=16
+s=3 first UNSAT n=11 -> M(3,3)=11 ; RESULT 3 11 UNSAT nodes=239
+s=4 first UNSAT n=19 -> M(3,4)=19 ; RESULT 4 19 UNSAT nodes=11492
+s=5 first UNSAT n=31 -> M(3,5)=31 ; RESULT 5 31 UNSAT nodes=1265028
+s=6 first UNSAT n=38 -> M(3,6)=38 ; RESULT 6 38 UNSAT nodes=328646363

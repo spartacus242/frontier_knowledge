@@ -1,0 +1,5 @@
+RESULT 6 38 UNSAT nodes=187773005 tie=3
+
+real	1m6.096s
+user	1m5.570s
+sys	0m0.003s

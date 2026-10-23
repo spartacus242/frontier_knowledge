@@ -1,0 +1,1 @@
+s=4 n=18 SAT nodes=16 verified=yes witness: 2 5 10 12 16 21 24 28 33 39 41 47 48 52 59 60 67 69

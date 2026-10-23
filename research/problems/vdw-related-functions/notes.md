@@ -258,4 +258,4 @@ Unchanged from 2026-10-21 04:52. Target: M(3,7) = 51 (witness of 50 blocks in `w
    **s = 7, T = 51: all 175 canonical cubes NONE, 6188 CPU-s, 1.9e10 nodes.** s = 7, T = 50: FOUND in cube 23:0,24:6,25:0,26:6
    (witness re-checked), run stopped after 299 of 1225 cubes. So two independently written searches agree: M(3,7) = 51.
 5. Novelty: searched for the Landman-Robertson 2nd ed. table or errata (AMS post-publication page: nothing). Still unreadable.
-6. Skeptic gate, claim 2026-10-22-1 "M(3,7) = 51": see `claims/2026-10-22-1/`.
+6. Skeptic gate, claim 2026-10-22-1 "M(3,7) = 51": 0 of 3 sign-offs (see `claims/2026-10-22-1/gate.md`). Label PROMISING.

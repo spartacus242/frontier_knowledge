@@ -1,0 +1,4 @@
+s=2 first UNSAT n=7 -> M(3,2)=7 ; RESULT 2 7 UNSAT nodes=10 props=16
+s=3 first UNSAT n=11 -> M(3,3)=11 ; RESULT 3 11 UNSAT nodes=120 props=313
+s=4 first UNSAT n=19 -> M(3,4)=19 ; RESULT 4 19 UNSAT nodes=5227 props=25009
+s=5 first UNSAT n=31 -> M(3,5)=31 ; RESULT 5 31 UNSAT nodes=502826 props=4747409

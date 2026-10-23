@@ -185,3 +185,30 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
   only through the thread). A new gate for M(3,7) should tell skeptics the search takes 1-2 CPU-hours with a good branching
   order, so they budget for it (that is a compute note, not a method hint beyond what the packet already says). Otherwise move
   to G(3,10), the first "?" entry, where `mrv`-style ordering may also help.
+
+## 2026-10-23
+
+### 08:53 UTC (scheduled run)
+- **Problem:** G(3,10), the first "?" entry of the G row in BLR Table 1 (arXiv:0706.4420). Status check: no source gives a
+  value (Brown-Hare 1997, which defines G(k;r), gives only asymptotic bounds).
+- **Frozen definition:** unchanged from 2026-10-21 04:52 (witness of size v - 1 plus exhaustive impossibility at v, unpublished);
+  a witness alone is a sub-result.
+- **Approaches (verdicts):**
+  1. `code/gm.c`, middle-out search from the middle element, extending the more constrained side: correct on G(3,2..8); about
+     as fast as fcp alone.
+  2. Lmin span bound (`code/lmin.c` computes Lmin(1..30), matching OEIS A065825; `lmin_oeis43.txt` adds A065825's terms to 43):
+     4x fewer nodes at s = 9. Kept.
+  3. Reversal symmetry for odd T (`code/gmcubes.py`, `code/rungm.sh`, `code/gm_res/`): validated at s = 8; **G(3,9), T = 49:
+     45/45 cubes NONE in 3387 CPU-s**, a third independent exhaustive check of G(3,9) = 49, 4x cheaper than fcp.
+  4. Serial witness search for s = 10 (`code/gm10/probe.txt`): witnesses up to 54 elements (`witness/G_s10_54elements.txt`),
+     so **G(3,10) >= 55**. T = 55 undecided in 600 s.
+  5. T = 55 by capped cubes: 3 cubes NONE, 7 hit the 15 min cap; full decision estimated at 30-80 CPU-hours. Stopped.
+  6. T = 55 witness hunt with four search orders (incl. randomised), 50 min each: nothing.
+- **Label:** PROMISING (sub-result): G(3,10) >= 55, a lower bound for an entry the table leaves open; exact value not reached.
+  No skeptic gate (no full claim).
+- **Code/data:** `problems/vdw-related-functions/` (`code/gm.c`, `code/lmin.c`, `code/lmin_*.txt`, `code/gmcubes.py`,
+  `code/rungm.sh`, `code/checkG.py`, `code/gm_res/`, `code/gm10/`, `witness/G_s10_54elements.txt`).
+- **Ideas for next run:** G(3,10) needs about 10x more pruning before an exhaustive run fits in a session: e.g. a bitset
+  rewrite of gm (2-3x), a gap-bounded analogue of Lmin (least span of a k-element 3-AP-free set with gaps <= 10, likely far
+  above Lmin for large k, judging by the witness), or a SAT/cube hybrid on the hardest cubes. Witness side: a 55-element set
+  may still exist; try local search seeded from the 54-element witness. The book remains the blocker for the earlier claims.

@@ -1,0 +1,4 @@
+GM_SEED=7 
+GM_SEED=11 
+GM_ORD=0 
+GM_ORD=2 

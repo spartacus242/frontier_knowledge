@@ -289,3 +289,7 @@ that v integers are impossible, not published elsewhere. A witness alone is a su
    decided in 600 s. **G(3,10) >= 55**: 54-element witness in `witness/G_s10_54elements.txt` (re-checked by checkG.py).
 5. Randomised gap order (GM_SEED) for witness hunting at T = 52: no witness in 2 x 300 s; the plain order found one. Dropped.
 6. T = 55 split into the 55 canonical cubes, 15 min cap each (`code/gm_res/s10_T55_*`): see below.
+   RESULT: of the cubes started, (1,1) and (2,2) NONE instantly, (1,2) NONE in 730 s (9.0e8 nodes); (1,3) to (1,9) all hit the
+   15 min cap. Stopped: at that rate the full T = 55 decision is roughly 30-80 CPU-hours, too much for one run or a skeptic.
+7. Witness hunt at T = 55 with four different search orders (GM_ORD 0 and 2, GM_SEED 7 and 11), 50 min each: none found.
+   So the best lower bound this run is G(3,10) >= 55.

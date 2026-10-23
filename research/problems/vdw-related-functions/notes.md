@@ -259,3 +259,33 @@ Unchanged from 2026-10-21 04:52. Target: M(3,7) = 51 (witness of 50 blocks in `w
    (witness re-checked), run stopped after 299 of 1225 cubes. So two independently written searches agree: M(3,7) = 51.
 5. Novelty: searched for the Landman-Robertson 2nd ed. table or errata (AMS post-publication page: nothing). Still unreadable.
 6. Skeptic gate, claim 2026-10-22-1 "M(3,7) = 51": 0 of 3 sign-offs (see `claims/2026-10-22-1/gate.md`). Label PROMISING.
+
+# Session 2026-10-23 08:53 UTC
+
+## Why tractable now
+G(3,10) is the first "?" in the G row of BLR Table 1 (arXiv:0706.4420). Status check: web searches (BLR table, "bounded gaps"
+3-AP values, Brown-Hare 1997 full text at sfu.ca/~vjungic/tbrown/tom-22.pdf) found no value: Brown-Hare define G(k;r) but
+give only asymptotic lower bounds; Fox-Schildkraut 2026 and the BLR journal version give none (see the 2026-10-22 gate reports).
+New angle: a middle-out search that grows the sequence from its middle element in both directions, always on the more
+constrained side, pruned with exact values of Lmin(k) (least N with a 3-AP-free k-subset of N consecutive integers).
+
+## Frozen definition of "solved" (this session)
+Unchanged from 2026-10-21 04:52, target G(3,10): a 3-AP-free set of v - 1 integers with gaps <= 10, plus an exhaustive proof
+that v integers are impossible, not published elsewhere. A witness alone is a sub-result (lower bound for a "?" entry).
+
+## Approaches (08:53 run)
+1. `code/gm.c` middle-out search (middle element x_m, m = ceil(T/2), at 0; left needs m - 1, right T - m; extend the side with
+   fewer usable positions). Correct on G(3,2..8) = 5, 9, 11, 17, 23, 33, 37. Speed about that of fcp (s = 8: 71 s vs 75 CPU-s).
+   Side orders compared on G(3,8): most constrained 2.6e8 nodes, one side first 4.6e8, balanced 7.2e8.
+2. Lmin bound (`code/lmin.c`, own computation of Lmin(1..30), equal to OEIS A065825 for all 30; `lmin_frozen.txt`;
+   `lmin_oeis43.txt` adds A065825's published terms 31-43 for the s = 10 runs; beyond the table the safe bound
+   Lmin(a+b) >= Lmin(a) + Lmin(b) - 1): every chosen anchor a forces the side's end to lie at least Lmin(c + r) - 1 beyond a,
+   so the side must cross every position up to there. 2.5x fewer nodes at s = 8, 4x at s = 9. Plus: dead if that reach
+   exceeds r*s.
+3. Reversal symmetry for odd T (`code/gmcubes.py`, `code/rungm.sh`, `code/gm_res/`): validated at s = 8 (T = 37: 2080/2080 NONE;
+   T = 36: 27 FOUND, witnesses re-checked by `code/checkG.py`). **G(3,9) at T = 49: 45/45 canonical cubes NONE, 3387 CPU-s**:
+   a third independent exhaustive confirmation of G(3,9) = 49 (claim 2026-10-21-2), 4x cheaper than fcp.
+4. G(3,10) witnesses by the plain serial search (`code/gm10/probe.txt`): FOUND at T = 46..54 (T = 54 in 419 s), T = 55 not
+   decided in 600 s. **G(3,10) >= 55**: 54-element witness in `witness/G_s10_54elements.txt` (re-checked by checkG.py).
+5. Randomised gap order (GM_SEED) for witness hunting at T = 52: no witness in 2 x 300 s; the plain order found one. Dropped.
+6. T = 55 split into the 55 canonical cubes, 15 min cap each (`code/gm_res/s10_T55_*`): see below.

@@ -1,0 +1,1 @@
+r=4 n=39 cube=113 UNSAT 0.3s

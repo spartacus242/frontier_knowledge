@@ -1,0 +1,1 @@
+r=3 n=23 cube=123 UNSAT 0.0s

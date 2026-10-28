@@ -1,0 +1,1 @@
+r=3 n=22 cube=12 UNSAT 0.0s

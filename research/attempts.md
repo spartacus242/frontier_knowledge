@@ -231,3 +231,27 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
 - **Ideas for next run:** the exact value needs an exhaustive "no 57-element set" check, tens of CPU-hours with gm. Options:
   run it across runs as resumable cubes (results persist in `code/gm_res/`), or find a stronger pruning idea first (a bitset
   gm for 2-3x; a SAT solver on the hardest cubes). Otherwise turn to another table entry.
+
+## 2026-10-28
+
+### 21:32 UTC (fired on request)
+- **Problem:** first G(3,10) at T = 57 (BLR Table 1, "?"), then w*(3;5) in the same table (printed ">= 75"), a new problem.
+- **Frozen definition:** G(3,10) unchanged from 2026-10-23; w*(3;5) frozen in `problems/wstar/notes.md` (a 74-colouring
+  plus an exhaustive, recorded check at 75).
+- **Approaches (verdicts):**
+  1. Timing sample of the G(3,10), T = 57 exhaustive check with gm.c (`vdw-related-functions/code/sample57/`): 90+ CPU-hours.
+     Not run. A bitset gm (`code/gmb.c`) gives the same node counts, slower. Dropped.
+  2. Switched to w*(3;5). SAT encoding (`wstar/code/wstar_sat.py`) with an independent checker (`code/check_wstar.py`);
+     reproduces w*(3;3) = 23 and w*(3;4) = 40.
+  3. Tabu local search (`code/wls.c`): weak, best 13 conflicts at n = 74. Ruled out.
+  4. Symmetric colourings: colour(i) = 6 - colour(75 - i) gives a valid 74-colouring (`runs/pal74.txt`), reproducing the printed
+     bound; neither symmetric type exists for n = 75..78.
+  5. Seed extension (`code/wext.py`): every central placement of the 74-colouring's middle block is UNSAT at 75 and 76.
+  6. Cube split on central positions (`code/wcube.py`, validated on r = 3, 4): width 5 leaves pieces of 20+ min; width 7 has
+     7687 pieces, 20 sampled all UNSAT at 60 s average, about 128 CPU-hours for the full check. Not run.
+- **Label:** NO PROGRESS on either open entry: the printed w*(3;5) >= 75 is reproduced, not improved, and the evidence that it
+  equals 75 is partial. No skeptic gate (no claim).
+- **Code/data:** `problems/wstar/` (all), `problems/vdw-related-functions/code/sample57/`, `code/gmb.c`.
+- **Ideas for next run:** the w*(3;5) = 75 proof is the cheapest exact result in reach: run `wcube.py 5 75 7 runs/c5_75w7 j 4`
+  across several runs (it resumes from saved pieces; commit `runs/c5_75w7/` each time), or first cut the cost with stronger
+  symmetry breaking or a dedicated solver. G(3,10) = 57 needs 90+ CPU-hours with current tools.

@@ -1,0 +1,4 @@
+START n=76 s=5 solver=cadical153 budget=1000000 special=3 proven_before=0 time=1793273741
+UNKNOWN 38 44.1
+UNKNOWN 39 54.7
+UNKNOWN 37 62.2

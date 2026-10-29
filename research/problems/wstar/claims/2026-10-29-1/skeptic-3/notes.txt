@@ -1,0 +1,6 @@
+SAT cube run killed after ~510 s with 0 of 1215 cubes finished
+calibration: Cadical153 on plain w(3;4): n=75 (SAT) not solved in 500 s; n=76 (UNSAT) not solved in 500 s
+classical w(3;4) n=76 calibration with dfs3 killed after 5.5 min, first of 8 cubes unfinished
+dfs3 K=6 run on n=76 s=5: first of 4923 cubes not finished after ~3 min; killed (infeasible: >100 s per cube)
+classical w(3;4) n=76, dfs3 left-to-right order: no cube of 8 finished in 600 s
+lemma run (chi(p)!=3 lemmas, 1M-conflict budget each): positions 38,39,37 all UNKNOWN (~45-60 s each); abandoned

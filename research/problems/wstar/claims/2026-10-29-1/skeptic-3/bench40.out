@@ -1,0 +1,9 @@
+cadical153 n=40 s=4 SAT=False time=7.3s
+cadical195 n=40 s=4 SAT=False time=7.9s
+glucose4 n=40 s=4 SAT=False time=4.6s
+maplechrono n=40 s=4 SAT=False time=11.1s
+lingeling n=40 s=4 SAT=False time=23.3s
+minisat22 n=40 s=4 SAT=False time=6.4s
+mergesat3 n=40 s=4 SAT=False time=20.3s
+gluecard4 n=40 s=4 SAT=False time=4.4s
+exit=0

@@ -2,3 +2,4 @@ __pycache__/
 code/wls
 runs/*/*.tmp
 runs/d5_76w8/
+runs/d5_76w8_all.txt

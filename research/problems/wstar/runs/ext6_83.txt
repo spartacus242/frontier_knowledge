@@ -1,0 +1,5 @@
+n=83 off=11 UNSAT 0.0s
+n=83 off=10 UNSAT 0.0s
+n=83 off=12 UNSAT 0.0s
+n=83 off=9 UNSAT 0.0s
+n=83 off=13 UNSAT 0.0s

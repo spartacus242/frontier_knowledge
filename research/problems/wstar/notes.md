@@ -22,3 +22,20 @@ or an exhaustive check at a larger N, is a sub-result.
   positions (orbit-minimal, internally valid: 7687 cubes) samples at 60 s average, max 258 s, 20/20 UNSAT
   (`runs/sample75w7*.txt`), about 128 CPU-hours in all. Tools: `code/wcube.py` (resumable cube runner), `code/wsample.py`,
   `code/wone.py`.
+
+## 2026-10-29 08:53 UTC run
+- Status check (arXiv:0706.4420 re-read; web searches; the journal version, Colgate preprint "Bounds on some van der Waerden
+  numbers", has no w* table): no published value of w*(3;5) beyond ">= 75" found. The Landman-Robertson book is unreadable.
+- **Lower bound is classical (found by two skeptics):** the colour set {1,2,4,5} contains no 3-term AP, so a 4-colouring of
+  [1, n] with no monochromatic 3-AP, recoloured into {1,2,4,5}, is good. Hence w*(3;5) >= W(3;4) = 76 (Beeler and O'Neil 1979),
+  and the printed ">= 75" was already weaker than a known bound. Our 75-colouring is exactly such a recoloured 4-colouring.
+  Likewise w*(3;6) >= 76 trivially. The only new part of "w*(3;5) = 76" is the upper bound (no good 5-colouring of [1, 76]).
+- `code/wdfs.c`: domain-bitmask DFS with forward checking, unit propagation, most-constrained-first with central tie-break.
+  Reproduces 9, 23, 40 in under 1 s; about 30x faster than CaDiCaL on the 20 sampled n = 75 cubes, same verdicts.
+- `code/rundfs.sh` + `code/wdcubes.py`: resumable cube runs (orbit-minimal central windows).
+  n = 75, width 7: two good colourings found (`runs/d5_75w7/`, `witness/wstar_r5_n75.txt`).
+  **n = 76, width 8: all 97,969 cubes NONE, 4.3 CPU-hours** (`runs/d5_76w8_all.txt.gz`, `runs/d5_76w8_cubes.txt`).
+- CaDiCaL (`code/wone.py`) agrees on 32 n = 76 cubes (10 hardest + 22 random): all UNSAT (`runs/sat_check76.txt`).
+- `code/wbt.c` (plain backtracking, no look-ahead): correct on small cases, far too slow on hard cubes (> 10 min). Dropped.
+- Six colours (table "?"): anti-symmetric SAT (`WSTAR_PAL=2`) gives a good 82-colouring (`witness/wstar_r6_n82.txt`),
+  so w*(3;6) >= 83; symmetric searches at 84..96 timed out (`runs/pal6_scan*.txt`).

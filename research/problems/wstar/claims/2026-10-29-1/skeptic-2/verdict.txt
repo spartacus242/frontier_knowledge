@@ -1,0 +1,1 @@
+SIGN-OFF: parts (1),(2) independently reproduced (good 75-colouring valid; exhaustive search of [1,76] found none, 82e9 nodes, 3.2h, validated on 9/23/40); no prior publication found though Scholar/OEIS-search/MO/MSE/the book could not be opened.

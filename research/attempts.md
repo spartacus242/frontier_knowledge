@@ -255,3 +255,33 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
 - **Ideas for next run:** the w*(3;5) = 75 proof is the cheapest exact result in reach: run `wcube.py 5 75 7 runs/c5_75w7 j 4`
   across several runs (it resumes from saved pieces; commit `runs/c5_75w7/` each time), or first cut the cost with stronger
   symmetry breaking or a dedicated solver. G(3,10) = 57 needs 90+ CPU-hours with current tools.
+
+## 2026-10-29
+
+### 08:53 UTC (scheduled run)
+- **Problem:** w*(3;5) in BLR Table 1 (arXiv:0706.4420), printed ">= 75". Status check: no other published value found.
+- **Frozen definition:** as in `problems/wstar/notes.md` (good colouring of [1, N-1] plus a recorded exhaustive check at N,
+  unpublished).
+- **Approaches (verdicts):**
+  1. Direct DFS with forward checking (`wstar/code/wdfs.c`): validated on 9, 23, 40; 30x faster than CaDiCaL on sampled cubes.
+  2. Resumable cube runs (`code/rundfs.sh`, `code/wdcubes.py`): n = 75 has good colourings (`witness/wstar_r5_n75.txt`);
+     **n = 76: all 97,969 cubes NONE, 4.3 CPU-h** (`runs/d5_76w8_all.txt.gz`).
+  3. SAT cross-check of 32 n = 76 cubes (10 hardest + 22 random): all UNSAT, agreeing.
+  4. Plain backtracking cross-check (`code/wbt.c`): too slow on hard cubes. Dropped.
+  5. Six colours by anti-symmetric SAT: good 82-colouring, so **w*(3;6) >= 83** (table "?"); 84+ timed out.
+  6. Skeptic gate, claim 2026-10-29-1 "w*(3;5) = 76".
+- **Correction found by the gate:** the lower bound w*(3;5) >= 76 is classical: {1,2,4,5} is a 3-AP-free colour set, so
+  W(3;4) = 76 (Beeler-O'Neil 1979) gives it directly, and our 75-colouring is a recoloured 4-colouring. The printed ">= 75"
+  was weaker than a known bound. Only the upper bound (no good 5-colouring of [1, 76]) is new.
+- **Label:** PROMISING (not verified). Skeptics: 1 (default model) REJECT, own search stopped at about 10% of the tree,
+  nothing found; 2 (Sonnet) SIGN-OFF, own exhaustive search of [1, 76] finished (8.2e10 nodes, 3.2 h) with none found;
+  3 (Fable) REJECT, could not finish a search in time. 1 of 3: does not count. Novelty: no prior value found by any
+  skeptic, but the Landman-Robertson book, Google Scholar, OEIS search and MathOverflow search could not be opened.
+- **Code/data:** `problems/wstar/` (`code/wdfs.c`, `code/rundfs.sh`, `code/wdcubes.py`, `code/wbt.c`, `runs/d5_7*`,
+  `runs/sat_check76.txt`, `runs/pal6_scan*.txt`, `witness/`, `claims/2026-10-29-1/`).
+- **Ideas for next run:** a new gate on "w*(3;5) <= 76" (the packet should state the classical lower bound and give a
+  realistic compute note: naive SAT and plain backtracking do not finish; a strong search takes 3-5 CPU-hours, so skeptics
+  need the whole session and resumable jobs). Then w*(3;6): push the lower bound past 83 (non-symmetric search seeded
+  from the 82-colouring), with the exact value likely far out of reach.
+- **Process lesson:** grepping /proc/*/cmdline of bash processes for a pattern also matches the calling shell; it killed this
+  run's shell once. Kill only by PID of the named binary (pgrep -x), or by a PID saved at launch.

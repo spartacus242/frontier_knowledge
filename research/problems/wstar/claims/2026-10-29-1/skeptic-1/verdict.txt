@@ -1,0 +1,1 @@
+REJECT part (2) not reproduced: own exhaustive search of [1,76] stopped at time limit after ~10.6% of the tree (no good colouring found so far); part (1) verified (it is a recoloured 4-colouring, so w*(3;5)>=76 already follows from W(3;4)=76); novelty not fully checkable (book, Google Scholar, OEIS search, MathOverflow blocked)

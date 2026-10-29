@@ -39,3 +39,11 @@ or an exhaustive check at a larger N, is a sub-result.
 - `code/wbt.c` (plain backtracking, no look-ahead): correct on small cases, far too slow on hard cubes (> 10 min). Dropped.
 - Six colours (table "?"): anti-symmetric SAT (`WSTAR_PAL=2`) gives a good 82-colouring (`witness/wstar_r6_n82.txt`),
   so w*(3;6) >= 83; symmetric searches at 84..96 timed out (`runs/pal6_scan*.txt`).
+
+## 2026-10-29 20:53 UTC run
+- Why tractable: the n = 76 exhaustive check takes 3-5 CPU-hours with a strong search, so a skeptic with a whole session and
+  one core can reproduce it; the 08:53 gate failed on time, not on any finding against the claim.
+- Frozen definition: unchanged (good 5-colouring of [1, 75], exhaustive check at 76, value unpublished). Status re-checked by
+  web search at 20:55 UTC: nothing newer than arXiv:0706.4420's ">= 75".
+- New gate: claim 2026-10-29-2, same claim w*(3;5) = 76, packet revised to state the classical lower bound (W(3;4) = 76) and
+  a realistic compute note (several hours, resumable, relaunch allowed). Three fresh skeptics; none from 2026-10-29-1 reused.

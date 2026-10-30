@@ -308,3 +308,26 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
   tens to hundreds of CPU-hours and hourly container restarts kill long jobs. A packet may not hint at our method, so a
   future gate needs skeptics with resumable designs from the start; or leave w*(3;5) as PROMISING and move on. Six colours:
   a non-symmetric search seeded from the 82-colouring for w*(3;6) >= 84.
+
+## 2026-10-30
+
+### 08:53 UTC (scheduled run)
+- **Problem:** M(3,8) in BLR Table 1 (arXiv:0706.4420), printed "?". Status check: no later value found by web search.
+- **Frozen definition:** unchanged from 2026-10-21 04:52 (witness of T - 1 blocks plus exhaustive impossibility at T,
+  unpublished); a witness alone is a sub-result.
+- **Approaches (verdicts):**
+  1. Plain SAT per T (`code/sat_funcs.py`): witnesses at 50, 51, 52 blocks; 53 and 56 undecided in 20 min.
+  2. SAT window climbing with new blocks at the end (`code/mclimb.py`): stuck at once. Ruled out as built.
+  3. `mrv` with wider bitsets (`code/mrv16.c`, validated on M(3,5), M(3,6)) as a complete cube climber
+     (`code/runmrv16.sh`, `code/mclimb_mrv.sh`): witnesses at 53, 54, 55, 56 blocks.
+  4. Coarse exhaustive cubes at T = 57: 1.5 h per cube without finishing. Stopped.
+  5. Finer cost sample at T = 57 (5 central blocks fixed): about 1,200 CPU-hours for the full check. Out of reach.
+  6. SAT extension with the witness shifted one block right and its centre fixed (`code/mext.py`): **a valid 57-block
+     choice at once, so M(3,8) >= 58**; T = 58 UNSAT with 8 to 40 central blocks fixed, smaller centres undecided.
+- **Label:** PROMISING (sub-result): M(3,8) >= 58 for an entry the table leaves open; exact value not reached. No skeptic
+  gate (no full claim). All witnesses checked by `checkM.py`.
+- **Code/data:** `problems/vdw-related-functions/` (`code/mrv16.c`, `code/runmrv16.sh`, `code/mclimb_mrv.sh`,
+  `code/mclimb.py`, `code/mext.py`, `code/mext_climb.sh`, `code/m8/`, `code/mrv16_res/`, `witness/M_s8_5[2-7]blocks.txt`).
+- **Ideas for next run:** M(3,8) = 58 would need an exhaustive "no 58-block choice" proof, likely thousands of CPU-hours
+  with mrv; a sharper bound (e.g. an Lmin-style span bound per block, as gm uses for G) is the first thing to try. A 58-block
+  witness may still exist: run mext with shifts of 2+ blocks or with the 55/56-block witnesses as seeds.

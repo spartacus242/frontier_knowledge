@@ -1,0 +1,2 @@
+T=58 keep=8 shift=0 UNSAT 1294.2s
+T=58 keep=8 shift=1 UNSAT 1327.8s

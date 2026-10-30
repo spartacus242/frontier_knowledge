@@ -1,0 +1,9 @@
+T=58 keep=40 shift=1 UNSAT 0.0s
+T=58 keep=40 shift=0 UNSAT 0.0s
+T=58 keep=30 shift=1 UNSAT 0.0s
+T=58 keep=30 shift=0 UNSAT 0.0s
+T=58 keep=20 shift=1 UNSAT 0.0s
+T=58 keep=20 shift=0 UNSAT 0.0s
+T=58 keep=10 shift=1 UNSAT 11.1s
+T=58 keep=10 shift=0 UNSAT 12.7s
+stuck at T=58

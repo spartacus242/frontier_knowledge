@@ -322,3 +322,30 @@ Unchanged from 2026-10-23 08:53 (target G(3,10); a witness alone is a sub-result
    RESULT: holes of 31-45 on the first 56-element set: nothing (`code/regrow_out/w56a_big.txt`).
 6. Cost sample for the exhaustive check at T = 57 (gm, plain Lmin): cube (1,2) NONE in 734 s (8.2e8 nodes); cubes (3,7) and
    (5,9) unfinished at 1500 s. So a full T = 57 decision (55 canonical cubes) is again tens of CPU-hours.
+
+# 2026-10-30 08:53 UTC run: M(3,8)
+
+## Why tractable now
+M(3,8) is "?" in BLR Table 1 (arXiv:0706.4420; web search 2026-10-30 found no later value). This project has three validated
+exhaustive M searches (`fcpm.c`, `mb.c`, `mrv.c`); `mrv.c` with central-block cubes settled M(3,7) = 51 in 6188 CPU-s, and
+a complete cube search also finds witnesses fast whenever they exist, so it doubles as a climber.
+
+## Frozen definition of "solved" (this session)
+Unchanged from 2026-10-21 04:52: a valid one-per-block choice of T - 1 blocks plus an exhaustive impossibility proof at T,
+value unpublished. A witness alone is a sub-result (a lower bound for a "?" entry).
+
+## Approaches (08:53 run)
+1. Plain SAT (`code/sat_funcs.py` M_sat) per T: SAT at 50 (6 s), 51 (9 s), 52 (472 s); 53 and 56 undecided in 20 min.
+2. SAT window climbing (`code/mclimb.py`, keep all but K blocks of a witness fixed, K up to 24): stuck at once from 50.
+3. `mrv.c` bitsets widened to 1024 bits (`code/mrv16.c`; checked on M(3,5) = 31, M(3,6) = 38) with the reflection cubes,
+   run as a climber (`code/runmrv16.sh`, `code/mclimb_mrv.sh`, results `code/mrv16_res/`): FOUND at 53, 54, 55 and 56 blocks
+   (`witness/M_s8_5[456]blocks.txt`, `witness/M_s8_52blocks.txt`, all checked by `checkM.py`). **M(3,8) >= 57.**
+4. T = 57 with the 256 coarse cubes: four cubes ran 1.5 h each without finishing. Stopped.
+5. T = 57 cost sample with 5 central blocks fixed (`m8/sample57w5.out`): 6 of 12 cubes dead at once, 6 took 320-670 s,
+   all NONE; about 16,400 canonical cubes, so roughly 1,200 CPU-hours. Out of reach.
+6. SAT extension of the 56-block witness to 57 with its central 20, 30 or 40 blocks fixed (`code/mext.py`, `m8/ext57.txt`).
+   RESULT: shift 1 (the witness moved one block right, a new block 0 free) with 20, 30 or 40 central blocks fixed is SAT
+   at once: a valid 57-block choice (`witness/M_s8_57blocks.txt`, checked). **M(3,8) >= 58.** Shift 0 (new block at the
+   end) is UNSAT, which is why approach 2 (end extension only) failed.
+7. T = 58 by the same extension (`code/mext_climb.sh`, `m8/mext_climb.log`, `m8/ext58_small.txt`): UNSAT with 40, 30, 20,
+   10 and 8 central blocks fixed, both shifts; 6, 4 and 2 undecided in 25 min.

@@ -1,0 +1,6 @@
+11 nodes=8 found=0 secs=0 probes=235
+12 nodes=17 found=0 secs=0 probes=774
+13 nodes=12 found=0 secs=0 probes=419
+21 nodes=37 found=0 secs=0 probes=1193
+22 nodes=49 found=2 secs=0 probes=1726
+23 nodes=37 found=0 secs=0 probes=1197

@@ -1,0 +1,5 @@
+n=76 s=5 vars=380 clauses=19115 3-APs=1406 forbidden triples=13
+cubes total=9375 already done=0
+[1/9375] cube 111111 UNSAT 0.0s elapsed 0s
+[51/9375] cube 111311 UNSAT 0.0s elapsed 1s
+[101/9375] cube 111511 UNSAT 0.0s elapsed 1s

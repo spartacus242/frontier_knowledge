@@ -1,0 +1,4 @@
+wdfs r=6 n=84 fixed= NONE nodes=28783875
+wdfs r=6 n=86 fixed= NONE nodes=28709573
+wdfs r=6 n=88 fixed= NONE nodes=29711137
+wdfs r=6 n=90 fixed= NONE nodes=29677791

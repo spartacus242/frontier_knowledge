@@ -12,16 +12,18 @@
 static int r, n, col[MAXN + 1], ncol, order[MAXN + 1];
 static unsigned char dom[MAXN + 2][MAXN + 1];   /* domain snapshots per depth */
 static long long nodes;
+static int ANTI = 0;   /* WDFS_ANTI=1: also force col(n+1-p) = r+1-col(p); =2: col(n+1-p) = col(p) (searches only that class) */
 static int popc(unsigned v) { return __builtin_popcount(v); }
 /* colour position p with c at depth level D; propagate; returns 0 on wipeout. Uses a queue of forced positions. */
 static int assign(unsigned char *d, int p0, int c0) {
-    int q[MAXN + 1], qc[MAXN + 1], qh = 0, qt = 0;
+    int q[4 * MAXN + 4], qc[4 * MAXN + 4], qh = 0, qt = 0;
     q[qt] = p0; qc[qt++] = c0;
     while (qh < qt) {
         int p = q[qh], c = qc[qh++];
         if (col[p]) { if (col[p] != c) return 0; continue; }
         if (!(d[p] >> (c - 1) & 1)) return 0;
         col[p] = c; order[ncol++] = p; d[p] = 1u << (c - 1);
+        if (ANTI && !col[n + 1 - p]) { q[qt] = n + 1 - p; qc[qt++] = ANTI == 2 ? c : r + 1 - c; }   /* witness hunting only */
         for (int t = 0; t < ncol - 1; t++) {
             int j = order[t], y = col[j];
             int ks[3], fc[3], m = 0;
@@ -61,6 +63,7 @@ static int rec(int D) {
 int main(int argc, char **argv) {
     if (argc < 3 || argc % 2 == 0) { fprintf(stderr, "usage: wdfs r n [pos colour ...]\n"); return 2; }
     r = atoi(argv[1]); n = atoi(argv[2]);
+    if (getenv("WDFS_ANTI")) ANTI = atoi(getenv("WDFS_ANTI"));
     if (r < 1 || r > 8 || n < 1 || n > MAXN) return 2;
     for (int p = 1; p <= n; p++) dom[0][p] = (1u << r) - 1;
     int ok = 1;

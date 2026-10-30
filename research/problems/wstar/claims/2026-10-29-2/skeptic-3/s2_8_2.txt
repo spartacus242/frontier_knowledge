@@ -1,0 +1,2 @@
+11 nodes=2 found=1 secs=0
+12 nodes=4 found=2 secs=0

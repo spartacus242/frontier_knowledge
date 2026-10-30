@@ -1,0 +1,6 @@
+11 nodes=353 found=0 secs=0
+12 nodes=826 found=0 secs=0
+13 nodes=638 found=0 secs=0
+21 nodes=1310 found=0 secs=0
+22 nodes=2073 found=2 secs=0
+23 nodes=1310 found=0 secs=0

@@ -1,0 +1,8 @@
+=== relaunch Thu Oct 29 22:11:15 UTC 2026
+n=76 s=5 K=4 solver=cadical195 clauses=19236 cubes=375 done=0
+[1/375] 1111 BADPREFIX 0.0s elapsed 0s
+[2/375] 1112 BADPREFIX 0.0s elapsed 0s
+[3/375] 1113 BADPREFIX 0.0s elapsed 0s
+[4/375] 1114 BADPREFIX 0.0s elapsed 0s
+[5/375] 1115 BADPREFIX 0.0s elapsed 0s
+=== stopped by skeptic at Thu Oct 29 22:24:57 UTC 2026 after cube 1121 ran 13.5 min without result

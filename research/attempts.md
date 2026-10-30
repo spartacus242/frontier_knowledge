@@ -285,3 +285,26 @@ Append-only. One entry per daily session (see PROMPT.md, END OF DAY).
   from the 82-colouring), with the exact value likely far out of reach.
 - **Process lesson:** grepping /proc/*/cmdline of bash processes for a pattern also matches the calling shell; it killed this
   run's shell once. Kill only by PID of the named binary (pgrep -x), or by a PID saved at launch.
+
+### 20:53 UTC (scheduled run; ran into 2026-10-30 UTC through two container restarts)
+- **Problem:** w*(3;5) in BLR Table 1 (arXiv:0706.4420): a fresh gate on the 08:53 result w*(3;5) = 76 (new part: <= 76).
+  Status re-checked by web search: nothing newer than ">= 75".
+- **Frozen definition:** unchanged from 2026-10-28 (`problems/wstar/notes.md`).
+- **Approaches (verdicts):**
+  1. Revised claim packet 2026-10-29-2: states the classical lower bound (W(3;4) = 76) and a realistic compute note
+     (several hours, resumable, relaunch allowed).
+  2. Skeptic gate with three fresh skeptics (none from 2026-10-29-1).
+  3. Six colours, anti-symmetric class (`code/wdfs.c`, WDFS_ANTI=1): exhaustive within the class, none at 84, 86, 88, 90.
+  4. Six colours, palindromic class (WDFS_ANTI=2): none at 83..88.
+  5. Six colours, long anti-symmetric SAT at 84 (2 h): timed out; superseded by 3.
+- **Label:** PROMISING (not verified). Skeptics: A (default model) SIGN-OFF, own exhaustive search complete, none found;
+  B (Sonnet) REJECT, search not finished (0% proven coverage, about 8 CPU-h lost to two restarts); C (Fable) REJECT, search
+  not finished (0.5% coverage by its fastest method, projected about 340 CPU-h). 1 of 3: does not count. Over both gates two
+  independent complete searches (Sonnet at 08:53, default model now) agree with ours; no skeptic found a prior publication,
+  none could open the Landman-Robertson book.
+- **Code/data:** `problems/wstar/` (`claims/2026-10-29-2/`, `code/wdfs.c`, `runs/anti6_dfs.txt`, `runs/pal6_dfs.txt`,
+  `runs/pal6_84_long.txt`).
+- **Ideas for next run:** the gate keeps failing on compute, not on findings: skeptics' first methods (SAT, plain DFS) need
+  tens to hundreds of CPU-hours and hourly container restarts kill long jobs. A packet may not hint at our method, so a
+  future gate needs skeptics with resumable designs from the start; or leave w*(3;5) as PROMISING and move on. Six colours:
+  a non-symmetric search seeded from the 82-colouring for w*(3;6) >= 84.

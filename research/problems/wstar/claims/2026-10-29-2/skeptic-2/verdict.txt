@@ -1,0 +1,1 @@
+REJECT part (2) (no good 5-colouring of [1,76]) not independently reproduced: my exhaustive search did not complete (0% proven coverage; ~8h CPU lost to two container restarts), and novelty could not be fully checked (Scholar, OEIS search, book inaccessible). Part (1) and the W(3;4)=76 lower bound are fine.

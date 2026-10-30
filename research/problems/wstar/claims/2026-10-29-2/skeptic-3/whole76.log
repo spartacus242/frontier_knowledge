@@ -1,0 +1,2 @@
+n=76 s=5 solver=kissat404 vars=380 clauses=19236 start Thu Oct 29 22:25:05 2026
+=== container restart ~03:19 UTC killed kissat whole-instance run (pid 10594) after ~4h54m without a result; non-resumable, work lost

@@ -1,0 +1,4 @@
+=== (re)launch Fri Oct 30 03:21:26 UTC 2026
+n=76 s=5 K=2 cubes=15 done=0 start Fri Oct 30 03:21:26 2026
+cube 11 start Fri Oct 30 03:21:26 2026
+=== container restart ~05:25 UTC killed kissat cube run (pid 594) during cube 11 after ~2h04m; cube not finished

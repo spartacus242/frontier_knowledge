@@ -1,0 +1,8 @@
+11 nodes=70262 found=7 secs=0 probes=52074
+12 nodes=63638 found=4 secs=0 probes=46087
+13 nodes=96364 found=3 secs=0 probes=61371
+14 nodes=75853 found=7 secs=0 probes=55775
+21 nodes=93315 found=6 secs=1 probes=62449
+22 nodes=87924 found=3 secs=0 probes=52107
+23 nodes=87815 found=3 secs=0 probes=47128
+24 nodes=101644 found=6 secs=0 probes=62252

@@ -1,0 +1,1 @@
+SIGN-OFF: witness verified; my independent exhaustive search (313,357 symmetry-reduced units, 1.98e10 nodes, 100% coverage, cross-checked) finds no good 5-colouring of [1,76], so w*(3;5)=76; no prior publication found in accessible sources (two Landman-Robertson books not checkable online).

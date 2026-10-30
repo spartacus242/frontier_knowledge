@@ -47,3 +47,10 @@ or an exhaustive check at a larger N, is a sub-result.
   web search at 20:55 UTC: nothing newer than arXiv:0706.4420's ">= 75".
 - New gate: claim 2026-10-29-2, same claim w*(3;5) = 76, packet revised to state the classical lower bound (W(3;4) = 76) and
   a realistic compute note (several hours, resumable, relaunch allowed). Three fresh skeptics; none from 2026-10-29-1 reused.
+- Six colours, symmetric classes by exhaustive DFS within the class (`code/wdfs.c` with WDFS_ANTI=1 or 2): no colouring with
+  col(n+1-i) = 7 - col(i) for n = 84, 86, 88, 90 (`runs/anti6_dfs.txt`), none with col(n+1-i) = col(i) for n = 83..88
+  (`runs/pal6_dfs.txt`). So the 82-colouring is the longest symmetric one; going past 83 needs a non-symmetric search.
+- Gate 2026-10-29-2: A (default model) SIGN-OFF with its own complete search (313,357 units, 1.98e10 nodes, 44 CPU-min);
+  B (Sonnet) and C (Fable) REJECT, their searches did not finish (two container restarts, 03:19 and 05:25 UTC, killed long
+  runs; C covered 0.5% at 6472 s). Across both gates two different-model skeptics completed independent exhaustive searches
+  and both found no good 76-colouring; four could not finish. No skeptic found any earlier publication.

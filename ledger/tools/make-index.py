@@ -11,7 +11,8 @@ Entry formats vary between runs: the canonical question may appear as
 "Question (canonical): ...", as "Question (canonical) - R1 (...): ...", or as a
 "## Question (canonical)" heading with the text on the following lines. All
 three are handled; an entry whose question cannot be found is reported on
-stderr rather than silently emitted with an empty cell.
+stderr rather than silently emitted with an empty cell. Entries from 2026-11-19 on
+also carry "Question (headline): ..."; the index shows the headline when present.
 """
 
 import os
@@ -68,12 +69,14 @@ def main():
     for eid, body in blocks:
         status = field(body, "Status").split("—")[0].split("(")[0].strip() or "?"
         domain = field(body, "Domain(s)").split(";")[0].strip()[:60]
-        question = field(body, "Question (canonical)")
+        # Since 2026-11-19 an entry also carries a plain "Question (headline):"; index
+        # by it when present, since that is the layer a duplicate would match on.
+        question = field(body, "Question (headline)") or field(body, "Question (canonical)")
         # Drop a leading "(V1, ...)" or "[...]" version marker so the truncated
         # cell shows the question itself rather than the bookkeeping.
         question = re.sub(r"^\[[^\]]*\]\s*", "", question)
         question = re.sub(r"^\((?:V\d|R\d|Gate)[^)]*\)\s*", "", question)
-        if not question:
+        if not field(body, "Question (canonical)"):
             missing.append(eid)
         rows.append(
             "| {} | {} | {} | {} |".format(

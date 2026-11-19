@@ -1,0 +1,72 @@
+[
+  {
+    "key": "M1", "area": "mathematics", "domain": "Mathematics - analytic number theory and random matrix theory",
+    "asOf": "1972-01-01",
+    "headline": "Do the spacings between zeros of the Riemann zeta function follow the same statistics as the eigenvalues of large random matrices?",
+    "landmark": "H. L. Montgomery, The pair correlation of zeros of the zeta function, Proc. Sympos. Pure Math. 24 (1973); Montgomery and Dyson's conversation of 1972",
+    "tests": "a cross-field bridge with no prior in either field's words"
+  },
+  {
+    "key": "M2", "area": "mathematics", "domain": "Mathematics - finite group theory and modular functions",
+    "asOf": "1978-09-01",
+    "headline": "Are the dimensions of the representations of the largest sporadic simple group related to the coefficients of a classical modular function?",
+    "landmark": "J. H. Conway and S. P. Norton, Monstrous Moonshine, Bull. London Math. Soc. 11 (1979) 308-339, after McKay's observation of late 1978",
+    "tests": "a unification question that sounds implausible on its face"
+  },
+  {
+    "key": "P1", "area": "physics", "domain": "Physics - condensed matter, two-dimensional crystals",
+    "asOf": "2004-01-01",
+    "headline": "Can a single atomic layer of graphite exist as a stable crystal on its own, and do its electrons behave as massless relativistic particles?",
+    "landmark": "K. S. Novoselov et al., Electric field effect in atomically thin carbon films, Science 306 (2004) 666-669",
+    "tests": "rule 4: a presupposition contested by the Peierls-Landau argument that 2D crystals are unstable; band structure known since Wallace 1947"
+  },
+  {
+    "key": "P2", "area": "physics", "domain": "Physics - electromagnetism of artificial materials",
+    "asOf": "2000-01-01",
+    "headline": "Can a material with a negative refractive index be built, and could it focus light more finely than the diffraction limit allows?",
+    "landmark": "J. B. Pendry, Negative refraction makes a perfect lens, Phys. Rev. Lett. 85 (2000) 3966; D. R. Smith et al., Phys. Rev. Lett. 84 (2000) 4184",
+    "tests": "rule 5: raised by V. G. Veselago (Sov. Phys. Usp. 10, 1968, 509) and little pursued for three decades - an Under-asked case"
+  },
+  {
+    "key": "C1", "area": "computer science", "domain": "Computer science - cryptography and complexity theory",
+    "asOf": "1983-01-01",
+    "headline": "Can one convince another party that a statement is true while revealing nothing except the fact that it is true?",
+    "landmark": "S. Goldwasser, S. Micali and C. Rackoff, The knowledge complexity of interactive proof-systems, STOC 1985 (drafts from 1982-83)",
+    "tests": "a question that opens a field, with no measurable object"
+  },
+  {
+    "key": "C2", "area": "computer science", "domain": "Computer science - AI architecture and learning dynamics",
+    "asOf": "2017-12-01",
+    "headline": "Does a neural network's error fall as a predictable power law in the amount of data and the size of the model, across very different tasks?",
+    "landmark": "J. Hestness et al., Deep learning scaling is predictable, empirically, arXiv:1712.00409 (2017)",
+    "tests": "rule 6: learning-curve theory (statistical mechanics of learning, early 1990s) and Banko and Brill (2001) are the same question on other objects"
+  },
+  {
+    "key": "B1", "area": "biology", "domain": "Biology - microbial genome biology and host-virus interaction",
+    "asOf": "2005-01-01",
+    "headline": "Do the clustered regularly interspaced repeats found in many bacterial and archaeal genomes defend the cell against foreign DNA such as viruses?",
+    "landmark": "F. J. M. Mojica et al., J. Mol. Evol. 60 (2005) 174-182; C. Pourcel et al., Microbiology 151 (2005) 653-663; A. Bolotin et al., Microbiology 151 (2005) 2551-2561; shown by R. Barrangou et al., Science 315 (2007) 1709",
+    "tests": "a function question where rival functions (DNA repair, replicon partitioning) had been proposed"
+  },
+  {
+    "key": "B2", "area": "biology", "domain": "Biology - cell fate and reprogramming",
+    "asOf": "2006-01-01",
+    "headline": "Can a handful of transcription factors reprogram a fully differentiated adult cell back into an embryonic-like pluripotent cell?",
+    "landmark": "K. Takahashi and S. Yamanaka, Cell 126 (2006) 663-676",
+    "tests": "rule 6: MyoD conversion of fibroblasts (Davis, Weintraub and Lassar, Cell 51, 1987) and nuclear transfer and cell fusion are the same idea on other objects"
+  },
+  {
+    "key": "D1", "area": "medicine", "domain": "Medicine - gastroenterology and infectious cause of chronic disease",
+    "asOf": "1983-01-01",
+    "headline": "Are chronic gastritis and peptic ulcer disease caused by a bacterial infection of the stomach?",
+    "landmark": "J. R. Warren; B. Marshall, Lancet 1983;1:1273-1275; B. J. Marshall and J. R. Warren, Lancet 1984;1:1311-1315",
+    "tests": "rule 4: contested presupposition (the stomach was held to be sterile); spiral organisms in gastric mucosa reported since the 1890s - possibly Under-asked"
+  },
+  {
+    "key": "D2", "area": "medicine", "domain": "Medicine - cancer immunology",
+    "asOf": "1996-01-01",
+    "headline": "Can blocking an inhibitory receptor on T cells release an immune response strong enough to reject established tumours?",
+    "landmark": "D. R. Leach, M. F. Krummel and J. P. Allison, Enhancement of antitumor immunity by CTLA-4 blockade, Science 271 (1996) 1734-1736",
+    "tests": "a cancer-cure question resting on a then-new finding that CTLA-4 is a negative regulator"
+  }
+]
